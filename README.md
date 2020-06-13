@@ -9,20 +9,20 @@ is primarily composed of 3 parts:
 To run the chatbot, run the following commands in your anaconda prompt ->
   1. Create a new virtual environment with the required modules :
   
-    `conda create --name venv python==3.7.6 ujson==2.0.3 tensorflow==2.1.0 rasa==1.10.0 pip`
+    conda create --name venv python==3.7.6 ujson==2.0.3 tensorflow==2.1.0 rasa==1.10.0 pip
  
  OR
     
   1. Downloading pip in conda :
   
-    ```conda install pip```
+    conda install pip
   2. Running the requirements.txt to install all the required modules in the created environment instead of installing it      globally:
   
-      ```pip install -r requirements.txt```
+    pip install -r requirements.txt
       
 Activate the virtual envirnoment :
 
-  ```conda activate venv```
+    conda activate venv
   
   
 Note: To run tensorflow on windows, you need to install Visual C++ - https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
