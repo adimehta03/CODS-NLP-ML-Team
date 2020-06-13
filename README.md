@@ -23,9 +23,11 @@ To run the chatbot, run the following commands in your anaconda prompt ->
 Activate the virtual envirnoment :
 
     conda activate venv
-  
+
+To initialise Rasa and train your model : 
+ 
+    rasa init
   
 Note: To run tensorflow on windows, you need to install Visual C++ - https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 
-To initialise Rasa and train your model : rasa init
 
