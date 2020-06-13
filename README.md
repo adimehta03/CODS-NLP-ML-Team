@@ -5,8 +5,16 @@ is primarily composed of 3 parts:
 (i)   Scraping the web for all relevant articles and blogs.
 (ii)  Creating a website which consists of updates, stats and the chatbot
 (iii) Creating a chatbot with sentimental analysis models.
- 
-To run the chatbot, run the following commands in your anaconda prompt ->
+
+
+For Linux users and Git Bash users:
+   `git clone https://github.com/saksham49/CODS-NLP-ML-Team.git`
+For other users, download and extract the zip file change directory to the folder and run the following commands.
+
+To download the requirements, run the following command in the command line/terminal:
+   `pip install -r requiremnts.txt`
+To run the chatbot, run the following commands in your: 
+Anaconda prompt ->
   1. Create a new virtual environment with the required modules :
   
     conda create --name venv ujson==2.0.3 tensorflow==2.1.0 rasa==1.10.0 pip
@@ -24,7 +32,7 @@ Activate the virtual envirnoment :
 
     conda activate venv
 
-To initialise Rasa and train your model : 
+To initialise Rasa and train your model, run the following command in Anaconda Prompt : 
  
     rasa init
   
