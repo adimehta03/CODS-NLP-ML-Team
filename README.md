@@ -9,7 +9,7 @@ is primarily composed of 3 parts:
 To run the chatbot, run the following commands in your anaconda prompt ->
   1. Create a new virtual environment with the required modules :
   
-    ```conda create --name venv python==3.7.6 ujson==2.0.3 tensorflow==2.1.0 rasa==1.10.0 pip```
+    `conda create --name venv python==3.7.6 ujson==2.0.3 tensorflow==2.1.0 rasa==1.10.0 pip`
  
  OR
     
