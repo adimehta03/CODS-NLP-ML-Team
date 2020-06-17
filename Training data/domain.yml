@@ -1,0 +1,2075 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- hcq1
+- hcq2
+- hcq3
+- hcq4
+- hcq5
+- on_youth1
+- on_youth2
+- on_youth3
+- on_youth4
+- on_youth5
+- on_youth6
+- on_youth7
+- on_youth8
+- on_youth9
+- on_youth10
+- on_youth11
+- on_youth12
+- on_youth13
+- on_youth14
+- on_youth15
+- on_youth16
+- on_youth17
+- on_youth18
+- on_youth19
+- on_physical_health1
+- on_physical_health2
+- on_breastfeeding1
+- on_breastfeeding2
+- on_breastfeeding3
+- on_breastfeeding6
+- on_breastfeeding8
+- on_cleaning1
+- on_cleaning2
+- on_cleaning3
+- on_cleaning4
+- on_cleaning5
+- on_cleaning6
+- on_cleaning7
+- on_cleaning8
+- on_virusinfo1
+- on_virusinfo2
+- on_virusinfo3
+- on_virusinfo4
+- on_virusinfo5
+- on_virusinfo6
+- on_virusinfo7
+- on_virusinfo8
+- on_virusinfo9
+- on_virusinfo10
+- on_virusinfo11
+- on_virusinfo12
+- on_virusinfo13
+- on_virusinfo14
+- on_virusinfo15
+- on_virusinfo16
+- on_virusinfo17
+- on_virusinfo18
+- on_virusinfo19
+- on_virusinfo20
+- on_virusinfo21
+- on_virusinfo22
+- on_virusinfo23
+- on_virusinfo24
+- on_virusinfo25
+- on_virusinfo26
+- on_resource1
+- on_resource2
+- on_resource3
+- on_resource4
+- on_resource5
+- on_resource6
+- on_antiretrovirals1
+- on_antiretrovirals2
+- on_healthcareworkers1
+- on_healthcareworkers2
+- on_healthcareworkers3
+- on_healthcareworkers4
+- on_healthcareworkers5
+- on_healthcareworkers6
+- on_healthcareworkers7
+- on_healthcareworkers8
+- on_healthcareworkers9
+- on_healthcareworkers10
+- on_healthcareworkers11
+- on_healthcareworkers12
+- on_healthcareworkers13
+- on_healthcareworkers14
+- on_healthcareworkers15
+- on_healthcareworkers16
+- on_healthcareworkers17
+- on_influenza1
+- on_influenza2
+- on_influenza3
+- on_malaria1
+- on_malaria2
+- on_malaria3
+- on_malaria4
+- on_malaria5
+- on_malaria6
+- on_malaria7
+- on_malaria8
+- on_malaria9
+- on_malaria10
+- on_malaria11
+- on_masks1
+- on_masks2
+- on_masks3
+- on_masks4
+- on_masks5
+- on_masks6
+- on_masks7
+- on_masks8
+- on_mass_gatherings1
+- on_mass_gatherings2
+- on_mass_gatherings3
+- on_mass_gatherings4
+- on_mass_gatherings5
+- on_mass_gatherings6
+- on_mass_gatherings7
+- on_mass_gatherings8
+- on_mass_gatherings9
+- on_mass_gatherings10
+- on_old_people1
+- on_old_people4
+- on_old_people7
+- on_pregnancy_and_childbirth1
+- on_pregnancy_and_childbirth2
+- on_pregnancy_and_childbirth3
+- on_pregnancy_and_childbirth4
+- on_pregnancy_and_childbirth5
+- on_pregnancy_and_childbirth6
+- on_pregnancy_and_childbirth7
+- on_sexual_health
+entities:
+- disease
+- chronic_disease
+- location
+- age
+- pet
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_hcq1:
+  - text: In light of recent publications of evidence on the safety and efficacy of
+      hydroxychloroquine as a treatment for COVID-19 patients, the Executive Group
+      of the Solidarity Trial decided to implement a temporary pause of the hydroxychloroquine
+      arm within the trial as a precaution while the safety data is being reviewed.As
+      an example, an observational study published in the Lancet on 22 May found that,
+      among 100 000 patients from multiple countries randomized to receive hydroxychloroquine,
+      when used alone or with a macrolide, there was a higher mortality rate and an
+      increased frequency of irregular heartbeats.A final decision on the harm, benefit
+      or lack of benefit of hydroxychloroquine will be made once the evidence has
+      been reviewed by the Data Safety Monitoring Board. This review will include
+      data from the Solidarity Trial and other ongoing trials, as well as any evidence
+      published so far. It is expected by mid-June.
+  utter_hcq2:
+  - text: Those patients previously randomized to hydroxychloroquine treatment should
+      continue to receive hydroxychloroquine until they finish their course of treatment.
+      The use of hydroxychloroquine and chloroquine are accepted as generally safe
+      for use in patients with autoimmune diseases or malaria.
+  utter_hcq3:
+  - text: 'WHO is currently assessing the use of hydroxychloroquine on COVID-19 patients
+      within the Solidarity Trial. The hydroxychloroquine arm has been paused as a
+      precaution while the safety data is being reviewed.Every country, particularly
+      those with regulatory authorities, is in a position to advise its citizens regarding
+      the use of any drug. Although hydroxychloroquine and chloroquine are already
+      licensed products for treating other diseases, at this stage, these drugs have
+      not been found to be effective in the treatment of COVID-19. In fact, warnings
+      have been issued by many national authorities on the side effects of the drugs
+      and their use has been limited in many countries to clinical trials under strict
+      supervision in hospital settings.WHO has cautioned physicians against recommending
+      or administering unproven treatments to COVID-19 patients, and cautioned people
+      against self-medicating with them. The consensus among world experts is that
+      the potential exists but that far more studies are urgently needed to determine
+      if existing antiviral drugs can be effective to treat COVID-19. If these treatments
+      prove to be effective, they could reduce the burden of COVID-19. '
+  utter_hcq4:
+  - text: 'The Solidarity Trial is an international clinical trial to help find an
+      effective treatment for COVID-19, launched by WHO and partners. It is hoped
+      that one or more of the treatments under trial will result in improving clinical
+      outcomes in COVID-19 patients and save lives. Other trials are on-going around
+      the world in addition to the Solidarity Trial. Based on data from laboratory
+      and clinical studies, Remdesivir, Lopinavir/Ritonavir, Lopinavir/Ritonavir with
+      Interferon beta-1a, and hydroxychloroquine had been initially selected as treatment
+      options. Following new evidence on the safety and efficacy of hydroxychloroquine
+      as a treatment for hospitalized  COVID-19 patients, enrollment for this drug
+      was temporarily suspended on 24 May 2020.Over 100 countries have expressed an
+      interest in participating in the trial and WHO is actively supporting more than
+      60 of them, including with the following:ethical and regulatory approvals of
+      the WHO core protocol;identification of hospitals participating in the trial;training
+      of hospital clinicians on the web-based randomization and data system;shipping
+      the trial drugs as requested by each participating country.To date, over 400
+      hospitals in 35 countries are actively recruiting patients and nearly 3500 patients
+      have been enrolled from 17 countries.An interim trial analysis will be produced
+      and will be monitored by an independent group of experts as the global Data
+      and Safety Monitoring Committee. '
+  utter_hcq5:
+  - text: Hydroxychloroquine(HCQ), sold under the brand name Plaquenil among others,
+      is a medication used to prevent and treat malaria in areas where malaria remains
+      sensitive to chloroquine.Hydroxychloroquine or chloroquine, often in combination
+      with a second-generation macrolide, were widely used for treatment of COVID-19,
+      despite no conclusive evidence of their benefit.
+  utter_on_youth1:
+  - text: Yes. All age groups can catch COVID-19. While we are still learning about
+      how COVID-19 affects people, older persons (e.g. persons over 60 years) and
+      persons with pre-existing medical conditions, like high blood pressure, heart
+      disease, lung disease, cancer or diabetes, appear to develop serious illness
+      more often than others. As this is a new virus, we are still learning about
+      how it affects children and adolescents. Evidence to date suggests that children
+      and adolescents are less likely to get severe disease, but severe cases and
+      death can still happen in these age groups.Read more:https://www.who.int/docs/default-source/coronaviruse/key-messages-and-actions-for-covid-19-prevention-and-control-in-schools-march-2020.pdf?sfvrsn=baf81d52_4https://www.who.int/news-room/q-a-detail/q-a-coronaviruses
+  utter_on_youth2:
+  - text: Yes.  Infected people in all age groups – including adolescents - can transmit
+      the virus to other people, even if  they have mild symptoms or do not feel ill.
+      The virus is spread from person to person through small droplets from the nose
+      or mouth which are spread when a person with COVID-19 coughs, sneezes or speaks.
+      These droplets can land on objects and surfaces. People can then become infected
+      by touching these objects or surfaces, and then touching their eyes, nose or
+      mouth.
+  utter_on_youth3:
+  - text: If you have minor symptoms, such as a slight cough or a mild fever, there
+      is generally no need to seek medical care. Stay at home, self-isolate and monitor
+      your symptoms. Follow national guidance on self-isolation.   Avoiding contact
+      with others and visits to medical facilities will allow these facilities to
+      operate more effectively and help protect you and others from possible COVID-19
+      and other viruses. Seek medical care if your health gets worse, or if there
+      is no one in your family that can take care of you at home. It is important
+      that you follow the procedures put in place by your country. Ask a family member
+      or another trusted adult how you can find out what these procedures are where
+      you live. Read more:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-publichttps://apps.who.int/iris/rest/bitstreams/1272288/retrieve
+  utter_on_youth4:
+  - text: Seek medical care, if members of your family get seriously ill.  If possible,
+      either you or an adult should phone the local or national COVID-19 emergency
+      number for advice on where and how you could get care. If your family member
+      is confirmed as having COVID-19, you must be prepared that you and other known
+      contacts will need to monitor your symptoms, and continue to self-quarantine
+      for 14 days, even if you feel healthy.Read more:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
+  utter_on_youth5:
+  - text: It is important to continue with any medication you may be using for chronic
+      and other conditions, such as asthma, diabetes, HIV infection and TB, and attend
+      recommended check-ups.  Check with your health authorities and health provider
+      if these check-ups should be done differently during the COVID-19 outbreak.
+      Some services, such as counselling, may be available remotely. For treatment
+      of clinically stable adolescents with HIV and adolescents with TB and/or other
+      chronic conditions, your health provider should consider multi-month prescriptions
+      and dispensing which will reduce the frequency of your visits to the clinic
+      and ensure continuity of treatment, if movements are disrupted during the pandemic.  Adherence
+      to treatment is just as important during this period.   Read more:https://www.who.int/news-room/q-a-detail/q-a-on-covid-19-hiv-and-antiretrovirals
+  utter_on_youth6:
+  - text: WHO recommends that all vaccination in schools and mass campaigns should
+      be postponed during the COVID-19 pandemic. However,  vaccines provided to adolescents
+      have sufficiently flexible schedules to make sure you can get the vaccine in
+      time when vaccination services start again. For example, the HPV vaccine that
+      requires two doses can be started any time between 9 and 14 years of age and
+      the interval between the two doses can be longer. The minimum interval between
+      doses is 6 months, but it can be 12 or 15 months and, if necessary, even longer.
+      It is most important hat you receive the t second dose at some point in time
+      to be fully protected. Decisions to continue routine vaccination services are
+      made by each country. Ask a family member or another trusted adult how you can
+      get information about vaccination services where you live.  It is important
+      you get the vaccines you are supposed to get, even if they have to be delayed
+      due to the COVID-19 pandemic. Read more:https://apps.who.int/iris/bitstream/handle/10665/331590/WHO-2019-nCoV-immunization_services-2020.1-eng.pdf
+      https://apps.who.int/iris/bitstream/handle/10665/331818/WHO-2019-nCoV-immunization_services-FAQ-2020.1-eng.pdf
+  utter_on_youth7:
+  - text: Staying at home is difficult and can get boring, but it may help to do something
+      you enjoy. This could be reading a book, playing games or listening to music.
+      Try to stay connected with friends and family every day either by communicating
+      with them by phone or internet if you can, or, if you live close to them and
+      the local rules allow you to, by talking in-person while keeping your distance.  At
+      the same time, it is still really important that you reduce your chances of
+      being infected or spreading COVID-19 by washing your hands with soap and water
+      or alcohol-based hand rub  as often as possible, keeping at least 1 metre (3
+      feet) from other people, and avoiding crowded places. You might be one of the
+      unlucky adolescents who does get severely ill if you catch COVID-19, or you
+      could spread it to others and be responsible for them getting really ill or
+      even dying. You have the power to make choices that could save lives and together
+      young people can play an important part in fighting COVID-19.  Read more:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
+  utter_on_youth8:
+  - text: Explain to your friends why it is important to protect themselves and others
+      by washing their hands, avoiding touching their face, always coughing or sneezing
+      into their elbow, sleeve, or a tissue, and cooperating with physical distancing
+      measures and movement restrictions when called on to do so. Maybe you can share
+      ideas for fun virtual activities that your friends can participate in,  and
+      you can encourage them to do them together with you or with other friends. This
+      way you are giving them alternatives rather than just telling them to stay at
+      home. But, remember that you do not have control over other peoples’ actions
+      so do not get into an argument or a fight to try to change their minds.
+  utter_on_youth9:
+  - text: "In situations like a pandemic it is very normal to feel anxious and powerless,\
+      \ and that is ok. Here are a few suggestions on things that could help you proactively\
+      \ manage your anxiety: Think about how you are feeling. Don’t ignore your feelings,\
+      \ especially if you don’t feel well. When your life is disrupted, it is normal\
+      \ to have many different feelings: worry, frustration, sad, stress, anger, anxiety\
+      \ - this can happen to everyone.  Draw on skills and strategies you have used\
+      \ in the past that have helped you to manage life challenges, and skills to\
+      \ help you manage your emotions. Here are a few examples:Keep a diary Express\
+      \ your feelings through art, like writing a poem, drawing, dancing, or playing\
+      \ music Talk about your feelings and concerns with someone you trust Try some\
+      \ breathing exercises. You may find guided breathing exercises online if you\
+      \ have access to internet.  Do something active every day: Any exercise will\
+      \ help, as it reduces levels of the body's stress hormones, which can help your\
+      \ body and mind relax. Exercise also produces a “feel good hormone” called endorphins\
+      \ which can help to improve your mood. Try taking a walk, running, or any physical\
+      \ activity outdoors while keeping a distance from others. For those who are\
+      \ unable to leave the house, you could open the window for fresh air and do\
+      \ some indoor exercises to stay active. Don’t use smoking, eating, alcohol or\
+      \ other drugs to deal with your emotions. Stay connected with friends and family\
+      \ either by communicating with them by phone or internet if you can., If you\
+      \ live close to them and the local rules allow you to, you could also talk to\
+      \ them in person while keeping your distance.Keep a daily routine as much as\
+      \ possible. Try to go to bed and wake up at the same times every day, making\
+      \ sure you get enough sleep. Plan ahead and try to have a balance of activities\
+      \ such as keeping up with schoolwork, physical exercise, connecting with friends\
+      \ and family, doing things you enjoy, and eating regular meals. Talk to a health\
+      \ worker or counsellor if you, or someone you care about:feel overwhelmed with\
+      \ emotions like sadness, fears and worries feel like stress gets in the way\
+      \ of your daily routines, orfeel like you want to harm yourself or others. At\
+      \ this time, you may find it easier to speak to a counsellor than a health worker,\
+      \ given that there may be restrictions on movement and health facilities may\
+      \ be busy caring for those with COVID-19.   Read more: https://www.who.int/docs/default-source/coronaviruse/coping-with-stress.pdf\
+      \ https://www.who.int/docs/default-source/coronaviruse/helping-children-cope-with-stress-print.pdf\
+      \ https://www.who.int/docs/default-source/coronaviruse/mental-health-considerations.pdf\
+      \ https://www.un.org/youthenvoy/2020/04/copingwithcovid-a-webinar-series-on-young-people-and-mental-health/\
+      \ https://www.voicesofyouth.org/campaign/covid-19-and-youth-mental-health"
+  utter_on_youth10:
+  - text: We don’t know when the pandemic will end, but we know it depends on every
+      individual’s contribution in helping stop the transmission. The sacrifices you
+      have made by not seeing your friends and by stopping going to school and other
+      activities are your contributions to fighting the pandemic. By putting societies
+      and economies on hold, we have reduced the ability of the virus to spread through
+      our communities. These defensive measures have helped to limit some of the short-term
+      impacts of the virus, and bought us time to translate what we have learned about
+      the virus into solutions so that we can get back to a more familiar way of living.
+      It is important that you continue to practise these measures and encourage your
+      friends to do the same.  Read more:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
+  utter_on_youth11:
+  - text: A decision to reopen schools in every country and area is made based on
+      careful assessment of the situation, with consensus among all the key parties
+      involved, including the health and education policy-makers, teachers and other
+      school staff, parents and health and community workers. In addition, the reopening
+      of schools are carefully planned and prepared, with all necessary measures in
+      place to protect the safety and health of everyone in the school community.Therefore,
+      if your school reopens, you should feel assured it is safe for you to go back
+      to school – provided that you strictly follow the guidelines and rules that
+      will be provided by your school.Of course, if you have any concerns with going
+      back to school, do not hesitate to speak out to your teachers and parents or
+      guardians. Read more:School reopening, UNESCO COVID-19 Education Response Education
+      Sector Issue Note 7.1, April 2020Prepare for school reopening, IIEP-UNESCO's
+      COVID response brief, April 2020
+  utter_on_youth12:
+  - text: Yes. You can still play sports that are in line with the physical distancing
+      measures and movement restrictions that are in place in your country. Being
+      physically active is good for your health, both physical and mental. Set up
+      a regular routine to practice activities or sports that do not require close
+      contact with others every day for 1 hour. You can do individual sports, like
+      jogging, walking, dancing or yoga. There are many options to try. You can set
+      up playground games indoors, such as jump rope and hop-scotch, play with your
+      brothers and sisters, and practice some strength training activities, using
+      improvised weights like bottles full of water or sand. If you have access to
+      the internet, you can also join in online active games or fitness classes, or
+      set up your own online physical exercises with your friends or classmates. Find
+      an activity that is fun, can be done within the restrictions that are in place
+      in your country, and makes you feel good.
+  utter_on_youth13:
+  - text: Your school or place where you are studying are likely to make arrangements
+      for you to catch up or to do exams at another time. Follow the procedures that
+      your school has put in place to reduce the immediate impact of school closures,
+      and to facilitate the continuity of education. If you have access to internet,
+      you can also consult your teachers and other trusted adults to identify and
+      access reliable online learning opportunities and resources, including those
+      included in the distance learning solutions recommended by UNESCO, the United
+      Nations agency that helps countries improve their education systems. In addition,
+      UNESCO is collecting stories from students, teachers and parents about how they
+      are coping and continuing to learn during school closures. Access those stories,
+      they might inspire you. You can also contact UNESCO and share your story! Find
+      out how to share it here.In places where internet connectivity is a problem,
+      many governments have started to broadcast educational programmes on TV and
+      radio channels during school closures. If you live in such a place, look out
+      for educational programmes on your local TV and radio channels. Read more:https://en.unesco.org/covid19/educationresponse/solutions
+      https://www.voicesofyouth.org/campaign/studying-home-due-coronavirus-how-young-people-around-world-are-keeping-their-mood
+  utter_on_youth14:
+  - text: A near-constant stream of news, sometimes contradictory, can cause anyone
+      to feel lost and distressed. Make sure to use reliable sources such as the UNICEF
+      and the World Health Organization’s sites to get information, or to check any
+      information you might be getting through less reliable channels. If you have
+      a phone, you can use the WHO Health Alert on WhatsApp to get the latest information
+      about the pandemic. This is a new service, which is free to use, designed to
+      give prompt, reliable and official information 24 hours a day, worldwide. Start
+      by clicking WHO Health Alert, then simply text the word ‘Hi’ in a WhatsApp message
+      to get started. Keep in mind that overloading yourself with information about
+      the COVID-19 pandemic can also be stressful, so seek information updates and
+      practical guidance at specific times during the day and avoid listening to or
+      following rumours that make you feel uncomfortable. Read more:https://www.who.int/docs/default-source/coronaviruse/mental-health-considerations.pdf
+  utter_on_youth15:
+  - text: There is no evidence that COVID-19 is transmitted through semen or vaginal
+      fluids. However, having sex with someone means that you are very close to them.
+      This puts one person at risk if the other person has COVID-19. Masturbation
+      does not involve another person, and carries no risk of COVID-19. Also, having
+      sex with a partner whom you are living with does not carry this risk if both
+      of you are taking steps to protect yourself from the virus. Make sure to use
+      condoms and contraception to avoid sexually transmitted infections and unintended
+      pregnancy.  Read more:https://www.who.int/news-room/q-a-detail/contraception-family-planning-and-covid-19  https://www.unfpa.org/resources/adolescents-and-young-people-coronavirus-disease-covid-19
+  utter_on_youth16:
+  - text: COVID-19 has abruptly pushed many people’s daily lives online, and you may
+      be spending even more hours online than before. While online solutions provide
+      huge opportunities for continuing your learning, socializing and playing, you
+      should try to limit the amount of screen time that is not related to your studies
+      or physical activity. This is because you need to be physically active to keep
+      healthy and a positive attitude. In addition, some people are sensitive to flickering
+      lights and may get headaches, nausea, and dizziness, and even seizures if they
+      spend too much time in front of a screen. Therefore it is important to replace
+      some of the recreational screen time with non-screen activities, like listening
+      to music, reading, playing board games, and physical activity, like  going for
+      a walk or jog. Excessive gaming can lead to “gaming disorder” that leads to
+      reduced sleep or day-night reversal, loss of appetite, aggression, headaches,
+      and attention problems. If you experience these symptoms, seek help from your
+      parents or a trusted adult.
+  utter_on_youth17:
+  - text: Since you might be spending even more time online than before, it is wise
+      to be aware of some of the risks. First, be careful what content you share online.
+      Risky behaviour, such as sexting or sharing of sexualized content, can expose
+      you to risks of blackmail, harassment and humiliation. Second, spending more
+      time online may increase the chances that you could come into contact with online
+      predators who seek to sexually exploit young people. When in front of webcams
+      wear appropriate clothing and do not connect with teachers or virtual classrooms
+      from a bedroom. In addition, it’s important to note that some adolescents –
+      for example those with disabilities and those perceived to be different or at
+      greater risk of catching or spreading COVID-19 - may be at increased risk of
+      cyberbullying and discrimination. Hurtful, discriminatory or inappropriate online
+      contact is never okay. If in doubt, or if you feel uncomfortable or distressed
+      about some interactions you have online, tell a parent or another trusted adult
+      immediately. Read more:https://www.unicef.org/media/67396/file/COVID-19%20and%20Its%20Implications%20for%20Protecting%20Children%20Online.pdf
+  utter_on_youth18:
+  - text: 'This is a difficult time. Many people – including perhaps your parents
+      - are worrying about security, health, and money. When people are in the cramped
+      and confined living conditions of lockdown, these tensions and stress can become
+      even greater. It is normal to have disagreements. However, if the disagreements
+      become verbal or physical, then it is right to take action.   If you are worried
+      about what is happening in your home, or don’t feel safe, talk to a trusted
+      adult about what worries you, and seek their advice. During an argument or a
+      fight, try not to draw attention to yourself so that you don’t end up getting
+      hurt. It might be useful to have a safety plan in case the violence escalates.
+      This includes preparing a bag with essential items, like clothing, documents
+      and electric charger, and having a neighbour, friend, relative, or shelter identified
+      to go to should you need to leave the house immediately for safety reasons.
+      Arrange with the trusted adult to help you alert the relevant authorities who
+      can help you stay safe, including the police, emergency health services and
+      social services.  In many of the countries that have been most affected by COVID-19,
+      essential services are still available, including shelters or protection services.
+      If there are no trusted adults for you to share your concerns with, your country
+      may have helplines, including text services so that you can communicate with
+      someone who can help you or give you advice. Read more: https://www.unwomen.org/-/media/headquarters/attachments/sections/library/publications/2020/issue-brief-covid-19-and-ending-violence-against-women-and-girls-en.pdf?la=en&vs=5006
+      https://www.who.int/publications-detail/who-guidelines-for-the-health-sector-response-to-child-maltreatment
+      https://apps.who.int/iris/bitstream/handle/10665/331699/WHO-SRH-20.04-eng.pdf'
+  utter_on_youth19:
+  - text: 'It is wrong for anyone to do this. And it is not your fault in any way.
+      If you are staying in the same house as the person and/or are dependent on him
+      (it will usually be a man), that may make some of the things that you could
+      do difficult, especially during stay-at-home restrictions due to COVID-19. Here
+      are some things that you can consider doing to improve your safety while in
+      the house. You could tell him politely but firmly that you do not want him to
+      touch you and ask him to please stop.You could inform your parents or other
+      caregivers or trusted adult in the house about what is happening.You could inform
+      a trusted adult outside your home such as a neighbour or a teacher or family
+      friend or relative. If you have access to a phone, you could call or text for
+      help and support. This includes calling hotlines/helplines for children and
+      women who are in need of help or feeling distressed or subjected to abuse, or
+      calling a child protection service in your area. Be careful not to leave your
+      phone calls or text messages where anyone else could access them.  If you need
+      to leave the house immediately because he is hurting or harming you, think of
+      discretely (without him overhearing) pre-arranging with a neighbour or trusted
+      relative or family friend to help you leave the house and stay with them until
+      it is safe for you to return home. If you have been sexually abused or raped
+      and need urgent medical help or care, go as soon as possible to the nearest
+      hospital or clinic to ask for medical care.    Read more:  https://apps.who.int/iris/bitstream/handle/10665/331699/WHO-SRH-20.04-eng.pdf'
+  utter_on_physical_health1:
+  - text: Do not exercise if you have a fever, cough and difficulty breathing. Stay
+      home and rest, seek medical attention and call in advance. Follow the directions
+      of your local health authority.If you are able to go for a walk or bicycle ride
+      always practice physical distancing and wash your hands with water and soap
+      before you leave, when you get to where you are going, and as soon as you get
+      home.  If water and soap are not immediately available, use alcohol-based hand
+      rub. If you go to a park or public open space to walk, run or exercise always
+      practice physical distancing and wash your hands with water and soap, before
+      you leave, when you get to where you are going, and as soon as you get home.  If
+      water and soap are not immediately available, use alcohol-based hand rub. Follow
+      the directions of your local health authority in regards to any restrictions
+      on the number of people with you and/or restrictions on the use of public outdoor
+      play or exercise equipment. If you are not regularly active start slowly and
+      with low intensity activities, like walking and low impact exercises. Start
+      with shorter amounts, like 5-10 minutes, and gradually build up to 30 minutes
+      or more continuously over a few weeks. It is better and safer to be active for
+      short periods more frequently than to try and be active for long periods when
+      you are not used to it. Choose the right activity so that you reduce the risk
+      of injury and that you enjoy the activity. Choose the right intensity according
+      to your health status and fitness level. You should be able to breath comfortably
+      and hold a conversation while you do light- and moderate-intensity physical
+      activity.
+  utter_on_physical_health2:
+  - text: Try and reduce long periods of time spent sitting, whether for work, studying,
+      watching TV, reading, or using social media or playing games using screens.
+      Reduce sitting for long periods by taking short 3-5 minute breaks every 20-30
+      minutes.Simply stand up and stretch or even better, take a walk around the house,
+      up and down the stairs, or into the garden. By just moving around and stretching
+      you can improve your health and wellbeing. For more ideas and illustrations
+      of healthy stretches see here.Set up a regular routine to be active every day,
+      by planning a physical activity or exercise break either by yourself, by joining
+      an online class, or by setting up a time to be active online with your friends
+      or colleagues. Making a specific time to be active helps ensure you get your
+      daily physical activity. Put the time in your diary, and it will help remind
+      you. Stick with it, as this will help you build a regular routine, and help
+      you adjust to new ways of working, study and family life under COVID-19 restrictionsBe
+      active with your family and friends, connecting with others can help you and
+      your family in the home and elsewhere spend time together and be active. Planning
+      time to be active with your children with active games at home, walks in the
+      parks, or cycling can be a way the whole family can relax, be together and be
+      active and healthy whilst at home.   Set yourself and your family Be Active
+      goals, by choosing a specific type of activity, time of day and/or number of
+      minutes you will do every day. Get each family member to choose their own goal
+      which sets a bit of a challenge but is realistic with help from family or friends
+      and motivation. Record your progress on a weekly activity chart and, if you
+      think it would help, reward yourself with something you value.Do some muscle
+      strengthening activities such as lifting weights or improvise using full bottles
+      of water or simply use your own body weight and do sets of press ups, sit ups
+      and squats. Make time for fun, such as dancing to music.Where to get more help
+      and informationFor more ideas use internet search platforms and check out social
+      media for suggestions and access to free resources suitable for children of
+      all ages and adults of all fitness and abilities.
+  utter_on_breastfeeding1:
+  - text: Transmission of active COVID-19 (virus that can cause infection) through
+      breast milk and breastfeeding has not been detected to date. There is no reason
+      to avoid or stop breastfeeding.
+  utter_on_breastfeeding2:
+  - text: Yes. In all socio-economic settings, breastfeeding improves survival and
+      provides lifelong health and development advantages to newborns and infants.
+      Breastfeeding also improves the health of mothers.
+  utter_on_breastfeeding3:
+  - text: Yes. Immediate and continued skin-to-skin care, including kangaroo mother
+      care, improves the temperature control of newborns and is associated with improved
+      survival among newborn babies. Placing the newborn close to the mother also
+      enables early initiation of breastfeeding which also reduces mortality.The numerous
+      benefits of skin-to-skin contact and breastfeeding substantially outweigh the
+      potential risks of transmission and illness associated with COVID-19.
+  utter_on_breastfeeding6:
+  - text: If you are too unwell to breastfeed your baby due to COVID-19 or other complications,
+      you should be supported to safely provide your baby with breast milk in a way
+      possible, available, and acceptable to you. This could include:Expressing milk;Donor
+      human milk. If expressing breast milk or donor human milk are not feasible then
+      consider wet nursing (another woman breastfeeds the child) or infant formula
+      milk with measures to ensure that it is feasible, correctly prepared, safe and
+      sustainable.
+  utter_on_breastfeeding8:
+  - text: No. There are always risks associated with giving infant formula milk to
+      newborns and infants in all settings. The risks associated with giving infant
+      formula milk are increased whenever home and community conditions are compromised,
+      such as reduced access to health services if a baby becomes unwell, reduced
+      access to clean water and/or access to supplies of infant formula milk are difficult
+      or not guaranteed, affordable and sustainable.The numerous benefits of breastfeeding
+      substantially outweigh the potential risks of transmission and illness associated
+      with the COVID-19 virus.
+  utter_on_cleaning1:
+  - text: Disinfection practices are important to reduce the potential for COVID-19
+      virus contamination in non-healthcare settings, such as in the home, office,
+      schools, gyms, publicly accessible buildings, faith-based community centres,
+      markets, transportation and business settings or restaurants. High-touch surfaces
+      in these non-health care settings should be identified for priority disinfection
+      such as door and window handles, kitchen and food preparation areas, counter
+      tops, bathroom surfaces, toilets and taps, touchscreen personal devices, personal
+      computer keyboards, and work surfaces.
+  utter_on_cleaning2:
+  - text: In non-health care settings, sodium hypochlorite (bleach / chlorine) may
+      be used at a recommended concentration of 0.1% or 1,000ppm (1 part of 5% strength
+      household bleach to 49 parts of water). Alcohol at 70-90% can also be used for
+      surface disinfection. Surfaces must be cleaned with water and soap or a detergent
+      first to remove dirt, followed by disinfection.  Cleaning should always start
+      from the least soiled (cleanest) area to the most soiled (dirtiest) area in
+      order to not spread the dirty to areas that are less soiled. All disinfectant
+      solutions should be stored in opaque containers, in a well-ventilated, covered
+      area that is not exposed to direct sunlight and ideally should be freshly prepared
+      every day.In indoor spaces, routine application of disinfectants to surfaces
+      via spraying is not recommended for COVID-19. If disinfectants are to be applied,
+      these should be via a cloth or wipe which is soaked in the disinfectant.
+  utter_on_cleaning3:
+  - text: 'It is important to reduce your risk when using disinfectants:The disinfectant
+      and its concentration should be carefully selected to avoid damaging surfaces
+      and to avoid or minimize toxic effects on household members (or users of public
+      spaces).Avoid combining disinfectants, such as bleach and ammonia, since mixtures
+      can cause respiratory irritation and release potentially fatal gases.Keep children,
+      pets and other people away during the application of the product until it is
+      dry and there is no odour. Open windows and use fans to ventilate. Step away
+      from odours if they become too strong. Disinfectant solutions should always
+      be prepared in well-ventilated areas.Wash your hands after using any disinfectant,
+      including surface wipes. Keep lids tightly closed when not in use. Spills and
+      accidents are more likely to happen when containers are open. Do not allow children
+      to use disinfectant wipes. Keep cleaning fluids and disinfectants out of the
+      reach of children and pets. Throw away disposable items like gloves and masks
+      if they are used during cleaning. Do not clean and re-use.Do not use disinfectant
+      wipes to clean hands or as baby wipes.The minimum recommended personal protective
+      equipment when disinfecting in non-health care settings is rubber gloves, waterproof
+      aprons and closed shoes. Eye protection and medical masks may also be needed
+      to protect against chemicals in use or if there is a risk of splashing.Note:
+      Where cleaning and disinfection are not possible on a regular basis due to resource
+      limitations, frequent hand washing and avoiding touching the face should be
+      the primary prevention approaches to reduce any potential transmission associated
+      with surface contamination.'
+  utter_on_cleaning4:
+  - text: In outdoor spaces, large-scale spraying or fumigation in areas such as streets
+      or open market places for the COVID-19 virus or other pathogens is not recommended.
+      Streets and sidewalks are not considered as routes of infection for COVID-19.
+      Spraying disinfectants, even outdoors, can be noxious for people’s health and
+      cause eye, respiratory or skin irritation or damage.This practice will be ineffective
+      since the presence of dirt or rubbish for example, inactivates the disinfectant,
+      and manual cleaning to physically remove all matter is not feasible. This is
+      even less effective on porous surfaces such as sidewalks and unpaved walkways.
+      Even in the absence of dirt or rubbish, it is unlikely that chemical spraying
+      would adequately cover surfaces allowing the required contact time to inactivate
+      pathogens.
+  utter_on_cleaning5:
+  - text: No. Spraying of individuals with disinfectants (such as in a tunnel, cabinet,
+      or chamber) is not recommended under any circumstances. This practice could
+      be physically and psychologically harmful and would not reduce an infected person’s
+      ability to spread the virus through droplets or contact. Even if someone who
+      is infected with COVID-19 goes through a disinfection tunnel or chamber, as
+      soon as they start speaking, coughing or sneezing they can still spread the
+      virus.  The toxic effect of spraying with chemicals such as chlorine on individuals
+      can lead to eye and skin irritation, bronchospasm due to inhalation, and potentially
+      gastrointestinal effects such as nausea and vomiting. In addition to health
+      safety concerns, the use of chlorine in large-scale spraying practices may prevent
+      this resource from being used for important interventions such as drinking water
+      treatment and environmental disinfection of health care facilities.
+  utter_on_cleaning6:
+  - text: 'Thorough hand hygiene: washing hands with soap and water or using alcohol-based
+      hand gel, should be performed before touching surfaces, items, pets, and people
+      within the household environment. Please see: https://www.who.int/gpsc/clean_hands_protection/en/.
+      While outside, people should always follow physical distancing measures, staying
+      at least one metre from another person; perform hand hygiene by washing hands
+      frequently with soap and water or using alcohol-based hand rub; follow good
+      respiratory hygiene by covering your mouth and nose with your bent elbow or
+      tissue when coughing or sneezing; avoid touching your eyes, nose and mouth;
+      and avoid crowded places.'
+  utter_on_cleaning7:
+  - text: No. The use of gloves by the public in public spaces is not a recommended
+      or proven prevention measure. Wearing gloves in public spaces does not replace
+      the need for hand hygiene, nor does it offer any additional measure of protection
+      against the COVID-19 virus than hand hygiene. Gloves do not provide complete
+      protection against hand contamination, as pathogens may gain access to the hands
+      via small defects in gloves or by contamination of the hands during glove removal.
+      People can also transfer pathogens from one surface to another by touching with
+      gloved hands, or even transfer pathogens to the mouth, nose, or eyes if they
+      touch their face with gloved hands.
+  utter_on_cleaning8:
+  - text: 'There is no evidence to date of viruses that cause respiratory illnesses
+      being transmitted via food or food packaging. Coronaviruses cannot multiply
+      in food; they need an animal or human host to multiply.The COVID-19 virus is
+      generally thought to be spread from person to person through respiratory droplets.
+      Currently, there is no evidence to support transmission of the COVID-19 virus
+      associated with food. Before preparing or eating food it is important to always
+      wash your hands with soap and water for at least 40-60 seconds. Regular food
+      safety and handling guidance should be followed.See: https://www.who.int/activities/promoting-safe-food-handling.
+      For food service businesses, please see the below guidance on COVID-19 and Food
+      Safety: https://www.who.int/teams/risk-communication/food-and-agriculture-sectors.'
+  utter_on_virusinfo1:
+  - text: Coronaviruses are a large family of viruses which may cause illness in animals
+      or humans.  In humans, several coronaviruses are known to cause respiratory
+      infections ranging from the common cold to more severe diseases such as Middle
+      East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS).
+      The most recently discovered coronavirus causes coronavirus disease COVID-19.
+  utter_on_virusinfo2:
+  - text: COVID-19 is the infectious disease caused by the most recently discovered
+      coronavirus. This new virus and disease were unknown before the outbreak began
+      in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many
+      countries globally.
+  utter_on_virusinfo3:
+  - text: COVID-19 cases maybe asymptomatic i.e they may not exhibit the symptoms.But
+      the most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other
+      symptoms that are less common and may affect some patients include aches and
+      pains, nasal congestion, headache, conjunctivitis, sore throat, diarrhea, loss
+      of taste or smell or a rash on skin or discoloration of fingers or toes. These
+      symptoms are usually mild and begin gradually. Some people become infected but
+      only have very mild symptoms. Most people (about 80%) recover from the disease
+      without needing hospital treatment. Around 1 out of every 5 people who gets
+      COVID-19 becomes seriously ill and develops difficulty breathing. Older people,
+      and those with underlying medical problems like high blood pressure, heart and
+      lung problems, diabetes, or cancer, are at higher risk of developing serious
+      illness.  However, anyone can catch COVID-19 and become seriously ill.  People
+      of all ages who experience fever and/or  cough associated withdifficulty breathing/shortness
+      of breath, chest pain/pressure, or loss of speech or movement should seek medical
+      attention immediately. If possible, it is recommended to call the health care
+      provider or facility first, so the patient can be directed to the right clinic.
+  utter_on_virusinfo4:
+  - text: If you have minor symptoms, such as a slight cough or a mild fever, there
+      is generally no need to seek medical care. Stay at home, self-isolate and monitor
+      your symptoms. Follow national guidance on self-isolation.However, if you live
+      in an area with malaria or dengue fever it is important that you do not ignore
+      symptoms of fever.  Seek medical help.  When you attend the health facility
+      wear a mask if possible, keep at least 1 metre distance from otherpeople and
+      do not touch surfaces with your hands. If it is a child who is sick help the
+      child stick to this advice.Seek immediate medical care if you have difficulty
+      breathing or pain/pressure in the chest. If possible, call your health care
+      provider in advance, so he/she can direct you to the right health facility.
+  utter_on_virusinfo5:
+  - text: People can catch COVID-19 from others who have the virus. The disease spreads
+      primarily from person to person through small droplets from the nose or mouth,
+      which are expelled when a person with COVID-19 coughs, sneezes, or speaks. These
+      droplets are relatively heavy, do not travel far and quickly sink to the ground.
+      People can catch COVID-19 if they breathe in these droplets from a person infected
+      with the virus.  This is why it is important to stay at least 1 meter) away
+      from others. These droplets can land on objects and surfaces around the person
+      such as tables, doorknobs and handrails.  People can become infected by touching
+      these objects or surfaces, then touching their eyes, nose or mouth.  This is
+      why it is important to wash your hands regularly with soap and water or clean
+      with alcohol-based hand rub. WHO is assessing ongoing research on the ways that
+      COVID-19 is spread and will continue to share updated findings.
+  utter_on_virusinfo6:
+  - text: COVID-19 is mainly spread through respiratory droplets expelled by someone
+      who is coughing or has other symptoms such as fever or tiredness. Many people
+      with COVID-19 experience only mild symptoms. This is particularly true in the
+      early stages of the disease. It is possible to catch COVID-19 from someone who
+      has just a mild cough and does not feel ill.Some reports have indicated that
+      people with no symptoms can transmit the virus. It is not yet known how often
+      it happens. WHO is assessing ongoing research on the topic and will continue
+      to share updated findings.
+  utter_on_virusinfo7:
+  - text: Practicing hand and respiratory hygiene is important at ALL times and is
+      the best way to protect others and yourself.When possible maintain at least
+      a 1 meter distance between yourself and others. This is especially important
+      if you are standing by someone who is coughing or sneezing.  Since some infected
+      persons may not yet be exhibiting symptoms or their symptoms may be mild, maintaining
+      a physical distance with everyone is a good idea if you are in an area where
+      COVID-19 is circulating.
+  utter_on_virusinfo8:
+  - text: If you have been in close contact with someone with COVID-19, you may be
+      infected.Close contact means that you live with or have been in settings of
+      less than 1 metre from those who have the disease. In these cases, it is best
+      to stay at home.However, if you live in an area with malaria or dengue fever
+      it is important that you do not ignore symptoms of fever.  Seek medical help.  When
+      you attend the health facility wear a mask if possible, keep at least 1 metre
+      distant from other people and do not touch surfaces with your hands. If it is
+      a child who is sick help the child stick to this advice. If you do not live
+      in an area with malaria or dengue fever please do the following:If you become
+      ill, even with very mild symptoms you must self-isolate Even if you don’t think
+      you have been exposed to COVID-19 but develop symptoms, then self-isolate and
+      monitor yourself.You are more likely to infect others in the early stages of
+      the disease when you just have mild symptoms, therefore early self-isolation
+      is very important.If you do not have symptoms, but have been exposed to an infected
+      person, self-quarantine for 14 days.If you have definitely had COVID-19 (confirmed
+      by a test)  self-isolate for 14 days even after symptoms have disappeared as
+      a precautionary measure – it is not yet known exactly how long people remain
+      infectious after they have recovered. Follow national advice on self-isolation.
+  utter_on_virusinfo9:
+  - text: Self-isolation is an important measure taken by those who have COVID-19
+      symptoms to avoid infecting others in the community, including family members.
+      Self-isolation is when a person who is experiencing fever, cough or other COVID-19
+      symptoms stays at home and does not go to work, school or public places.  This
+      can be voluntarily or based on his/her health care provider’s recommendation.
+      However, if you live in an area with malaria or dengue fever it is important
+      that you do not ignore symptoms of fever.  Seek medical help.  When you attend
+      the health facility wear a mask if possible, keep at least 1 metre distant from
+      other people and do not touch surfaces with your hands. If it is a child who
+      is sick help the child stick to this advice. If you do not live in an area with
+      malaria or dengue fever please do the following:-  If a person is in self-isolation,
+      it is because he/she is ill but not severely ill (requiring medical attention).have
+      a large, well-ventilated with hand-hygiene and toilet facilities If this is
+      not possible, place beds at least 1 metre apart.Keep at least 1 metre from others,
+      even from your family membersMonitor your symptoms daily.Isolate for 14 days,
+      even if you feel healthy.If you develop difficulty breathing, contact your healthcare
+      provider immediately – call them first if possibleStay positive and energized
+      by keeping in touch with loved ones by phone or online, and by exercising yourself
+      at home.
+  utter_on_virusinfo10:
+  - text: To self-quarantine means to separate yourself from others because you have
+      been exposed to someone with COVID-19 even though you, yourself, do not have
+      symptoms.During self-quarantine you monitor yourself    for symptoms.  The goal
+      of the self-quarantine is to prevent transmission.  Since people who become
+      ill with COVID-19 can infect people immediately self-quarantine can prevent
+      some infections from happening.  .In this case:Have a large, well-ventilated
+      single room with hand hygiene and toilet facilitiesIf this is not available
+      place beds at least 1 metre apart.Keep at least 1-metre distance from others,
+      even from your family members.Monitor your symptoms dailySelf-quarantine for
+      14 days, even if you feel healthyIf you develop difficulty breathing, contact
+      your healthcare provider immediately – call them first if possible.Stay positive
+      and energized by keeping in touch with loved ones by phone or online, and by
+      exercising yourself at home.However, if you live in an area with malaria or
+      dengue fever it is important that you do not ignore symptoms of fever.  Seek
+      medical help.  When you attend the health facility wear a mask if possible,
+      keep at least 1 metre distant from            other people and do not touch
+      surfaces with your hands. If it is a child who is sick help the child stick
+      to this advice.
+  utter_on_virusinfo11:
+  - text: Quarantine means restricting activities or separating people who are not
+      ill themselves but may have been exposed to COVID-19. The goal is to prevent
+      spread of the disease at the time when people just develop symptoms..Isolation
+      means separating people who are ill with symptoms of COVID-19 and may be infectious
+      to prevent the spread of the disease.Physical distancing means being physically
+      apart. WHO recommends keeping at least 1-metre distance from others. This is
+      a general measure that everyone should take even if they are well with no known
+      exposure to COVID-19.
+  utter_on_virusinfo12:
+  - text: Research indicates that children and adolescents are just as likely to become
+      infected as any other age group and can spread the disease.Evidence to date
+      suggests that children and young adults are less likely to get severe disease,
+      but severe cases can still happen in these age groups. Children and adults should
+      follow the same guidance on self-quarantine and self-isolation if there is a
+      risk they have been exposed or are showing symptoms. It is particularly important
+      that children avoid contact with older people and others who are at risk of
+      more severe disease.
+  utter_on_virusinfo13:
+  - text: Stay aware of the latest information on the COVID-19 outbreak, available
+      on the WHO website and through your national and local public health authority.
+      Most countries around the world have seen cases of COVID-19 and many are experiencing
+      outbreaks. Authorities in China and some other countries have succeeded in slowing
+      their outbreaks. However, the situation is unpredictable so check regularly
+      for the latest news.You can reduce your chances of being infected or spreading
+      COVID-19 by taking some simple precautions:Regularly and thoroughly clean your
+      hands with an alcohol-based hand rub or wash them with soap and water. Why?
+      Washing your hands with soap andwater or using alcohol-based hand rub kills
+      viruses that may be on your hands.Maintain at least 1 metre distance between
+      yourself and others. Why? When someone coughs, sneezes, or speaks they spray
+      small liquid droplets from their nose or mouth which may contain virus. If you
+      are too close, you can breathe in the droplets,    including the COVID-19 virus
+      if the person has the disease.Avoid going to crowded places. Why? Where people
+      come together in crowds, you are more likely to come into close contact with
+      someone that has COVID-19 and it is more difficult to maintain physical distance
+      of 1 metre.Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces
+      and can pick up viruses. Once contaminated, hands can transfer the virus to
+      your eyes, nose or mouth. From there, the virus can enter your body and infect
+      you.Make sure you, and the people around you, follow good respiratory hygiene.
+      This means covering your mouth and nose with your bent elbow or tissue when
+      you cough or sneeze. Then dispose of the used tissue immediately and wash your
+      hands. Why? Droplets    spread virus. By following good respiratory hygiene,
+      you protect the people around you from viruses such as cold, flu and COVID-19.Stay
+      home and self-isolate even with minor symptoms such as cough, headache, mild
+      fever, until you recover. Have someone bring you supplies. If you need to leave
+      your house, wear a mask to avoid infecting others. Why? Avoiding contact with
+      others will    protect them from possible COVID-19 and other viruses.If you
+      have a fever, cough and difficulty breathing, seek medical attention, but call
+      by telephone in advance if possible and follow the directions of your local
+      health authority. Why? National and local authorities will have the most up
+      to date information    on the situation in your area. Calling in advance will
+      allow your health care provider to quickly direct you to the right health facility.
+      This will also protect you and help prevent spread of viruses and other infections.Keep
+      up to date on the latest information from trusted sources, such as WHO or your
+      local and national health authorities. Why? Local and national authorities are
+      best placed to advise on what people in your area should be doing to protect
+      themselves.
+  utter_on_virusinfo14:
+  - text: While there are a number of therapeutics currently in clinical trials in
+      China and more than 20 vaccines in development for COVID-19, there are currently
+      no licensed vaccines or therapeutics for COVID-19.And some western, traditional
+      or home remedies may provide comfort and alleviate symptoms of mild COVID-19,
+      there are no medicines that have been shown to prevent or cure the disease.
+      WHO does not recommend self-medication with any medicines, including antibiotics,
+      as a prevention or cure for COVID-19. However, there are several ongoing clinical
+      trials of both western and traditional medicines. WHO is coordinating efforts
+      to develop vaccines and medicines to prevent and treat COVID-19 and will continue
+      to provide updated information as soon research results become available.The
+      most effective ways to protect yourself and others against COVID-19 are to:Clean
+      your hands frequently and thoroughlyAvoid touching your eyes, mouth and noseCover
+      your cough with the bend of elbow or tissue. If a tissue is used, discard it
+      immediately and wash your hands.Maintain a distance of at least 1 metre from
+      others.
+  utter_on_virusinfo15:
+  - text: Currently, there is not enough evidence for or against the use of masks
+      (medical or other) in healthy individuals in the wider community. However, WHO
+      is actively studying the rapidly evolving science on masks and continuously
+      updates its guidance. Medical masks are recommended primarily in health care
+      settings, but can be considered in other circumstances (see below). Medical
+      masks should be combined with other key infection prevention and control measures
+      such as hand hygiene and physical distancing. Healthcare workersWhy? Medical
+      masks and respirators such as N95, FFP2 or equivalent are recommended for and
+      should be reserved for, healthcare workers while giving care to patients. Close
+      contact with people with suspected or confirmed COVID-19 and their surrounding
+      environment are the main routes of transmission, which means healthcare workers
+      are the most exposed. People who are sick and exhibiting symptoms of COVID-19Why?
+      Anyone who is sick, with mild symptoms such as muscle aches, slight cough, sore
+      throat or fatigue, should isolate at home and use a medical mask according to
+      WHO’s recommendation on home care of patients with suspected COVID-19. Coughing,
+      sneezing or talking can generate droplets that cause can spread the infection.
+      These droplets can reach the face of others nearby and land on the surrounding
+      environment. If an infected person coughs, sneezes, or talks while wearing a
+      medical mask, this can help to protect those nearby from infection.If a sick
+      person needs to go to a health facility they should wear a medical mask. Anyone
+      taking care of a person at home who is sick with COVID-19 Why? Those caring
+      for individuals who are sick with COVID-19 should wear a medical mask for protection.
+      Again, close, frequent and prolonged contact with someone with COVID-19 puts
+      caretakers at high risk. National decision makers may also choose to recommend
+      medical mask use for certain individuals using a risk-based approach. This approach
+      takes into consideration the purpose of the mask, risk of exposure and vulnerability
+      of the wearer, the setting, the feasibility of use and the types of masks to
+      be considered.
+  utter_on_virusinfo16:
+  - text: If you choose to wear a mask:Before touching the mask, clean hands with
+      an alcohol-based hand rub or soap and waterTake the mask and inspect it for
+      tears or holes.Orient which side is the top side (where the metal strip is).Ensure
+      the proper side of the mask faces outwards (the coloured side).Place the mask
+      to your face. Pinch the metal strip or stiff edge of the mask so it moulds to
+      the shape of your nose.Pull down the mask’s bottom so it covers your mouth and
+      your chin.Do not touch the mask while you are wearing it for protection.After
+      use, take off the mask with clean hands; remove the elastic loops from behind
+      the ears while keeping the mask away from your face and clothes, to avoid touching
+      potentially contaminated surfaces of the mask. Discard the mask in a closed
+      bin immediately after use. Do not reuse the mask.Perform hand hygiene after
+      touching or discarding the mask – Use alcohol-based hand rub or, if visibly
+      soiled, wash your hands with soap and water.Be aware that there is a global
+      shortage of medical masks (both surgical masks and N95 masks). These should
+      be reserved as much as possible for health care workers. Remember that  masks
+      are not a substitute for other, more effective ways to protect yourself and
+      others against COVID-19 such as frequently washing your hands, covering your
+      cough with the bend of elbow or tissue and maintain a distance of at least 1
+      meter from others. See basic protective measures against the new coronavirus
+      for more information.Follow the advice of your national health authority on
+      the use of masks.
+  utter_on_virusinfo17:
+  - text: The time between exposure to COVID-19 and the moment when symptoms start
+      is commonly around five to six days but can range from 1 – 14 days.
+  utter_on_virusinfo18:
+  - text: COVID-19 is spread through human-to-human transmission. We already know
+      a lot about other viruses in the coronavirus family and most of these types
+      of viruses have an origin in animals. The COVID-19 virus (also called SARS-CoV-2)
+      is a new virus in humans. The possible animal source of COVID-19 has not yet
+      been confirmed but research is ongoing.WHO continues to monitor the latest research
+      on this and other COVID-19 topics and will update, as new findings are available.
+  utter_on_virusinfo19:
+  - text: 'Several dogs and cats (domestic cats and tigers) in contact with infected
+      humans have tested positive for COVID-19. In addition, ferrets appear to be
+      susceptible to the infection. In experimental conditions, both cats and ferrets
+      were                able to transmit infection to other animals of the same
+      species. However, there is no evidence that these animals can transmit the disease
+      to humans and spread COVID-19. COVID-19 is mainly spread through droplets produced
+      when an infected                person coughs, sneezes, or speaks.Minks raised
+      in farms have also been detected with the virus. Most likely, they have been
+      infected by farm workers. In a few instances, the minks that were infected by
+      humans have transmitted the virus to other people. These are the first reported
+      cases of animal-to-human transmission.It is still recommended that people who
+      are sick with COVID-19 and people who are at risk limit contact with companion
+      and other animals. When handling and caring for animals, basic hygiene measures
+      should always be implemented. This includes                hand washing after
+      handling animals, their food or supplies, as well as avoiding kissing, licking
+      or sharing food.More recommendations are available on the OIE website: https://www.oie.int/en/scientific-expertise/specific-information-and-recommendations/questions-and-answers-on-2019novel-coronavirus/WHO
+      continues to monitor the latest research on this and other COVID-19 topics and
+      will update as new findings are available.'
+  utter_on_virusinfo20:
+  - text: The most important thing to know about coronavirus on surfaces is that they
+      can easily be cleaned with common household disinfectants that will kill the
+      virus. Studies have shown that the COVID-19 virus can survive for up to 72 hours
+      on plastic and stainless steel, less than 4 hours on copper and less than 24
+      hours on cardboard.As, always clean your hands with an alcohol-based hand rub
+      or wash them with soap and water. Avoid touching your eyes, mouth, or nose.
+  utter_on_virusinfo21:
+  - text: When grocery shopping, keep at least 1-metre distance from others and avoid
+      touching your eyes, mouth and nose. If possible, sanitize the handles of shopping
+      trolleys or baskets before shopping. Once home, wash your hands thoroughly and
+      also after handling and storing your purchased products.There is currently no
+      confirmed case of COVID-19 transmitted through food or food packaging.
+  utter_on_virusinfo22:
+  - text: 'Fruits and vegetables are important components of a healthy diet. Wash
+      them the same way you should do under any circumstance: before handling them,
+      wash your hands with soap and water. Then, wash fruits and vegetables thoroughly
+      with clean water, especially if you eat them raw.'
+  utter_on_virusinfo23:
+  - text: No. Antibiotics do not work against viruses; they only work on bacterial
+      infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics
+      should not be used as a means of prevention or treatment of COVID-19. In hospitals
+      physicians will sometimes use antibiotics to prevent or treat secondary bacterial
+      infections which can be a complication of COVID-19 in severely ill patients.
+      They should only be used as directed by a physician to treat a bacterial infection.
+  utter_on_virusinfo24:
+  - text: While initial investigations suggest the virus may be present in faeces
+      in some cases, to date, there have not been reports of faecal-oral transmission
+      of COVID-19. Additionally, there is no evidence to date on the survival of the
+      COVID-19 virus in water or sewage.WHO is assessing ongoing research on the ways
+      COVID-19 is spread and will continue to share new findings on this topic.
+  utter_on_virusinfo25:
+  - text: The first human cases of COVID-19, the disease caused by the novel coronavirus
+      causing COVID-19, subsequently named SARS-CoV-2 were first reported by officials
+      in Wuhan City, China, in December 2019.Retrospective investigations by Chinese
+      authorities have identified human cases with onset of symptoms in early December
+      2019. While some of the earliest known cases had a link to a wholesale food
+      market in Wuhan, some did not.
+  utter_on_virusinfo26:
+  - text: Mortality rate or Death rate of COVID-19 is the ratio of number of deaths
+      due to COVID-19 and the total population of the area.Mortality rate of COVID-19
+      is about 3-4%.Some areas may have it upto 5-6%
+  utter_on_resource1:
+  - text: Many ethical frameworks have been produced for resource allocation, some
+      of which havebeen included in pandemic plans. Those frameworks provide useful
+      guidance in the currentscenario. Yet, when applying them, we must take into
+      account the type of health careresource, the context, and the stage of the pandemic.
+      That is, while the ethical principles thatapply to resource allocation might
+      be the same in different pandemics, they can lead todifferent decisions, given
+      contextual circumstances. For example, this pandemic appears tosignificantly
+      impact older adults (those 60 years of age or older), and such characteristics
+      arerelevant to shaping priorities for the allocation of resources during COVID-19.
+      As a result, itmay be inappropriate to use critical care triage guidelines that
+      have age cut-offs thatdeprioritize or exclude those aged over 60 years.When
+      applying ethical guidelines for resource allocation, we should consider the
+      extent towhich resources are overwhelmed in the current context. It would be
+      inappropriate, forinstance, to exclude population groups from being allocated
+      a resource (for example,ventilators) at the outset of a pandemic when capacity
+      remains. When resources are scarce,though – when there is an insufficient supply
+      to meet everyone’s needs – resource allocationshould be guided by well established,
+      broadly applicable ethical principles, unless there arecharacteristics of the
+      outbreak that justify different courses of action. Irrelevantcharacteristics
+      of populations within countries, such as ethnicity, race or creed, should playno
+      role in any resource allocation in any pandemic. This reflects our commitment
+      to treatingpeople with equal respect.
+  utter_on_resource2:
+  - text: Generally, the considerations may be different. The allocation of different
+      resources may findethical justifications in different principles or values.
+      For instance, once a novel vaccine isfound to be safe and effective, to prioritize
+      those at highest risk, as well as populations likehealth care workers who may
+      be more likely to serve as vectors for transmission, is justified.Within those
+      subgroups, some suggest that a lottery-based (i.e., random) allocation may bejustified,
+      given that resources will be limited and we can assume nearly equal benefits
+      will bederived from any recipient within that group. This is not the case, however,
+      for otherresources such as ventilators, where some individuals may derive significantly
+      more benefitthan others.
+  utter_on_resource3:
+  - text: The ethical basis for deciding which individuals or groups might be prioritized,
+      including the principles to be applied, are presented in the below table:Ethical
+      considerations when deciding who to prioritizePrincipleDescriptionPractice implicationEqualityEach
+      person’s interest should count equally unless there are good reasons that justify
+      the differential prioritization of resources.Irrelevant characteristics of individuals,
+      such as race, ethnicity, creed, ability or gender, should not serve arbitrarily
+      as the basis for the differential allocation of resources.This principle can
+      be used to justify the allocation of resources by a lottery – that is, randomly
+      by chance – or by a system of first come, first served. May be most appropriate
+      to guide the allocation of scarce resources among individuals or populations
+      who can be expected to derive the same benefit from the resource, for example,
+      vaccines among high-risk populations, or ventilators among those with similar
+      clinical indicators for benefit.Best outcomes (utility)This principle can be
+      used to justify the allocation of resources according to their capacity to do
+      the most good or minimize the most harm, for example, using available resources
+      to save the most lives possible.May be most appropriate to guide the allocation
+      of scarce resources that confer substantially different benefits to different
+      individuals, for example, ventilators to those expected to derive the most benefit.Prioritize
+      the worst offThis principle can be used to justify the allocation of resources
+      to those in greatest medical need or those most at risk.May be most appropriate
+      to guide the allocation of resources that are designed or intended to protect
+      those at risk, for example, PPE for health care workers, vaccines for those
+      most at risk of infection and severe illness, or those most in need, as in the
+      case of provision of drugs in short supply to those needing them most urgently.Prioritize
+      those tasked with helping othersThis principle can be used to justify the allocation
+      of resources to those who have certain skills or talents that can save many
+      other people, or because something is owed to them on account of their participation
+      in helping others.May be most appropriate to guide the allocation of resources
+      to health care workers, first responders, etc.Allocation principles may be relevant
+      or justified at different stages of resource scarcity (from less scarcity to
+      more scarcity). For example, where little scarcity exists, the allocation of
+      resources such as ventilators may be most justified by the    principle of first
+      come, first served (which promotes the value of equality). When those resources
+      become increasingly scarce, their allocation may be justified according to a
+      principle that prioritizes those most in need. With even greater scarcity,    a
+      principle that aims to maximize benefit from the resource may be most justified.
+      At each stage, allocation should aim to promote equality – that is, first come,
+      first served, or random allocation, when no relevant factors distinguish individuals
+      within a particular scheme of allocation (for example, among those with similar
+      needs, or among those who can be expected to benefit similarly from the resources,
+      or among those that are at similar levels of risk).In addition, multiple principles
+      may be combined within an allocation scheme. For example, an allocation scheme
+      for PPE might find its justification in a principle prioritizing those most
+      at risk as well as a principle prioritizing those tasked with helping    others,
+      which would support priority allocation of PPE to health care workers.
+  utter_on_resource4:
+  - text: For most decisions, multiple ethical values and principles will be relevant
+      to deliberationsabout how to allocate resources. This is likely to generate
+      some disagreement, becausedifferent people may weigh the values differently.
+      Some may prioritize equality while othersmight put more emphasis on best outcomes
+      or prioritization of the worst-off. For this reason,it is imperative that the
+      different values be weighed and applied to specific allocation issuesusing a
+      fair process.A fair process for allocating scarce resources must promote certain
+      ethical values:Transparency. In a transparent process, the decisions and their
+      justifications shouldbe made public. This means that the population should be
+      informed about the criteriaguiding the decisions.Inclusiveness. Those affected
+      by allocation decisions – including individuals,communities or countries – should
+      be able to exert at least some influence over thedecision-making process as
+      well as the decision itself. This also means that decisions 4should be open
+      to challenge and potentially revisable, perhaps through an appealprocess. Consistency.
+      Decisions should be consistent so that all persons in the same categoriesare
+      treated in the same way. This means that favouritism towards one’s own family,religious
+      or political compatriots, or otherwise, is not appropriate. All forms ofcorruption
+      that are at variance with this principle should be challenged andcondemned.
+      Accountability. Those making decisions about allocation must be accountable
+      forthose decisions – that is, they should justify their decisions and be held
+      responsible forthem. A fair process means that allocation decisions should not
+      be made byindividuals, by individual pharmaceutical companies, or, in the case
+      of allocationbetween countries, by a single country. Resources such as vaccines
+      and therapiesshould not be stockpiled outside the system of fair allocation.The
+      fair allocation of resources is one that is valuable in itself precisely because
+      it is fair.However, it may also be valuable because a fair system engenders
+      solidarity and trust,which are vital to the successful and sustained collective
+      response necessary for dealingeffectively with any outbreak.
+  utter_on_resource5:
+  - text: Countries are equally vulnerable to COVID-19 and have a shared responsibility,
+      grounded in solidarity, to collaborate globally to mitigate the outbreak. Each
+      government has special obligations to its own citizens, but the fair allocation
+      of vaccines globally    requires us not to simply appeal to self-interest, claims
+      of resource ownership and the prioritization of compatriots. Vaccines should
+      be allocated in a way that prioritizes those who fall into the categories presented
+      in the below table. (Where individuals    or populations fall into multiple
+      categories, they should receive even higher priority.)Priority populations,
+      and rationale for prioritizationPriority populationRationale for prioritizationThose
+      at greatest risk of becoming infected and seriously illMaximize benefit of vaccineThose
+      who, if vaccinated, would prevent the greatest spread of the virusMaximize benefit
+      of vaccineThose who have volunteered to participate in research aimed at developing
+      the vaccineReciprocal obligation to those who were voluntarily put at risk to
+      aid in this effortThose falling into each category may change over time.
+  utter_on_resource6:
+  - text: Health care workers (caring for patients) and first responders can justifiably
+      beprioritized when allocating some resources because of their contribution to
+      the healthand well-being of the community. Their health helps preserve the health
+      of others.Participants of research aimed at developing vaccines, therapies or
+      other criticalresources should receive some priority in receiving those resources
+      because they havealso helped save others by their participation. This is not
+      an absolute priority – forexample, it should not take precedence over giving
+      priority to those most at risk in thecase of resources such as vaccines.While
+      the principle of first come, first served is often applied when allocatingresources
+      in health care settings, it is rarely appropriate in an emergency. In practice,it
+      is very likely to favour certain groups, such as those closest to a distribution
+      centre,those with access to better information, or those who are most well-off.Younger
+      populations appear to be at lower risk in the COVID-19 context.Consequently,
+      the principle of youngest first should have low priority for vaccine, butperhaps
+      may have more weight if they do become sick and need critical careresources.The
+      allocation of different resources may find ethical justification in differentprinciples
+      or values. For instance, if a novel vaccine is found to be safe and effective,a
+      lottery-based allocation may be justified among those as highest risk, the old
+      andthose with co-morbidities, if they outnumber available vaccines.Maximizing
+      utility should be balanced with the principle of priority to the worst-off:centralizing
+      the availability of resources in larger centres may extend their benefits tomore
+      people, but may exclude isolated populations and challenge our concern forthose
+      at highest risk.
+  utter_on_antiretrovirals1:
+  - text: 'Several studies have suggested that patients infected with the virus causing
+      COVID-19, and the related coronavirus infections (SARS-CoV and MERS-CoV) had
+      good clinical outcomes, with almost all cases recovering fully.  In some cases,
+      patients were given an antiretroviral drug: lopinavir boosted with ritonavir
+      (LPV/r). These studies were mostly carried out in HIV-negative individuals.It
+      is important to note that these studies using LPV/r had important limitations.
+      The studies were small, timing, duration and dosing for treatment were varied
+      and most patients received co-interventions/co-treatments which may have contributed
+      to the reported outcomes. While the evidence of benefit of using antiretrovirals
+      to treat coronavirus infections is of very low certainty, serious side effects
+      were rare. Among people living with HIV, the routine use of LPV/r as treatment
+      for HIV is associated with several side effects of moderate severity. However,
+      as the duration of treatment in patients with coronavirus infections was generally
+      limited to a few weeks, these occurrences can be expected to be low or less
+      than that reported from routine use.'
+  utter_on_antiretrovirals2:
+  - text: Two studies have reported the use of LPV/r as post-exposure prophylaxis
+      for SARS-CoV and MERS-CoV. One of these studies suggested that the occurrence
+      of MERS-CoV infection was lower among health workers receiving LPV/r compared
+      to those who did not receive any drugs; the other study found no cases of SARS-CoV
+      infection among 19 people living with HIV hospitalized in the same ward of SARS
+      patients, of whom 11 were on antiretroviral therapy. Again, the certainty of
+      the evidence is very low due to small sample size, variability in drugs provided,
+      and uncertainty regarding intensity of exposure.
+  utter_on_healthcareworkers1:
+  - text: 'All individuals dealing with soiled bedding, towels and clothes from patients
+      with COVID-19 should: Wear appropriate personal protective equipment, which
+      includes heavy duty gloves, mask, eye protection (face shield/goggles), long-sleeved
+      gown, apron (if gown is not fluid resistant), boots or closed shoes before touching
+      any soiled linen.Never carry soiled linen against body; place soiled linen in
+      a clearly labelled, leak-proof container (e.g. bag, bucket)If there is any solid
+      excrement on the linen, such as feces or vomit, scrape it off carefully with
+      a flat, firm object and put it in the commode or designated toilet/latrine before
+      putting linen in the designated container. If the latrine is not in the same
+      room as the patient, place soiled excrement in covered bucket to dispose of
+      in the toilet or latrine; Wash and disinfect linen: washing by machine with
+      warm water (60-90°C) and laundry detergent is recommended for cleaning and disinfection
+      of linens. If machine washing is not possible, linen can be soaked in hot water
+      and soap in a large drum, using a stick to stir, avoiding splashing. If hot
+      water not available, soak linen in 0.05% chlorine for approximately 30 minutes.  Finally,
+      rinse with clean water and let linen dry fully in the sunlight.  Additional
+      resources for best practices for environmental cleaning can be found in the
+      following two documents: 1) Infection prevention and control of epidemic-and
+      pandemic prone acute respiratory infections in health care2) Best Practices
+      for Environmental Cleaning in Healthcare Facilities in Resource-Limited Settings
+      which was developed by CDC and ICAN in collaboration with WHO'
+  utter_on_healthcareworkers2:
+  - text: To date there is no epidemiological information to suggestthat contact with
+      goods, products or vehicles shipped from COVID-19 affectedcountries have been
+      the source of COVID-19 in humans.For these reasons, there is no disinfection
+      recommendationsfor any goods and products coming from COVID-19 affected countries
+      given thatthere is no available evidence that these products pose a risk to
+      publichealth. WHO will continue to closely monitor the evolution ofCOVID-19,
+      and will update the recommendations as needed.
+  utter_on_healthcareworkers3:
+  - text: Health care workers collecting NP and OP swab specimens from suspected or
+      confirmed COVID-19 patients should be well-trained on the procedure and should
+      wear a clean, non-sterile, long-sleeve gown, a medical mask, eye protection
+      (i.e., googles or face shield), and gloves. Procedure should be conducted in
+      a separate/isolation room, and during NP specimen collection health care workers
+      should request the patients to cover their mouth with a medical mask or tissue.
+      Although collection of NP and OP swabs have the potential to induce fits of
+      coughing from the patient undergoing the procedure, there is no currently available
+      evidence that cough generated via NP/OP specimen collection leads to increased
+      risk of COVID-19 transmission via aerosols.
+  utter_on_healthcareworkers4:
+  - text: No, although RNA fragments of SARS-CoV-2 were detected in blood of symptomatic
+      COVID-19 patients, this does not mean that the virus is viable/infectious. In
+      general, respiratory viruses are not known to be transmitted by blood transfusion.
+      Blood centers should have routine blood donor screening measures in place to
+      prevent individuals with respiratory symptoms or fever from donating blood.  As
+      precautionary measures, blood centers might encourage self-deferral of those
+      with travel history to an COVID-19 affected country in the previous 14 days,
+      or of those who have been diagnosed with COVID-19 or are close contact with
+      a confirmed COVID-19 case.
+  utter_on_healthcareworkers5:
+  - text: No. Current WHO guidance for HCW caring for suspected or confirmed 2019-nCoV
+      acute respiratory disease patients recommends the use of contact and droplet
+      precautions, in addition to standard precautions which should always be used
+      by all HCW for all patients.In terms of PPE, contact and droplet precautions
+      include wearing disposable gloves to protect hands, and clean, non-sterile,
+      long-sleeve gown to protect clothes from contamination, medical masks to protect
+      nose and mouth, and eye protection (e.g.,    goggles, face shield), before entering
+      the room where suspected or confirmed 2019-nCoV acute respiratory disease patients
+      are admitted. Respirators (e.g. N95) are only required for aerosol generating
+      procedures.
+  utter_on_healthcareworkers6:
+  - text: Disposable medical face masks are intended for a single use only. After
+      use they should be removed using appropriate techniques (i.e. do no touch the
+      front, remove by pulling the elastic ear straps or laces from behind) and disposed
+      of immediately in an infectious waste bin with a lid, followed by hand hygiene.
+  utter_on_healthcareworkers7:
+  - text: WHO developed its rapid guidance based on the consensus of international
+      experts who considered the currently available evidence on the modes of transmission
+      of 2019-nCoV. This evidence demonstrates viral transmission by droplets and
+      contact with contaminated surfaces of equipment; it does not support routine
+      airborne transmission. Airborne transmission may happen, as has been shown with
+      other viral respiratory diseases, during aerosol-generating procedures (e.g.,
+      tracheal intubation, bronchoscopy), thus    WHO recommends airborne precautions
+      for these procedures.
+  utter_on_healthcareworkers8:
+  - text: No. WHO does not recommend that asymptomatic individuals (i.e., who do not
+      have respiratory symptoms) in the community should wear medical masks, as currently
+      there is no evidence that routine use of medical masks by healthy individuals
+      prevents 2019-nCoV transmission. Masks are recommended to be used by symptomatic
+      persons in the community. Misuse and overuse of medical masks may cause serious
+      issues of shortage of stocks and lack of mask availability for those who actually
+      need to wear them. In health care facilities where health care workers are directly
+      taking care of suspect or confirmed 2019-nCoV acute respiratory disease patients,
+      masks are an important part of containing 2019-nCoV spread between people, along
+      with other PPE and hand hygiene.
+  utter_on_healthcareworkers9:
+  - text: Ideally, suspected and confirmed 2019-nCoV acute respiratory disease patients
+      should be isolated in single rooms. However, when this is not feasible (e.g.,
+      limited number of single rooms), cohorting is an acceptable option. Some patients
+      with suspected 2019-nCoV infection may actually have other respiratory illnesses,
+      hence they must be cohorted separately from patients with confirmed 2019-nCoV
+      infection. A minimum of 1-meter distance between beds should be maintained at
+      all times.
+  utter_on_healthcareworkers10:
+  - text: Mildly infected patients can be treated at hoem. For patients who have mild
+      illness, e.g., low-grade fever, cough, malaise,rhinorrhoea, sore throat without
+      any warning signs, such as shortness of breath or difficulty in breathing, increased
+      respiratory (i.e. sputum or haemoptysis),gastro-intestinal symptoms such as
+      nausea, vomiting, and/or diarrhoea and without changes in mental status, hospitalization
+      may not be required unless there is concern for rapid clinical deterioration.
+      All patients discharged home should be instructed to return to hospital if they
+      develop any worsening of illness.
+  utter_on_healthcareworkers11:
+  - text: Current WHO recommendations do not include a requirement for exclusive use
+      of specialized or referral hospitals to treat suspected or confirmed 2019-nCoV
+      acute respiratory disease patients. However, countries or local jurisdictions
+      may choose to care for patients at such hospitals if those are deemed the most
+      likely to be able to safely care for patients with suspected or confirmed 2019-nCoV
+      infection or for other clinical reasons (e.g., availability of advanced life
+      support). Regardless, any healthcare facility treating patients with suspected
+      or confirmed 2019-nCoV patients should adhere to the WHO infection prevention
+      and control recommendations for healthcare to protect patients, staff and visitors.
+      Click here for the guidance.
+  utter_on_healthcareworkers12:
+  - text: Environmental cleaning in healthcare facilities or homes housing patients
+      with suspected or confirmed 2019-nCoV infection should use disinfectants that
+      are active against enveloped viruses, such as 2019-nCoV and other coronaviruses.
+      There are many disinfectants,    including commonly used hospital disinfectants,
+      that are active against enveloped viruses. Currently WHO recommendations include
+      the use of:70% Ethyl alcohol to disinfect reusable dedicated equipment (e.g.,
+      thermometers) between usesSodium hypochlorite at 0.5% (equivalent 5000ppm) for
+      disinfection of frequently touched surfaces in homes or healthcare facilitiesClick
+      here for the guidance on clinical management of severe acute respiratory infection
+      when novel coronavirus (nCoV) infection is suspected.
+  utter_on_healthcareworkers13:
+  - text: There is currently no data available on stability of 2019-nCoV on surfaces.  Data
+      from laboratory studies on SARS-CoV and MERS-CoV have shown that stability in
+      the environment depends on several factors including relative temperature, humidity,
+      and surface type. WHO continues to monitor existing evidence around nCoV and
+      will update when such evidence is available.
+  utter_on_healthcareworkers14:
+  - text: Waste produced during the health care or home care of patients with suspected
+      or confirmed 2019-nCoV infection should be disposed of as infectious waste.
+  utter_on_healthcareworkers15:
+  - text: There are no special procedures for the management of bodies of persons
+      who have died from 2019-nCoV. Authorities and medical facilities should proceed
+      with their existing policies and regulations that guide post-mortem management
+      of persons who died from infectious diseases.
+  utter_on_healthcareworkers16:
+  - text: 'A model for setting up an isolation ward is currently under development.
+      PPE specifications for healthcare workers caring for nCoV patients can be found  in
+      the disease commodity package at: https://www.who.int/publications-detail/disease-commodity-package---novel-coronavirus-(ncov)'
+  utter_on_healthcareworkers17:
+  - text: Chlorine solutions are strongly discouraged as they carry a higher risk
+      of hand irritation and ill health effects from making and diluting chlorine
+      solutions, including eye irritation and respiratory problems. In addition, there
+      is a risk of loss of antimicrobial effect if exposed to sunlight or heat.  Preparing
+      chlorine solutions requires training to reach the correct dose of 0.05% with
+      varying strengths of bleach available in the private sector.  Even if stored
+      at a cool dry place with a lid away from sunlight, they have to be renewed daily.  In
+      comparison simple soapy water solution do not have any of the above-mentioned
+      health risks and complications including loss of antiviral effect due to heat
+      or sunlight.  The antiviral effect of soapy water is due to the oily surface
+      membrane of the COVID-virus that is dissolved by soap, killing the virus.
+  utter_on_influenza1:
+  - text: Firstly, COVID-19 and influenza viruses have a similar disease presentation.
+      That is, they both cause respiratory disease, which presents as a wide range
+      of illness from asymptomatic or mild through to severe disease and death.  Secondly,
+      both viruses are transmitted by contact, droplets and fomites. As a result,
+      the same public health measures, such as hand hygiene and good respiratory etiquette
+      (coughing into your elbow or into a tissue and immediately disposing of the
+      tissue), are important actions all can take to prevent infection.
+  utter_on_influenza2:
+  - text: The speed of transmission is an important point of difference between the
+      two viruses. Influenza has a shorter median incubation period (the time from
+      infection to appearance of symptoms) and a shorter serial interval (the time
+      between successive cases) than COVID-19 virus. The serial interval for COVID-19
+      virus is estimated to be 5-6 days, while for influenza virus, the serial interval
+      is 3 days. This means that influenza can spread faster than COVID-19.   Further,
+      transmission in the first 3-5 days of illness, or potentially pre-symptomatic
+      transmission –transmission of the virus before the appearance of symptoms –
+      is a major driver of transmission for influenza. In contrast, while we are learning
+      that there are people who can shed COVID-19 virus 24-48 hours prior to symptom
+      onset, at present, this does not appear to be a major driver of transmission.   The
+      reproductive number – the number of secondary infections generated from one
+      infected individual – is understood to be between 2 and 2.5 for COVID-19 virus,
+      higher than for influenza. However, estimates for both COVID-19 and influenza
+      viruses are very context and time-specific, making direct comparisons more difficult.   Children
+      are important drivers of influenza virus transmission in the community. For
+      COVID-19 virus, initial data indicates that children are less affected than
+      adults and that clinical attack rates in the 0-19 age group are low. Further
+      preliminary data from household transmission studies in China suggest that children
+      are infected from adults, rather than vice versa.  While the range of symptoms
+      for the two viruses is similar, the fraction with severe disease appears to
+      be different. For COVID-19, data to date suggest that 80% of infections are
+      mild or asymptomatic, 15% are severe infection, requiring oxygen and 5% are
+      critical infections, requiring ventilation. These fractions of severe and critical
+      infection would be higher than what is observed for influenza infection. Those
+      most at risk for severe influenza infection are children, pregnant women, elderly,
+      those with underlying chronic medical conditions and those who are immunosuppressed.
+      For COVID-19, our current understanding is that older age and underlying conditions
+      increase the risk for severe infection.  Mortality for COVID-19 appears higher
+      than for influenza, especially seasonal influenza. While the true mortality
+      of COVID-19 will take some time to fully understand, the data we have so far
+      indicate that the crude mortality ratio (the number of reported deaths divided
+      by the reported cases) is between 3-4%, the infection mortality rate (the number
+      of reported deaths divided by the number of infections) will be lower. For seasonal
+      influenza, mortality is usually well below 0.1%. However, mortality is to a
+      large extent determined by access to and quality of health care.
+  utter_on_influenza3:
+  - text: While there are a number of therapeutics currently in clinical trials in
+      China and more than 20 vaccines in development for COVID-19, there are currently
+      no licensed vaccines or therapeutics for COVID-19.  In contrast, antivirals
+      and vaccines available for influenza. While the influenza vaccine is not effective
+      against COVID-19 virus, it is highly recommended to get vaccinated each year
+      to prevent influenza infection.
+  utter_on_malaria1:
+  - text: Malaria-endemic countries in all WHO have regions have reported cases of
+      COVID-19. In the WHO African Region, which carries more than 90% of the global
+      malaria burden, 45 countries had reported approximately 25 000 cases of the
+      disease    as of 30 April 2020. The latest situation reports on the COVID-19
+      pandemic are available on the WHO website.
+  utter_on_malaria2:
+  - text: As of March 2020, there have been reports of the suspension of insecticide-treated
+      net (ITN) and indoor residual spraying (IRS) campaigns in several African countries
+      due to concerns around exposure to COVID-19. Suspending such campaigns will
+      leave many vulnerable populations at greater risk of malaria, particularly young
+      children and pregnant women. WHO strongly encourages countries not to suspend
+      the planning for – or implementation of – vector control activities, including
+      ITN and IRS campaigns, while ensuring these services are delivered using best
+      practices to protect health workers and communities from COVID-19 infection.
+      Modifications of planned distribution strategies may be needed to minimize exposure
+      to the coronavirus. WHO commends the leaders of Benin, Chad, the Central African
+      Republic, the Democratic Republic of the Congo, Mali, Niger, Sierra Leone and
+      Uganda for committing to move forward with ITN campaigns during the pandemic.
+      Other countries are adapting their net distribution strategies to ensure households
+      receive the nets as quickly and safely as possible.Together with partners, WHO
+      has developed guidance to ensure that those suffering from malaria can safely
+      receive the care they need in COVID-19 settings.  Tailoring malaria interventions
+      in the COVID-19 response includes guidance on the prevention of infection through
+      vector control and chemoprevention, testing, treatment of cases, clinical services,
+      supply chain and laboratory activities. The document is consistent with broader
+      WHO guidance on how to maintain essential health services during the pandemic.
+  utter_on_malaria3:
+  - text: Yes, delivery of intermittent preventive treatment in pregnancy (IPTp),
+      seasonal malaria chemoprevention (SMC), and intermittent preventive treatment
+      in infants (IPTi) should be maintained provided that best practices for protecting
+      health workers – and other front-line workers – from COVID-19 are followed.
+      Ensuring access to these and other core malaria prevention tools saves lives
+      and is an important strategy for reducing the strain on health systems in the
+      context of the COVID-19 response.Tailoring malaria interventions in the COVID-19
+      response, developed by WHO and partners, includes guidance on how to deliver
+      preventive therapies for pregnant women and young children in ways that protect
+      health workers and communities against potential COVID-19 transmission.
+  utter_on_malaria4:
+  - text: WHO guidance remains the same. Countries should not scale back efforts to
+      detect and treat malaria; doing so would seriously undermine the health and
+      well-being of millions of people infected with a potentially life-threatening
+      disease.As signs and symptoms of malaria and COVID-19 can overlap (such as a
+      fever), public health messages will need to be adapted in malaria-endemic settings
+      so that people who have a fever are encouraged to seek immediate treatment rather
+      than stay at home; without prompt treatment, a mild case of malaria can rapidly
+      progress to severe illness and death.
+  utter_on_malaria5:
+  - text: 'In addition to routine approaches to malaria control, there may be a case
+      for special measures in the context of the COVID-19 pandemic – such as a temporary
+      return to presumptive malaria treatment, or the use of mass drug administration
+      – which have proved useful in some previous emergencies. Presumptive malaria
+      treatment refers to treatment of a suspected malaria case without the benefit
+      of diagnostic confirmation (e.g. through a rapid diagnostic test). This approach
+      is typically reserved for extreme circumstances, such as disease in settings
+      where prompt diagnosis is no longer possible.Mass drug administration (MDA)
+      is a WHO-recommended approach for rapidly reducing malaria mortality and morbidity
+      during epidemics and in complex emergency settings. Through MDA, all individuals
+      in a targeted population are given antimalarial medicines – often at repeated
+      intervals – regardless of whether or not they show symptoms of the disease.
+      Such special measures should only be adopted after careful consideration of
+      2 key aims: lowering malaria-related mortality and keeping health workers and
+      communities safe. WHO is exploring concrete proposals for when and how to activate
+      such measures; guidance will be published in due course.'
+  utter_on_malaria6:
+  - text: Efforts must be sustained to prevent, detect and treat malaria cases while
+      preventing the spread of COVID-19 and ensuring the safety of those who deliver
+      the services. Countries that are nearing malaria elimination must protect their
+      important gains and avoid malaria resurgences. Countries that have eliminated
+      malaria must remain vigilant for any imported cases of malaria that may be occurring
+      to prevent reintroduction of the disease.
+  utter_on_malaria7:
+  - text: Experience from previous disease outbreaks has shown the disruptive effect
+      on health service delivery and the consequences for diseases such as malaria.
+      The 2014-2016 Ebola outbreak in Guinea, Liberia and Sierra Leone, for example,
+      undermined malaria control efforts and led to a massive increase in malaria-related
+      illness and death in the 3 countries.A new modelling analysis from WHO and partners,
+      published on 23 April, found that the number of malaria deaths in sub-Saharan
+      Africa could double this year alone if there are severe disruptions in access
+      to insecticide-treated nets and antimalarial medicines due to COVID-19. These
+      projections reinforce the critical importance of sustaining efforts to prevent,
+      detect and treat malaria during the pandemic.In all regions, protective measures
+      should be utilized to minimize the risk of COVID-19 transmission between patients,
+      communities and health providers. WHO and partners have developed guidance on
+      how to safely maintain malaria prevention and treatment services in COVID-19
+      settings.
+  utter_on_malaria8:
+  - text: In recent weeks, there have been reports of disruptions in the supply chains
+      of essential malaria commodities – such as long-lasting insecticidal nets, rapid
+      diagnostic tests and antimalarial medicines – resulting from lockdowns and from
+      a suspension of the importation and exportation of goods in response to COVID-19.
+      WHO and partners are working together to ensure the availability of key malaria
+      control tools, particularly in countries with a high burden of the disease,
+      and that efforts to limit the spread of COVID-19 do not compromise access to
+      malaria prevention, diagnosis and treatment services.
+  utter_on_malaria9:
+  - text: WHO is actively following the ongoing clinical trials that are being conducted
+      in response to COVID-19, including studies looking at the use of chloroquine
+      and its derivative, hydroxychloroquine, for treatment and/or prevention. Currently,
+      there is insufficient data to assess the efficacy of either of these medicines
+      in treating patients with COVID-19, or in preventing them from contracting the
+      coronavirus. In the context of the COVID-19 response, hydroxychloroquine was
+      one of the potential treatment options that was being assessed as part of the
+      Solidarity clinical trial. However, on 25 May 2020, the WHO Director-General
+      announced that the Executive Group of the Solidarity Trial had put a temporary
+      pause on the hydroxychloroquine arm of the trial while the safety data are reviewed.
+      This decision follows the publication of a recent Lancet study focusing on the
+      effects of hydroxychloroquine on COVID-19 patients who have been hospitalized;
+      authors of the study reported a higher mortality rate among patients who received
+      the drug.  The Director-General made clear in his announcement that hydroxychloroquine
+      continues to be a safe drug for use in patients with malaria and autoimmune
+      diseases.For public health emergencies, WHO has a systematic and transparent
+      process for research and development (R&D), including for clinical trials of
+      drugs. The WHO “R&D Blueprint” for COVID-19, initiated on 7 January 2020, aims
+      to fast-track the availability of effective tests, vaccines and medicines that
+      can be used to save lives and avert large-scale crises. WHO has also designed
+      a set of procedures to assess the performance, quality and safety of medical
+      technologies during emergency situations.
+  utter_on_malaria10:
+  - text: The most widely used antimalarial treatments, artemisinin-based combination
+      therapies (ACTs), are produced using the pure artemisinin compound extracted
+      from the plant Artemisia annua. In recent years, some news reports have suggested
+      that    a range of non-pharmaceutical products made from Artemisia plant material
+      – such as herbal teas and tablets – may be effective in preventing or treating
+      malaria. Now, there are reports that products made from Artemisia plant material
+      may also have a preventive or curative effect on COVID-19. WHO urges extreme
+      caution over reports touting the efficacy of such products. As explained in
+      a WHO position statement, there is no scientific evidence base to support the
+      use of non-pharmaceutical forms of Artemisia for the prevention or treatment
+      of malaria. There is also no evidence to suggest that COVID-19 can be prevented
+      or treated with products made from    Artemisia-based plant material.
+  utter_on_malaria11:
+  - text: The WHO Global Malaria Programme is leading a cross-partner effort to mitigate
+      the negative impact of the coronavirus in malaria-affected countries and, where
+      possible, contribute towards a successful COVID-19 response. The work is being
+      carried out in close collaboration with colleagues based at WHO headquarters,
+      regional offices and country level.In March 2020, before the pandemic had secured
+      a strong footing in Africa, WHO sounded an urgent call for maintaining core
+      malaria prevention and treatment services while protecting health workers and
+      communities against COVID-19 transmission. The findings of a modelling analysis
+      from WHO and partners, published in April, reinforced the WHO call for continuity
+      of malaria services during then pandemic.In collaboration with partners, WHO
+      developed technical guidance for countries on how to safely maintain malaria
+      prevention and treatment in COVID-19 settings. Tailoring malaria interventions
+      in the COVID-19 response is consistent with broader WHO guidance on how to maintain
+      essential health services during the pandemic.
+  utter_on_masks1:
+  - text: 'WHO recognizes that there are many questions about the use of face masks
+      to prevent the transmission of COVID-19 in the community, and that many countries
+      are recommending that people wear them. Wearing a medical mask can limit the
+      spread of certain respiratory    viral diseases, including COVID-19. However,
+      the use of a mask alone is not sufficient to provide an adequate level of protection.
+      Other measures such as physical distancing and hand hygiene should be adopted.WHO
+      aims to provide the most scientifically sound yet practical recommendations
+      for the safety and wellbeing of individuals in all settings. At present, WHO
+      recommends a risk-based approach to be considered by decision makers when deciding
+      in which settings and circumstances non-medical masks could be used in the community.Please
+      see: Advice on the use of masks.'
+  utter_on_masks2:
+  - text: 'For countries that are currently considering the use of masks, WHO advises
+      decision makers to apply a risk-based approach and consider the following:Purpose
+      of mask use: if the intention is preventing the wearer transmitting infection
+      to others (that is source control) or to offer protection to the wearer against
+      infection (that is prevention).Risk of exposure to COVID-19 due to epidemiology/number
+      of cases in the population: if there is high community transmission and other
+      measures such as contact tracing or ability to carry out testing are not possible.
+      depending on occupation: e.g., individuals working in close contact with public
+      (e.g., community health worker, cashier).Vulnerability of the mask wearer/population:
+      for example, if supplies are adequate medical masks could be used by people
+      with comorbidities, such as cardiovascular disease or diabetes mellitus, older
+      people, immunocompromised patients.Setting in which the population lives: settings
+      with high population density (e.g. refugee camps, those living in cramped conditions)
+      and settings where individuals are unable to keep a safe distance (e.g. crowded
+      buses or other transport).Feasibility: availability and costs of masks, access
+      to clean water to wash non-medical  masks, and ability of mask wearers to tolerate
+      adverse effects of wearing a mask. Type of mask: medical mask versus non-medical
+      mask (prioritization of medical masks for health care providers, symptomatic
+      people and their caregivers).In addition to these factors, potential advantages
+      of the use of masks by healthy people in the community setting include reducing
+      potential exposure risk from an infected person during the ‘pre-symptomatic’
+      period or if an infected person is asymptomatic. There are potential risks and
+      disadvantages that should be taken into account in any decision-making process
+      on the use of masks:Non-medical or cloth masks could increase potential for
+      COVID-19 to infect a person if the mask is contaminated by dirty hands and touched
+      often, or kept on other parts of the face or head and then placed back over
+      the mouth and noseDepending on the type of mask used, could cause difficulty
+      in breathing They can lead to facial skin breakdownThey can lead to difficulty
+      with communicating clearly They can be uncomfortable to wear It is possible
+      that mask use, with unclear benefits, could create a false sense of security
+      in the wearer, leading to diminished practice of recognized beneficial preventive
+      measures such as physical distancing and hand hygiene.'
+  utter_on_masks3:
+  - text: Non-medical masks are often homemade of breathable fabrics and can be commercially
+      available as well.   There are numerous designs for fabric masks, but they generally
+      cover the nose and mouth, are secured with ties or elastic loops, include multiple
+      layers of fabric, and can sometimes be washed and re-used. The evidence about
+      the benefits of these masks is limited. One good quality study showed that the
+      risk of respiratory infection is increased (and not reduced) in health care
+      workers using cotton cloth masks when compared to medical masks. Cloth masks
+      are currently being recommended by some countries as a means of source control
+      in the general population. Although their protective effectiveness to the wearer
+      is unknown, they may protect others if the wearer is a pre-symptomatic or asymptomatic
+      carrier.WHO is continuing to gather and review data as new studies become available
+      and will update guidance accordingly.
+  utter_on_masks4:
+  - text: Currently there is not enough evidence for or against the use of masks (medical
+      or other) for healthy individuals in the wider community. WHO continues to recommend
+      that medical masks be worn by individuals who are sick or those caring for them.
+      WHO is actively studying the rapidly evolving science on masks and continuously
+      updates its guidance.In the interim, to support countries in their decision-making
+      process WHO has provided advice through a risk-based approach for the use of
+      masks in the context of COVID-19.
+  utter_on_masks5:
+  - text: Medical masks are recommended in health care settings. However, it is important
+      to remember that the use of masks should be combined with other key infection
+      prevention and control measures such as hand hygiene and physical distancing,
+      as they do not serve all purposes to protect against COVID-19. WHO recommends
+      the use of medical masks for the following individuals:Healthcare workersWhy?
+      Medical masks and respirators such as N95, FFP2 or equivalent are recommended
+      for and should be reserved for, healthcare workers while giving care to patients.
+      Healthcare workers are the most exposed because they are in close contact with
+      people with suspected or confirmed COVID-19 and their surrounding environment,
+      which are the main routes of transmission. People who are sick and exhibiting
+      symptoms of COVID-19Why? Anyone who is sick, even with mild symptoms such as
+      muscle aches, slight cough, sore throat or fatigue, should isolate at home and
+      use a medical mask as much as possible according to WHO’s recommendation on
+      home care of patients with suspected COVID-19. Coughing, sneezing or talking
+      can generate droplets that can spread the infection. These droplets can reach
+      the face of others nearby or land on the surrounding environment. If an infected
+      person coughs, sneezes, or talks wearing a medical mask, this helps to protect
+      those nearby from infection.Anyone taking care of a person at home who is sick
+      with COVID-19 Why? Those caring for individuals who are sick with COVID-19 should
+      wear a medical mask for protection. Close and frequent contact with someone
+      with COVID-19 can put those caring for them at high risk. National decision
+      makers may also choose to recommend medical mask use for certain individuals
+      using a risk-based approach. This approach takes into consideration the purpose
+      of the mask, risk of exposure and vulnerability of the wearer, the setting and
+      feasibility of use and the types of masks considered. See “Advice on the use
+      of masks in the context of COVID-19”.WHO will continue to update guidance according
+      to scientific findings.
+  utter_on_masks6:
+  - text: WHO convenes global teams of experts that collectively review the latest
+      studies. Throughout the COVID-19 pandemic, a group of more than 80 experts in
+      infection prevention and control from institutions worldwide participate in
+      weekly advisory calls to help inform WHO guidance documents. Advice on mask
+      use for healthy individuals in community settings was developed in consultation
+      with several senior experts.
+  utter_on_masks7:
+  - text: No, WHO does not recommend the regular use of gloves by people in the community.
+      The wearing of gloves may increase risks, since it can lead to self-infection
+      or transmission to others through touching contaminated surfaces which is not
+      followed by removal of gloves and hand hygiene. Therefore, in public places
+      such as supermarkets, in addition to physical distancing, WHO recommends the
+      installation of public hand hygiene stations at the entrance and exit.By widely
+      improving hand hygiene practices, countries can help prevent the spread of the
+      COVID-19 virus.
+  utter_on_masks8:
+  - text: 'Non-medical masks are often homemade of breathable fabrics and can be commercially
+      available as well.The evidence about the benefits of these masks is limited.Medical
+      masks (also known as surgical masks): these are made from a minimum of three
+      layers of synthetic nonwoven materials, and configured to have filtration layers
+      sandwiched in the middle. These masks are available in different thicknesses,
+      have various levels of fluid-resistance and two levels of filtration. These
+      medical masks reduce the transfer of saliva or respiratory droplets from the
+      wearer to others and to the environment. They also decrease the likelihood of
+      potentially infectious droplets from others reaching the mouth and nose of the
+      mask wearer. Hand hygiene should be performed before putting on a clean mask
+      and after removing the mask. These masks should be worn tightly around the chin
+      and top of the nose. The wearer should avoid touching the mask while it is on
+      the face and the mask should be immediately discarded if it becomes moist. Importantly,
+      wearing a mask must be combined with other preventive measures including performing
+      frequent and appropriate hand hygiene and physical distancing of at least 1
+      metre (3 feet).Respirators (also known as filtering facepiece respirators --FFR)
+      and available at different performance levels such as FFP2, FFP3, N95, N99):
+      these are specifically designed for healthcare workers who provide care to COVID-19
+      patients in settings and areas where special medical procedures are undertaken.   Respirators
+      are intended to protect the wearer when these medical procedures aerosolize
+      smaller particles than normal droplets into the air in the health treatment
+      area.  Healthcare workers should be fit tested before using a respirator to
+      ensure that the respirator is sealed tightly on the wearer’s face and is properly
+      fitted. Respirators with valves should not be used as the purpose of source
+      control.'
+  utter_on_mass_gatherings1:
+  - text: High profile international sporting events such as the Olympics or World
+      Cups as well as international religious events such as the Hajj count as mass
+      gatherings. However, lower profile conferences and events can also meet WHO’s
+      definition of a mass gathering. An event counts as a “mass gatherings” if the
+      number of people it brings together is so large that it has the potential to
+      strain the planning and response resources of the health system in the community
+      where it takes place. You need to consider the location and duration of the
+      event as well as the number of participants. For example, if the event takes
+      place over several days in a small island state where the capacity of the health
+      system is quite limited then even an event with just a few thousand participants
+      could place a big strain on the health system and then be considered a “mass
+      gathering” event. Conversely, if the event is held in a big city in a country
+      with a large, well-resourced health system and lasts just a few hours, the event
+      may not constitute a “mass gathering” event.
+  utter_on_mass_gatherings2:
+  - text: No. As each international mass gathering is different, the factors to consider
+      when determining if the event should be cancelled may also differ. Any decision
+      to change a planned international gathering should be based on a careful assessment
+      of the risks and how they can be managed, and the level of event planning. The
+      assessment should involve all stakeholders in the event, and in particular the
+      health authorities in the country or community where the event is due to take
+      place. These authorities and stakeholders are in the best position to assess
+      the level of stress the event might place on the local health system and emergency
+      services – and whether this level of stress is acceptable in the current situation.
+      It is WHO’s view that all countries with community transmission should seriously
+      consider postponing or reducing mass gatherings that bring people together and
+      have the potential to amplify disease and support the recommended best practice
+      of physical distancing. Any decision will be supported through the use of WHO
+      tools, in particular the Risk Assessment for Mass Gatherings during COVID-19.
+      If movement restrictions and further national measures have been established
+      in the country, the WHO RA does not apply. However, when the process of re-opening/conducting
+      mass gatherings is being considered post movement restrictions, it will be key
+      to ensure any decisions are based on a risk assessment, such as the WHO Mass
+      gatherings COVID-19 risk assessment.
+  utter_on_mass_gatherings3:
+  - text: 'For countries not currently known to be experiencing community transmission
+      of COVID-19, the priority consideration will be whether the planned mass gathering
+      event substantially increases the risk of the virus entering the country and
+      becoming established, as well as the risk for participants to importing infection
+      back to their home country and further increasing global spread. In making this
+      assessment, the organizers and their national or local health authorities should
+      recognize that the risk of imported cases of COVID-19 is naturally linked to
+      international travel. They should also recognize that it is neither realistic
+      or desirable to aim for zero risk. When organizers and health authorities are
+      determining whether to hold a mass gathering, they should determine what is
+      an acceptable risk and what additional measures should be implemented to mitigate
+      the risks.For countries where COVID-19 has already started to spread in the
+      community, key consideration will be: aiming at containing or at least slowing
+      down the spread of the virus in the local community/country.preventing participants
+      from other countries being infected with COVID-19  In each case the risk should
+      be considered in the context of the known features of COVID-19, its severity,
+      its transmissibility and the effectiveness of measures to prevent or reduce
+      transmission. The strain already placed on the local health system in responding
+      to COVID-19 outbreak(s), and the additional strain the mass gathering might
+      place on the system also need to be taken into account.You can find more advice
+      on what to look at in the WHO document Key planning recommendations for Mass
+      Gatherings in the context of the current COVID-19 outbreak of 14 February 2020.
+      See: https://www.who.int/publications-detail/key-planning-recommendations-for-mass-gatherings-in-the-context-of-the-current-covid-19-outbreak'
+  utter_on_mass_gatherings4:
+  - text: The national and local public health authorities in the country where you
+      plan to hold the mass gathering will most likely know how to conduct a health
+      risk assessment. If there is a WHO Country Office there they may also be able
+      to provide some expert support. So too might the WHO Regional Office in your
+      part of the world. You can find the names and contact details of the WHO Regional
+      Offices at https://www.who.int/about/who-we-are/regional-offices
+  utter_on_mass_gatherings5:
+  - text: 'Promote hand washing, respiratory hygiene and social distancing at the
+      event. Make sure you have emergency contact details for all participants, including
+      where they are staying during the event. You should make it clear to them that
+      this information will be shared with the local public health authorities to
+      enable rapid contact tracing if a participant at the event becomes ill with
+      COVID-19. The event organisers need to have an agreed preparedness plan in case
+      one or more participants become ill with COVID-19 symptoms. This should include
+      rapid isolation of the ill person and their safe transfer to a local health
+      facility. You should consider whether the number of participants at the event
+      could be reduced, making available participation by video or teleconference
+      and possibly screening participants for COVID-19 symptoms (cough, fever, malaise)
+      at points of entry to the venue. You can find advice on how individual participants
+      can protect themselves and their loved ones from COVID-19 at: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
+  utter_on_mass_gatherings6:
+  - text: 'WHO has produced guidance and also a training course on how to plan for
+      a mass gathering. The guidance and the course both look at how to conduct a
+      risk assessment, plan for and manage health risks in partnership with the local
+      authorities: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/points-of-entry-and-mass-gatherings  You
+      can find advice to give individual participants on how to protect themselves
+      and their loved ones from COVID-19 at: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'
+  utter_on_mass_gatherings7:
+  - text: 'Agreed health criteria are needed for the exclusion of athletes from competing
+      and for allowing them to return to competition wherever appropriate. These should
+      be consistent with public health guidelines for the general population, with
+      risk profiles based on recent travel to high-risk community transmission zones,
+      recent contact with individuals diagnosed with or suspected of having COVID-19,
+      current symptomatology, etc. Athletes who are feeling unwell should not participate
+      in events.If testing of athletes has been agreed with the local public health
+      service there is a need to consider test availability, time taken for receipt
+      of test results and host-country health services capacity. Criteria for exclusion
+      of officials/judges from competition and for allowing them to return to competition
+      where appropriate should follow guidance and criteria for the workplace.Requirements
+      for the attendance of all athletes and other accredited participants should
+      be put in place:–   health check: travel declaration and temperature screening–   contact
+      tracing protocols ready (with all details of those present) –   allowing extra
+      spacing (physical distancing)–   following all hygiene precautions.  Isolation
+      procedures for athletes and other accredited participants (e.g. field-of-play
+      staff, medical teams, officials who have close contact with the athletes) who
+      feel unwell or become symptomatic should be clear and documented and rehearsed
+      prior to holding the event, especially for higher risk sports, e.g. contact
+      sports.'
+  utter_on_mass_gatherings8:
+  - text: Temperature screening alone, at exit or entry, is not an effective way to
+      stop international spread, since infected individuals may be in incubation period,
+      may not express apparent symptoms early on in the course of the disease, or
+      may dissimulate fever through the use of antipyretics; in addition, such measures
+      require substantial investments for what may bear little benefits. It is more
+      effective to provide prevention recommendation messages to travellers and to
+      collect health declarations at arrival, with travellers’ contact details, to
+      allow for a proper risk assessment and a possible contact tracing of incoming
+      travellers. Event organizers should also consider the capacity to undertake
+      this and the management of suspected cases. However, sporting organizations
+      may have criteria for participation that are stricter than government requirements
+      for Ports of Entry into the country that are based on event risk assessment,
+      including organizers' healthcare capacity.Any additional screening questionnaires
+      for participation in events need to be aligned with public health agencies in
+      the jurisdiction. There is a need to consider how to manage different groups
+      – athletes, officials and spectators, and the large numbers of individuals likely
+      to arrive at a sporting event from many oversea countries – and to follow both
+      host country and WHO travel advice and to assess whether there is difficulty
+      in obtaining accurate information about the travel history of those individuals.
+  utter_on_mass_gatherings9:
+  - text: Testing should be conducted in accordance with local health providers and
+      national guidance.  Anyone unwell or symptomatic should not be allowed to participate
+      in the event. Establish close collaboration with local public health authorities
+      well before the event, to facilitate testing for athletes, officials or spectators
+      who meet pre-agreed suspect cases definitions. Consider host-country health
+      service capacity to manage any COVID-19 activity, and other public health issues
+      happening at the event over and above its own national pandemic response.
+  utter_on_mass_gatherings10:
+  - text: Follow standard preventative advice to the general public, including physical
+      distancing, in the athletes’ village.Also promote:signage, digital messaging
+      to all participants and their entourages about COVID-19 and how to prevent infectionregular
+      disinfection and cleaning of surfaces, in venues and in personal spaces non-sharing
+      of equipment and cleaning of equipment after each user.Organizers are recommended
+      to develop a checklist (include hand gels stations, hygiene facilities, etc.).
+      See the event mitigation recommendations checklist for event organizers above.
+  utter_on_old_people1:
+  - text: Older people, and people of all ages with pre-existing medical conditions
+      (such as diabetes, high blood pressure, heart disease, lung disease, or cancer)
+      appear to develop serious illness more often than others.
+  utter_on_old_people4:
+  - text: There is a lot that you can do to prepare for COVID-19 in your community.
+      Inform yourself of the special measures taken in your community as well as the
+      services and the sources of reliable information that are availableduring the
+      health emergency  (e.g. home deliveries, psychosocial support, health ministry
+      website, alternative access to your pension). Create a list of the basic supplies
+      that you will need for at least two weeks and try to get these delivered where
+      possible (e.g. non-perishable food items, household products, batteries for
+      assistive            devices you may use, and prescription medicines). Alternatively,
+      ask family members, caregivers, neighbours or community leaders to help with
+      ordering and/or delivery of groceries or prescription medicines. Make sure that
+      your mobile phone            credit is topped up and identify a safe place to
+      charge your phone regularly so that you can keep in contact with family and
+      friends and reach emergency services if needed.   Make a list of emergency numbers
+      (e.g. COVID-19 local helpline, nearby hospital and health emergencies numbers,
+      hotline for victims of abuse, psychosocial support hotline) and support contacts
+      (e.g. family members            and friends, main caregiver, community care
+      worker, associations of older persons). If you live alone, you may wish to share
+      this list and ask your neighbours, family or caregiver to be in touch regularly,
+      for example, by phone or video chat. Discuss with your health-care worker how
+      your health needs can be addressed during COVID-19. This may involve postponing
+      non-urgent appointments, talking to your doctor or health-care worker by phone
+      or video chat instead            of in person and/or revising your vaccination
+      schedule. If you rely on the support provided by a caregiver, identify with
+      him or her another person that you trust to support your daily living and care
+      needs in case your caregiver is unable to continue to provide            care.
+      Together, you can note down all the personal care and assistance that you require
+      and how it should be provided and share it with this trusted person so that
+      they can be ready to provide care in case of need.  If you are the primary caregiver
+      of another person who is care dependent (e.g. grandchild, older spouse, child
+      with a disability), identify a person that you and the person that you care
+      for trust to take on your caregiving responsibilities in case you fall sick.
+      Local authorities or volunteer organizations that provide support in these situations
+      in your community might be able to help. If multiple people live in your home,
+      if possible prepare a separate room or space in your home so that anyone showing
+      symptoms compatible with COVID-19 can be isolated from others. If you do not
+      have space for self-isolation,            contact your community leaders or
+      local health authorities to see if there is community space that could help
+      you or other household members self-isolate. Think about what matters most to
+      you regarding care and support, including medical treatment, in case something
+      happens to you and you are unable to make your own decisions. If you want to
+      develop an advanced care plan to record            your treatment and care wishes,
+      you can talk about it with your health-care worker or someone that you trust.
+      You can write down your wishes and  share them with people you trust.
+  utter_on_old_people7:
+  - text: Losing someone close to you is always hard, whatever the cause. During these
+      extraordinary circumstances, when your usual routine may be disrupted and when
+      funerals may not be permitted, it may be even harder. Following this advice
+      may help. Do not criticise yourself for how you feel. When you lose a family
+      member or friend to COVID-19, you may experience a range of emotions.  You may
+      also have difficulty sleeping or low levels of energy. All these feelings are
+      normal        and there is no right or wrong way to feel grief. Allow yourself
+      time to process your emotions in response to your loss. You may think that the
+      sadness and pain that you feel will never go away, but in most cases, these
+      feelings lessen over time. Talk regularly with people that you trust about your
+      feelings. Keep to your routines as much as you feel able and try to focus on
+      activities that bring you joy. Seek advice and comfort from people that you
+      trust (e.g. religious/faith leaders, mental health workers or other trusted
+      members of your community) while maintaining physical distance (e.g. attending
+      virtual mass).    Think of alternative ways to say goodbye to the person who
+      passed away such as writing a letter or dedicating a drawing to your loved one.
+      These are small actions that can help you cope with grief and loss, particularly
+      in situations where funeral services are not permitted
+  utter_on_pregnancy_and_childbirth1:
+  - text: Research is currently underway to understand the impacts of COVID 19 infection
+      on pregnant women. Data are limited, but at present there is no evidence that
+      they are at higher risk of severe illness than the general population. However,
+      due to changes in their bodies and immune systems, we know that pregnant women
+      can be badly affected by some respiratory infections. It is therefore important
+      that they take precautions to protect themselves against COVID-19, and report
+      possible symptoms (including fever, cough or difficulty breathing) to their
+      healthcare provider.WHO will continue to review and update its information and
+      advice as more evidence becomes available.
+  utter_on_pregnancy_and_childbirth2:
+  - text: Pregnant women should take the same precautions to avoid COVID-19 infection
+      as other people. You can help protect yourself by:Washing your hands frequently
+      with an alcohol-based hand rub or soap and water.Keeping space between yourselves
+      and others and avoiding crowded spaces.Avoiding touching your eyes, nose and
+      mouth.Practicing respiratory hygiene. This means covering your mouth and nose
+      with your bent elbow or tissue when you cough or sneeze. Then dispose of the
+      used tissue immediately.If you have fever, cough or difficulty breathing, seek
+      medical care early. Call before going to a health facility, and follow the directions
+      of your local health authority. Pregnant women and women who have recently delivered
+      – including those affected by COVID-19 - should attend their routine care appointments.
+  utter_on_pregnancy_and_childbirth3:
+  - text: Testing protocols and eligibility vary depending on where you live. However,
+      WHO recommendations are that pregnant women with symptoms of COVID-19 should
+      be prioritized for testing. If they have COVID-19, they may need specialized
+      care.
+  utter_on_pregnancy_and_childbirth4:
+  - text: We still do not know if a pregnant woman with COVID-19 can pass the virus
+      to her foetus or baby during pregnancy or delivery. To date, the active virus
+      has not been found in samples of amniotic fluid or breastmilk.
+  utter_on_pregnancy_and_childbirth5:
+  - text: All pregnant women, including those with confirmed or suspected COVID-19
+      infections, have the right to high quality care before, during and after childbirth.
+      This includes antenatal, newborn, postnatal, intrapartum and mental health care.A
+      safe and positive childbirth experience includes:Being treated with respect
+      and dignity;Having a companion of choice present during delivery;Clear communication
+      by maternity staff;Appropriate pain relief strategies:Mobility in labour where
+      possible, and birth position of choice.If COVID-19 is suspected or confirmed,
+      health workers should take all appropriate precautions to reduce risks of infection
+      to themselves and others, including hand hygiene, and appropriate use of protective
+      clothing like gloves, gown and medical mask.
+  utter_on_pregnancy_and_childbirth6:
+  - text: WHO advice is that caesarean sections should only be performed when medically
+      justified. The mode of birth should be individualized and based on a woman’s
+      preferences alongside obstetric indications.
+  utter_on_pregnancy_and_childbirth7:
+  - text: Yes. Close contact and early, exclusive breastfeeding helps a baby to thrive.
+      You should be supported to Breastfeed safely, with good respiratory hygiene;
+      Hold your newborn skin-to-skin, and Share a room with your baby.You should wash
+      your hands before and after touching your baby, and keep all surfaces clean.
+  utter_on_sexual_health:
+  - text: In 2019, WHO issued a new guideline that brought together 32 existing or
+      new recommendations on a range of sexual and reproductive health self-care interventions.
+      The guideline has recommendations on pregnancy and newborn care, contraception,
+      abortion, sexually transmitted infections including HIV and HPV, and for sexual
+      health more broadly. The full list of recommendations can be found here:https://apps.who.int/iris/bitstream/handle/10665/325719/WHO-RHR-19.14-eng.pdf
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_hcq1
+- utter_hcq2
+- utter_hcq3
+- utter_hcq4
+- utter_hcq5
+- utter_on_youth1
+- utter_on_youth2
+- utter_on_youth3
+- utter_on_youth4
+- utter_on_youth5
+- utter_on_youth6
+- utter_on_youth7
+- utter_on_youth8
+- utter_on_youth9
+- utter_on_youth10
+- utter_on_youth11
+- utter_on_youth12
+- utter_on_youth13
+- utter_on_youth14
+- utter_on_youth15
+- utter_on_youth16
+- utter_on_youth17
+- utter_on_youth18
+- utter_on_youth19
+- utter_on_physical_health1
+- utter_on_physical_health2
+- utter_on_breastfeeding1
+- utter_on_breastfeeding2
+- utter_on_breastfeeding3
+- utter_on_breastfeeding6
+- utter_on_breastfeeding8
+- utter_on_cleaning1
+- utter_on_cleaning2
+- utter_on_cleaning3
+- utter_on_cleaning4
+- utter_on_cleaning5
+- utter_on_cleaning6
+- utter_on_cleaning7
+- utter_on_cleaning8
+- utter_on_virusinfo1
+- utter_on_virusinfo2
+- utter_on_virusinfo3
+- utter_on_virusinfo4
+- utter_on_virusinfo5
+- utter_on_virusinfo6
+- utter_on_virusinfo7
+- utter_on_virusinfo8
+- utter_on_virusinfo9
+- utter_on_virusinfo10
+- utter_on_virusinfo11
+- utter_on_virusinfo12
+- utter_on_virusinfo13
+- utter_on_virusinfo14
+- utter_on_virusinfo15
+- utter_on_virusinfo16
+- utter_on_virusinfo17
+- utter_on_virusinfo18
+- utter_on_virusinfo19
+- utter_on_virusinfo20
+- utter_on_virusinfo21
+- utter_on_virusinfo22
+- utter_on_virusinfo23
+- utter_on_virusinfo24
+- utter_on_virusinfo25
+- utter_on_virusinfo26
+- utter_on_resource1
+- utter_on_resource2
+- utter_on_resource3
+- utter_on_resource4
+- utter_on_resource5
+- utter_on_resource6
+- utter_on_antiretrovirals1
+- utter_on_antiretrovirals2
+- utter_on_healthcareworkers1
+- utter_on_healthcareworkers2
+- utter_on_healthcareworkers3
+- utter_on_healthcareworkers4
+- utter_on_healthcareworkers5
+- utter_on_healthcareworkers6
+- utter_on_healthcareworkers7
+- utter_on_healthcareworkers8
+- utter_on_healthcareworkers9
+- utter_on_healthcareworkers10
+- utter_on_healthcareworkers11
+- utter_on_healthcareworkers12
+- utter_on_healthcareworkers13
+- utter_on_healthcareworkers14
+- utter_on_healthcareworkers15
+- utter_on_healthcareworkers16
+- utter_on_healthcareworkers17
+- utter_on_influenza1
+- utter_on_influenza2
+- utter_on_influenza3
+- utter_on_malaria1
+- utter_on_malaria2
+- utter_on_malaria3
+- utter_on_malaria4
+- utter_on_malaria5
+- utter_on_malaria6
+- utter_on_malaria7
+- utter_on_malaria8
+- utter_on_malaria9
+- utter_on_malaria10
+- utter_on_malaria11
+- utter_on_masks1
+- utter_on_masks2
+- utter_on_masks3
+- utter_on_masks4
+- utter_on_masks5
+- utter_on_masks6
+- utter_on_masks7
+- utter_on_masks8
+- utter_on_mass_gatherings1
+- utter_on_mass_gatherings2
+- utter_on_mass_gatherings3
+- utter_on_mass_gatherings4
+- utter_on_mass_gatherings5
+- utter_on_mass_gatherings6
+- utter_on_mass_gatherings7
+- utter_on_mass_gatherings8
+- utter_on_mass_gatherings9
+- utter_on_mass_gatherings10
+- utter_on_old_people1
+- utter_on_old_people4
+- utter_on_old_people7
+- utter_on_pregnancy_and_childbirth1
+- utter_on_pregnancy_and_childbirth2
+- utter_on_pregnancy_and_childbirth3
+- utter_on_pregnancy_and_childbirth4
+- utter_on_pregnancy_and_childbirth5
+- utter_on_pregnancy_and_childbirth6
+- utter_on_pregnancy_and_childbirth7
+- utter_on_sexual_health
