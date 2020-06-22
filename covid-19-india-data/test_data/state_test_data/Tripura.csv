@@ -1,0 +1,58 @@
+Updated On,Total Tested,Positive,Negative,Unconfirmed,Test positivity rate,Tests per thousand,Tests per million,Tests per positive case
+11/04/2020,337.0,2.0,335,Not Available,0.59%,0.08,84.0,169.0
+15/04/2020,738.0,2.0,Not Available,Not Available,0.27%,0.18,185.0,369.0
+16/04/2020,762.0,2.0,760,Not Available,0.26%,0.19,191.0,381.0
+21/04/2020,2604.0,2.0,2602,Not Available,0.08%,0.65,652.0,1302.0
+22/04/2020,3215.0,2.0,3123,Not Available,0.06%,0.81,805.0,1608.0
+01/05/2020,4828.0,3.0,4825,Not Available,0.06%,1.21,1209.0,1609.0
+02/05/2020,4955.0,5.0,4950,Not Available,0.10%,1.24,1241.0,991.0
+03/05/2020,5162.0,5.0,5157,Not Available,0.10%,1.29,1293.0,1032.0
+04/05/2020,5394.0,17.0,5377,Not Available,0.32%,1.35,1351.0,317.0
+05/05/2020,5850.0,30.0,5820,Not Available,0.51%,1.47,1465.0,195.0
+06/05/2020,6228.0,43.0,6185,Not Available,0.69%,1.56,1560.0,145.0
+07/05/2020,6917.0,89.0,6828,Not Available,1.29%,1.73,1733.0,78.0
+08/05/2020,7448.0,89.0,7359,Not Available,1.19%,1.87,1866.0,84.0
+09/05/2020,8340.0,119.0,8221,Not Available,1.43%,2.09,2089.0,70.0
+10/05/2020,9091.0,136.0,8955,Not Available,1.50%,2.28,2277.0,67.0
+11/05/2020,9596.0,154.0,9442,Not Available,1.60%,2.4,2404.0,62.0
+12/05/2020,10344.0,155.0,10189,Not Available,1.50%,2.59,2591.0,67.0
+13/05/2020,11146.0,155.0,10991,Not Available,1.39%,2.79,2792.0,72.0
+14/05/2020,11804.0,156.0,11648,Not Available,1.32%,2.96,2957.0,76.0
+15/05/2020,12561.0,156.0,12405,Not Available,1.24%,3.15,3147.0,81.0
+16/05/2020,13178.0,167.0,13011,Not Available,1.27%,3.3,3301.0,79.0
+17/05/2020,13750.0,167.0,13583,Not Available,1.21%,3.44,3444.0,82.0
+18/05/2020,14286.0,167.0,14119,Not Available,1.17%,3.58,3579.0,86.0
+19/05/2020,15083.0,169.0,14914,Not Available,1.12%,3.78,3778.0,89.0
+20/05/2020,15822.0,173.0,15694,Not Available,1.09%,3.96,3963.0,91.0
+21/05/2020,16873.0,173.0,16610,Not Available,1.03%,4.23,4227.0,98.0
+22/05/2020,17721.0,175.0,17546,Not Available,0.99%,4.44,4439.0,101.0
+23/05/2020,18737.0,191.0,18546,Not Available,1.02%,4.69,4694.0,98.0
+24/05/2020,19278.0,191.0,19537,Not Available,0.99%,4.83,4829.0,101.0
+25/05/2020,20871.0,198.0,20637,Not Available,0.95%,5.23,5228.0,105.0
+26/05/2020,22049.0,209.0,21840,Not Available,0.95%,5.52,5523.0,105.0
+27/05/2020,23264.0,232.0,23032,Not Available,1.00%,5.83,5828.0,100.0
+28/05/2020,24126.0,242.0,23884,Not Available,1.00%,6.04,6044.0,100.0
+29/05/2020,25403.0,244.0,25159,Not Available,0.96%,6.36,6363.0,104.0
+30/05/2020,26376.0,271.0,26105,Not Available,1.03%,6.61,6607.0,97.0
+31/05/2020,27475.0,316.0,27159,Not Available,Not Available,Not Available,Not Available,Not Available
+01/06/2020,28360.0,423.0,27937,Not Available,Not Available,Not Available,Not Available,Not Available
+02/06/2020,29066.0,471.0,28595,Not Available,Not Available,Not Available,Not Available,Not Available
+03/06/2020,30481.0,622.0,29859,Not Available,Not Available,Not Available,Not Available,Not Available
+04/06/2020,31138.0,646.0,30492,Not Available,Not Available,Not Available,Not Available,Not Available
+05/06/2020,32300.0,694.0,31606,Not Available,Not Available,Not Available,Not Available,Not Available
+06/06/2020,33331.0,749.0,32582,Not Available,Not Available,Not Available,Not Available,Not Available
+07/06/2020,35263.0,802.0,34461,Not Available,Not Available,Not Available,Not Available,Not Available
+08/06/2020,37453.0,840.0,36613,Not Available,Not Available,Not Available,Not Available,Not Available
+09/06/2020,38572.0,866.0,37706,Not Available,Not Available,Not Available,Not Available,Not Available
+10/06/2020,40027.0,897.0,39130,Not Available,Not Available,Not Available,Not Available,Not Available
+11/06/2020,41389.0,915.0,40474,Not Available,Not Available,Not Available,Not Available,Not Available
+12/06/2020,40837.0,960.0,39877,Not Available,Not Available,Not Available,Not Available,Not Available
+13/06/2020,43972.0,1042.0,42930,Not Available,Not Available,Not Available,Not Available,Not Available
+14/06/2020,46015.0,1075.0,44940,Not Available,Not Available,Not Available,Not Available,Not Available
+15/06/2020,47683.0,1084.0,46599,Not Available,Not Available,Not Available,Not Available,Not Available
+16/06/2020,49208.0,1090.0,48118,Not Available,Not Available,Not Available,Not Available,Not Available
+17/06/2020,50268.0,1133.0,49135,Not Available,Not Available,Not Available,Not Available,Not Available
+18/06/2020,51495.0,1154.0,50341,Not Available,Not Available,Not Available,Not Available,Not Available
+19/06/2020,52752.0,1181.0,51571,Not Available,Not Available,Not Available,Not Available,Not Available
+20/06/2020,53905.0,1189.0,52716,Not Available,Not Available,Not Available,Not Available,Not Available
+21/06/2020,54983.0,1224.0,53759,Not Available,Not Available,Not Available,Not Available,Not Available

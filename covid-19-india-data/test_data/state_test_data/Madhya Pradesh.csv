@@ -1,0 +1,78 @@
+Updated On,Total Tested,Positive,Negative,Unconfirmed,Test positivity rate,Tests per thousand,Tests per million,Tests per positive case
+05/04/2020,2812.0,193.0,1954,665.0,6.86%,0.03,34.0,15.0
+07/04/2020,3770.0,290.0,3125,355.0,7.69%,0.05,46.0,13.0
+08/04/2020,4056.0,341.0,3443,272.0,8.41%,0.05,49.0,12.0
+09/04/2020,5135.0,411.0,3989,Not Available,8.00%,0.06,62.0,12.0
+10/04/2020,7049.0,451.0,4840,Not Available,6.40%,0.09,86.0,16.0
+11/04/2020,8516.0,529.0,5790,Not Available,6.21%,0.1,104.0,16.0
+12/04/2020,10481.0,562.0,6875,Not Available,5.36%,0.13,127.0,19.0
+13/04/2020,10481.0,614.0,6875,Not Available,5.86%,0.13,127.0,17.0
+14/04/2020,8105.0,741.0,7103,4835.0,9.14%,0.1,99.0,11.0
+15/04/2020,9596.0,938.0,8658,4501.0,9.77%,0.12,117.0,10.0
+16/04/2020,13492.0,1164.0,12326,4158.0,8.63%,0.16,164.0,12.0
+17/04/2020,15302.0,1310.0,13992,4996.0,8.56%,0.19,186.0,12.0
+18/04/2020,14978.0,1402.0,13576,7251.0,9.36%,0.18,182.0,11.0
+19/04/2020,17835.0,1407.0,16428,7054.0,7.89%,0.22,217.0,13.0
+20/04/2020,19142.0,1485.0,17657,8519.0,7.76%,0.23,233.0,13.0
+21/04/2020,20905.0,1552.0,19353,8215.0,7.42%,0.25,254.0,13.0
+22/04/2020,22664.0,1587.0,21077,8414.0,7.00%,0.28,276.0,14.0
+23/04/2020,24548.0,1687.0,22861,8526.0,6.87%,0.3,299.0,15.0
+24/04/2020,26233.0,1846.0,24387,8843.0,7.04%,0.32,319.0,14.0
+25/04/2020,27866.0,1945.0,25921,9021.0,6.98%,0.34,339.0,14.0
+26/04/2020,25232.0,2090.0,21716,Not Available,8.28%,0.31,307.0,12.0
+27/04/2020,27009.0,2165.0,23500,Not Available,8.02%,0.33,328.0,12.0
+28/04/2020,31060.0,2387.0,26159,Not Available,7.69%,0.38,378.0,13.0
+29/04/2020,33837.0,2560.0,29261,Not Available,7.57%,0.41,411.0,13.0
+30/04/2020,41712.0,2625.0,29816,Not Available,6.29%,0.51,507.0,16.0
+01/05/2020,44116.0,2715.0,39353,Not Available,6.15%,0.54,536.0,16.0
+02/05/2020,46578.0,2788.0,41460,Not Available,5.99%,0.57,566.0,17.0
+03/05/2020,49186.0,2837.0,43937,Not Available,5.77%,0.6,598.0,17.0
+04/05/2020,52095.0,2942.0,46634,Not Available,5.65%,0.63,634.0,18.0
+05/05/2020,54595.0,3049.0,48931,Not Available,5.58%,0.66,664.0,18.0
+06/05/2020,54595.0,3138.0,51479,Not Available,5.75%,0.66,664.0,17.0
+07/05/2020,61020.0,3252.0,55002,Not Available,5.33%,0.74,742.0,19.0
+08/05/2020,63705.0,3341.0,57528,Not Available,5.24%,0.77,775.0,19.0
+09/05/2020,68010.0,3457.0,61629,Not Available,5.08%,0.83,827.0,20.0
+10/05/2020,72069.0,3614.0,65436,Not Available,5.01%,0.88,876.0,20.0
+11/05/2020,76039.0,3785.0,69187,Not Available,4.98%,0.92,925.0,20.0
+12/05/2020,80885.0,3986.0,73761,Not Available,4.93%,0.98,984.0,20.0
+13/05/2020,85903.0,4173.0,77738,Not Available,4.86%,1.04,1045.0,21.0
+14/05/2020,89760.0,4426.0,82028,Not Available,4.93%,1.09,1092.0,20.0
+15/05/2020,93849.0,4595.0,85879,Not Available,4.90%,1.14,1141.0,20.0
+16/05/2020,99677.0,4790.0,91393,Not Available,4.81%,1.21,1212.0,21.0
+17/05/2020,103898.0,4977.0,95355,Not Available,4.79%,1.26,1263.0,21.0
+18/05/2020,112168.0,5236.0,100469,Not Available,4.67%,1.36,1364.0,21.0
+19/05/2020,116473.0,5465.0,104348,Not Available,4.69%,1.42,1416.0,21.0
+20/05/2020,120737.0,5735.0,108744,Not Available,4.75%,1.47,1468.0,21.0
+21/05/2020,125608.0,5981.0,112947,Not Available,4.76%,1.53,1527.0,21.0
+22/05/2020,129060.0,6170.0,116835,Not Available,4.78%,1.57,1569.0,21.0
+23/05/2020,132769.0,6371.0,121033,Not Available,4.80%,1.61,1615.0,21.0
+24/05/2020,135889.0,6665.0,124549,Not Available,4.90%,1.65,1653.0,20.0
+25/05/2020,138584.0,6859.0,128267,Not Available,4.95%,1.69,1685.0,20.0
+26/05/2020,141508.0,7024.0,131415,Not Available,4.96%,1.72,1721.0,20.0
+27/05/2020,146144.0,7261.0,134774,Not Available,4.97%,1.78,1777.0,20.0
+28/05/2020,151182.0,7453.0,138387,Not Available,4.93%,1.84,1838.0,20.0
+29/05/2020,155436.0,7645.0,142383,Not Available,4.92%,1.89,1890.0,20.0
+30/05/2020,161552.0,7891.0,146616,Not Available,Not Available,Not Available,Not Available,Not Available
+31/05/2020,167808.0,8089.0,151793,Not Available,Not Available,Not Available,Not Available,Not Available
+01/06/2020,172019.0,8283.0,157790,Not Available,Not Available,Not Available,Not Available,Not Available
+02/06/2020,177481.0,8420.0,163100,Not Available,Not Available,Not Available,Not Available,Not Available
+03/06/2020,183662.0,8588.0,168219,Not Available,Not Available,Not Available,Not Available,Not Available
+04/06/2020,189252.0,8762.0,173392,Not Available,Not Available,Not Available,Not Available,Not Available
+05/06/2020,195249.0,8996.0,179234,Not Available,Not Available,Not Available,Not Available,Not Available
+06/06/2020,200913.0,9228.0,184202,Not Available,Not Available,Not Available,Not Available,Not Available
+07/06/2020,208514.0,9401.0,190155,Not Available,Not Available,Not Available,Not Available,Not Available
+08/06/2020,215194.0,9638.0,196497,Not Available,Not Available,Not Available,Not Available,Not Available
+09/06/2020,220936.0,9849.0,203131,Not Available,Not Available,Not Available,Not Available,Not Available
+10/06/2020,228042.0,10049.0,210081,Not Available,Not Available,Not Available,Not Available,Not Available
+11/06/2020,233740.0,10241.0,217860,Not Available,Not Available,Not Available,Not Available,Not Available
+12/06/2020,241461.0,10443.0,224064,Not Available,Not Available,Not Available,Not Available,Not Available
+13/06/2020,246973.0,10641.0,231123,Not Available,Not Available,Not Available,Not Available,Not Available
+14/06/2020,252762.0,10802.0,236649,Not Available,Not Available,Not Available,Not Available,Not Available
+15/06/2020,258040.0,10935.0,242117,Not Available,Not Available,Not Available,Not Available,Not Available
+16/06/2020,263983.0,11083.0,247196,Not Available,Not Available,Not Available,Not Available,Not Available
+17/06/2020,271205.0,11244.0,253474,Not Available,Not Available,Not Available,Not Available,Not Available
+18/06/2020,277451.0,11426.0,260395,Not Available,Not Available,Not Available,Not Available,Not Available
+19/06/2020,282674.0,11582.0,267247,Not Available,Not Available,Not Available,Not Available,Not Available
+20/06/2020,290831.0,11724.0,273628,Not Available,Not Available,Not Available,Not Available,Not Available
+21/06/2020,296943.0,11903.0,280480,Not Available,Not Available,Not Available,Not Available,Not Available
