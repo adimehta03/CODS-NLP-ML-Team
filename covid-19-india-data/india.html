@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1aef20089e67482db98738c63ff24d6e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1aef20089e67482db98738c63ff24d6e" ></div>
+        
+</body>
+<script>    
+    
+            var map_1aef20089e67482db98738c63ff24d6e = L.map(
+                "map_1aef20089e67482db98738c63ff24d6e",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b60ec463d40346e09dea8d1427aeee05 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var circle_marker_4d5a5efc061e45249f97de6608607634 = L.circleMarker(
+                [11.66702557, 92.73598262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_d904201cb6344c66b82ef1a8623c1dc5 = L.marker(
+                [11.66702557, 92.73598262],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_fa6992fee0d84514a3fbf3d51de7dffd = L.popup({"maxWidth": 200});
+
+        
+            var html_d64ffcc847884d9fa6ab19c595d1915b = $(`<div id="html_d64ffcc847884d9fa6ab19c595d1915b" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Andaman and Nicobar Islands</strong> <br><strong><b>Total Cases : 116</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>51</striong><br><strong><b>Active Cases : 65</striong></div>`)[0];
+            popup_fa6992fee0d84514a3fbf3d51de7dffd.setContent(html_d64ffcc847884d9fa6ab19c595d1915b);
+        
+
+        marker_d904201cb6344c66b82ef1a8623c1dc5.bindPopup(popup_fa6992fee0d84514a3fbf3d51de7dffd)
+        ;
+
+        
+    
+    
+            var circle_marker_0a5a813666dc4553a6d87329321aad61 = L.circleMarker(
+                [14.7504291, 78.57002559],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_a6bfe1e75c6b40448aa8910d65af14d0 = L.marker(
+                [14.7504291, 78.57002559],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_f579c9c9a3834740a1ef873856020b9f = L.popup({"maxWidth": 200});
+
+        
+            var html_4e356c5a004a407a8371cba4db09dc6e = $(`<div id="html_4e356c5a004a407a8371cba4db09dc6e" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Andhra Pradesh</strong> <br><strong><b>Total Cases : 16934</striong><br><strong><font color= red>Deaths : </font>206</striong><br><strong><font color=green>Recoveries : </font>7632</striong><br><strong><b>Active Cases : 9096</striong></div>`)[0];
+            popup_f579c9c9a3834740a1ef873856020b9f.setContent(html_4e356c5a004a407a8371cba4db09dc6e);
+        
+
+        marker_a6bfe1e75c6b40448aa8910d65af14d0.bindPopup(popup_f579c9c9a3834740a1ef873856020b9f)
+        ;
+
+        
+    
+    
+            var circle_marker_f2875931216946198062e054fc8160c3 = L.circleMarker(
+                [27.10039878, 93.61660071],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_f4483b41cc00499a900aec1a9c724f84 = L.marker(
+                [27.10039878, 93.61660071],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_1f3ce7e010e045868d84b075577e5fc7 = L.popup({"maxWidth": 200});
+
+        
+            var html_2b8ec9288deb4504b45aea626cbf7fe7 = $(`<div id="html_2b8ec9288deb4504b45aea626cbf7fe7" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Arunachal Pradesh</strong> <br><strong><b>Total Cases : 232</striong><br><strong><font color= red>Deaths : </font>1</striong><br><strong><font color=green>Recoveries : </font>71</striong><br><strong><b>Active Cases : 160</striong></div>`)[0];
+            popup_1f3ce7e010e045868d84b075577e5fc7.setContent(html_2b8ec9288deb4504b45aea626cbf7fe7);
+        
+
+        marker_f4483b41cc00499a900aec1a9c724f84.bindPopup(popup_1f3ce7e010e045868d84b075577e5fc7)
+        ;
+
+        
+    
+    
+            var circle_marker_5fb792bb03854197b0d910046af71033 = L.circleMarker(
+                [26.7499809, 94.21666744],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_653dac30055040a7b85f88db25088048 = L.marker(
+                [26.7499809, 94.21666744],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_36020769b1bf40ca84b59d02938c5464 = L.popup({"maxWidth": 200});
+
+        
+            var html_234e6873d03b481dbdd01e055d44d86c = $(`<div id="html_234e6873d03b481dbdd01e055d44d86c" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Assam</strong> <br><strong><b>Total Cases : 9435</striong><br><strong><font color= red>Deaths : </font>14</striong><br><strong><font color=green>Recoveries : </font>6107</striong><br><strong><b>Active Cases : 3311</striong></div>`)[0];
+            popup_36020769b1bf40ca84b59d02938c5464.setContent(html_234e6873d03b481dbdd01e055d44d86c);
+        
+
+        marker_653dac30055040a7b85f88db25088048.bindPopup(popup_36020769b1bf40ca84b59d02938c5464)
+        ;
+
+        
+    
+    
+            var circle_marker_ff441ad27eac4cfa968b2fcb802857c2 = L.circleMarker(
+                [25.78541445, 87.4799727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_8e04c1944ee94f48b7151eaff5c8ed97 = L.marker(
+                [25.78541445, 87.4799727],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_aa30e557f6f34f23bb78038940a0e5f5 = L.popup({"maxWidth": 200});
+
+        
+            var html_e5ecd9aa19274135a3bcdf660b111226 = $(`<div id="html_e5ecd9aa19274135a3bcdf660b111226" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Bihar</strong> <br><strong><b>Total Cases : 10914</striong><br><strong><font color= red>Deaths : </font>78</striong><br><strong><font color=green>Recoveries : </font>7994</striong><br><strong><b>Active Cases : 2842</striong></div>`)[0];
+            popup_aa30e557f6f34f23bb78038940a0e5f5.setContent(html_e5ecd9aa19274135a3bcdf660b111226);
+        
+
+        marker_8e04c1944ee94f48b7151eaff5c8ed97.bindPopup(popup_aa30e557f6f34f23bb78038940a0e5f5)
+        ;
+
+        
+    
+    
+            var circle_marker_e71702ed7cf545b3922646d0d54edd6e = L.circleMarker(
+                [30.71999697, 76.78000565],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_0c670b0a65f6480f84ca9efb0b91a6fb = L.marker(
+                [30.71999697, 76.78000565],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_2130d161062b418ba1ff1a174e28a06d = L.popup({"maxWidth": 200});
+
+        
+            var html_212a842c7fce44ecb2e91c29b5e5518b = $(`<div id="html_212a842c7fce44ecb2e91c29b5e5518b" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Chandigarh</strong> <br><strong><b>Total Cases : 450</striong><br><strong><font color= red>Deaths : </font>6</striong><br><strong><font color=green>Recoveries : </font>389</striong><br><strong><b>Active Cases : 55</striong></div>`)[0];
+            popup_2130d161062b418ba1ff1a174e28a06d.setContent(html_212a842c7fce44ecb2e91c29b5e5518b);
+        
+
+        marker_0c670b0a65f6480f84ca9efb0b91a6fb.bindPopup(popup_2130d161062b418ba1ff1a174e28a06d)
+        ;
+
+        
+    
+    
+            var circle_marker_ff13ce3067aa4055b539a4a1e7df453d = L.circleMarker(
+                [22.09042035, 82.15998734],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_80264832c5ee4603898b0d286c499810 = L.marker(
+                [22.09042035, 82.15998734],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_325b8a1e860445888b9dcf3172b27076 = L.popup({"maxWidth": 200});
+
+        
+            var html_7ef29f3f016b4126b2a033ef54f95aac = $(`<div id="html_7ef29f3f016b4126b2a033ef54f95aac" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Chhattisgarh</strong> <br><strong><b>Total Cases : 3013</striong><br><strong><font color= red>Deaths : </font>14</striong><br><strong><font color=green>Recoveries : </font>2362</striong><br><strong><b>Active Cases : 637</striong></div>`)[0];
+            popup_325b8a1e860445888b9dcf3172b27076.setContent(html_7ef29f3f016b4126b2a033ef54f95aac);
+        
+
+        marker_80264832c5ee4603898b0d286c499810.bindPopup(popup_325b8a1e860445888b9dcf3172b27076)
+        ;
+
+        
+    
+    
+            var circle_marker_d96499d89ca342f2955a86b65489407a = L.circleMarker(
+                [20.26657819, 73.01661779999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_debd6565989a488ebf5bd67bd243e029 = L.marker(
+                [20.26657819, 73.01661779999999],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_d52e679eb9774070a0ea35ddb1eec183 = L.popup({"maxWidth": 200});
+
+        
+            var html_79aabfc1fb5144fda511147ace26280d = $(`<div id="html_79aabfc1fb5144fda511147ace26280d" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Dadra and Nagar Haveli and Daman and Diu</strong> <br><strong><b>Total Cases : 268</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>125</striong><br><strong><b>Active Cases : 142</striong></div>`)[0];
+            popup_d52e679eb9774070a0ea35ddb1eec183.setContent(html_79aabfc1fb5144fda511147ace26280d);
+        
+
+        marker_debd6565989a488ebf5bd67bd243e029.bindPopup(popup_d52e679eb9774070a0ea35ddb1eec183)
+        ;
+
+        
+    
+    
+            var circle_marker_85cc54c99a4e418abaece32f1bb555f9 = L.circleMarker(
+                [28.6699929, 77.23000403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_68003966d0524ac1b9653cc7c7ca6903 = L.marker(
+                [28.6699929, 77.23000403],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_f2b81493ae254b71a34077afbce38b07 = L.popup({"maxWidth": 200});
+
+        
+            var html_28e537acd8ec42abaef2012c309320ca = $(`<div id="html_28e537acd8ec42abaef2012c309320ca" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Delhi</strong> <br><strong><b>Total Cases : 92175</striong><br><strong><font color= red>Deaths : </font>2864</striong><br><strong><font color=green>Recoveries : </font>63007</striong><br><strong><b>Active Cases : 26304</striong></div>`)[0];
+            popup_f2b81493ae254b71a34077afbce38b07.setContent(html_28e537acd8ec42abaef2012c309320ca);
+        
+
+        marker_68003966d0524ac1b9653cc7c7ca6903.bindPopup(popup_f2b81493ae254b71a34077afbce38b07)
+        ;
+
+        
+    
+    
+            var circle_marker_5239a5f00abc4e3f9f5ec4db2746c159 = L.circleMarker(
+                [15.491997, 73.81800065],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_62c1ce89a8ac4bf2bf9d74c8df50567e = L.marker(
+                [15.491997, 73.81800065],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_f6bd7e576eac49dd8f87ca74766439a7 = L.popup({"maxWidth": 200});
+
+        
+            var html_ee953950fa4e4f6da171bac4a129d63e = $(`<div id="html_ee953950fa4e4f6da171bac4a129d63e" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Goa</strong> <br><strong><b>Total Cases : 1482</striong><br><strong><font color= red>Deaths : </font>4</striong><br><strong><font color=green>Recoveries : </font>734</striong><br><strong><b>Active Cases : 744</striong></div>`)[0];
+            popup_f6bd7e576eac49dd8f87ca74766439a7.setContent(html_ee953950fa4e4f6da171bac4a129d63e);
+        
+
+        marker_62c1ce89a8ac4bf2bf9d74c8df50567e.bindPopup(popup_f6bd7e576eac49dd8f87ca74766439a7)
+        ;
+
+        
+    
+    
+            var circle_marker_ffa786644aaf4c5d9b8a600a502bbc72 = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_a5295debce124a49804e92591180a0ae = L.marker(
+                [22.2587, 71.1924],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_8706bf349344457899216c318458970f = L.popup({"maxWidth": 200});
+
+        
+            var html_6ec07cbc89ef4f259b8fa37301fef911 = $(`<div id="html_6ec07cbc89ef4f259b8fa37301fef911" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Gujarat</strong> <br><strong><b>Total Cases : 33999</striong><br><strong><font color= red>Deaths : </font>1887</striong><br><strong><font color=green>Recoveries : </font>24601</striong><br><strong><b>Active Cases : 7511</striong></div>`)[0];
+            popup_8706bf349344457899216c318458970f.setContent(html_6ec07cbc89ef4f259b8fa37301fef911);
+        
+
+        marker_a5295debce124a49804e92591180a0ae.bindPopup(popup_8706bf349344457899216c318458970f)
+        ;
+
+        
+    
+    
+            var circle_marker_0823438b81c44e09af7bc5f9e779eb2b = L.circleMarker(
+                [28.45000633, 77.01999101],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_97ef37df826744dc98c75b4da9f74675 = L.marker(
+                [28.45000633, 77.01999101],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_4355daffadeb42338cd96da89aaa5926 = L.popup({"maxWidth": 200});
+
+        
+            var html_dcc5f90cfa8c4d8c9ebf651988eb9582 = $(`<div id="html_dcc5f90cfa8c4d8c9ebf651988eb9582" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Haryana</strong> <br><strong><b>Total Cases : 15732</striong><br><strong><font color= red>Deaths : </font>251</striong><br><strong><font color=green>Recoveries : </font>11074</striong><br><strong><b>Active Cases : 4407</striong></div>`)[0];
+            popup_4355daffadeb42338cd96da89aaa5926.setContent(html_dcc5f90cfa8c4d8c9ebf651988eb9582);
+        
+
+        marker_97ef37df826744dc98c75b4da9f74675.bindPopup(popup_4355daffadeb42338cd96da89aaa5926)
+        ;
+
+        
+    
+    
+            var circle_marker_5c7b02127218489bb926984713a64a9f = L.circleMarker(
+                [31.10002545, 77.16659704],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_f86d8d67d0c74b649dc02f411f27c8d6 = L.marker(
+                [31.10002545, 77.16659704],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_47402e9dc7de4a8bb45888b21ad59fb9 = L.popup({"maxWidth": 200});
+
+        
+            var html_c25dfd4e44504587b13846a74e1afc4d = $(`<div id="html_c25dfd4e44504587b13846a74e1afc4d" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Himachal Pradesh</strong> <br><strong><b>Total Cases : 1016</striong><br><strong><font color= red>Deaths : </font>9</striong><br><strong><font color=green>Recoveries : </font>637</striong><br><strong><b>Active Cases : 357</striong></div>`)[0];
+            popup_47402e9dc7de4a8bb45888b21ad59fb9.setContent(html_c25dfd4e44504587b13846a74e1afc4d);
+        
+
+        marker_f86d8d67d0c74b649dc02f411f27c8d6.bindPopup(popup_47402e9dc7de4a8bb45888b21ad59fb9)
+        ;
+
+        
+    
+    
+            var circle_marker_a04ed38ce60f4ed3b0ce25e18fa99edf = L.circleMarker(
+                [34.29995933, 74.46665849],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_356b8ae5a5204d8b988089beda3dc3f5 = L.marker(
+                [34.29995933, 74.46665849],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_8fedc7adae8c4b98b6f5f0e332d1e060 = L.popup({"maxWidth": 200});
+
+        
+            var html_045668751ffb4aed9db0b57742b2091a = $(`<div id="html_045668751ffb4aed9db0b57742b2091a" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Jammu and Kashmir</strong> <br><strong><b>Total Cases : 7849</striong><br><strong><font color= red>Deaths : </font>115</striong><br><strong><font color=green>Recoveries : </font>4974</striong><br><strong><b>Active Cases : 2760</striong></div>`)[0];
+            popup_8fedc7adae8c4b98b6f5f0e332d1e060.setContent(html_045668751ffb4aed9db0b57742b2091a);
+        
+
+        marker_356b8ae5a5204d8b988089beda3dc3f5.bindPopup(popup_8fedc7adae8c4b98b6f5f0e332d1e060)
+        ;
+
+        
+    
+    
+            var circle_marker_c5b23e979e3a49e4b17b28aa9b4e70da = L.circleMarker(
+                [23.80039349, 86.41998572],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_0e14fe5e1e064714905cff9b81c5b43b = L.marker(
+                [23.80039349, 86.41998572],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_25541a52bc2348588a03116df03236a6 = L.popup({"maxWidth": 200});
+
+        
+            var html_8337c82bba714e99a6520dee98408505 = $(`<div id="html_8337c82bba714e99a6520dee98408505" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Jharkhand</strong> <br><strong><b>Total Cases : 2634</striong><br><strong><font color= red>Deaths : </font>15</striong><br><strong><font color=green>Recoveries : </font>1988</striong><br><strong><b>Active Cases : 631</striong></div>`)[0];
+            popup_25541a52bc2348588a03116df03236a6.setContent(html_8337c82bba714e99a6520dee98408505);
+        
+
+        marker_0e14fe5e1e064714905cff9b81c5b43b.bindPopup(popup_25541a52bc2348588a03116df03236a6)
+        ;
+
+        
+    
+    
+            var circle_marker_2b7652985c0840e7aa2cc18f4b987f81 = L.circleMarker(
+                [12.57038129, 76.91999711],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_ec61116afee0460c90c67950e9a064a3 = L.marker(
+                [12.57038129, 76.91999711],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_33ddc7cd9ad74256a02b2e793371e3f0 = L.popup({"maxWidth": 200});
+
+        
+            var html_3421ccfe07a04401a04ed00d493fc80c = $(`<div id="html_3421ccfe07a04401a04ed00d493fc80c" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Karnataka</strong> <br><strong><b>Total Cases : 18016</striong><br><strong><font color= red>Deaths : </font>272</striong><br><strong><font color=green>Recoveries : </font>8336</striong><br><strong><b>Active Cases : 9404</striong></div>`)[0];
+            popup_33ddc7cd9ad74256a02b2e793371e3f0.setContent(html_3421ccfe07a04401a04ed00d493fc80c);
+        
+
+        marker_ec61116afee0460c90c67950e9a064a3.bindPopup(popup_33ddc7cd9ad74256a02b2e793371e3f0)
+        ;
+
+        
+    
+    
+            var circle_marker_f03aedd0b9ed40b9932fd17118107ca2 = L.circleMarker(
+                [8.900372741, 76.56999263],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_ab1837f02ab241bc9293366e89c42d7f = L.marker(
+                [8.900372741, 76.56999263],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_a5391014cb8c407ea6eee8e532994b3d = L.popup({"maxWidth": 200});
+
+        
+            var html_2f672adde16d4c9e8168110999255fcb = $(`<div id="html_2f672adde16d4c9e8168110999255fcb" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Kerala</strong> <br><strong><b>Total Cases : 4754</striong><br><strong><font color= red>Deaths : </font>26</striong><br><strong><font color=green>Recoveries : </font>2638</striong><br><strong><b>Active Cases : 2088</striong></div>`)[0];
+            popup_a5391014cb8c407ea6eee8e532994b3d.setContent(html_2f672adde16d4c9e8168110999255fcb);
+        
+
+        marker_ab1837f02ab241bc9293366e89c42d7f.bindPopup(popup_a5391014cb8c407ea6eee8e532994b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_72636f5ba6054d1d8d4436bf9550dc19 = L.circleMarker(
+                [34.209515, 77.615112],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_76f12a5cff7c4b0e9e6693011ab77527 = L.marker(
+                [34.209515, 77.615112],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_83ee998e864c4b42b78b62e7dc60d46e = L.popup({"maxWidth": 200});
+
+        
+            var html_b9e59a1efd0843479eeab7f04c76e598 = $(`<div id="html_b9e59a1efd0843479eeab7f04c76e598" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Ladakh</strong> <br><strong><b>Total Cases : 991</striong><br><strong><font color= red>Deaths : </font>1</striong><br><strong><font color=green>Recoveries : </font>729</striong><br><strong><b>Active Cases : 261</striong></div>`)[0];
+            popup_83ee998e864c4b42b78b62e7dc60d46e.setContent(html_b9e59a1efd0843479eeab7f04c76e598);
+        
+
+        marker_76f12a5cff7c4b0e9e6693011ab77527.bindPopup(popup_83ee998e864c4b42b78b62e7dc60d46e)
+        ;
+
+        
+    
+    
+            var circle_marker_6814c3be8d034f078fb560166db9cdad = L.circleMarker(
+                [10.56257331, 72.63686717],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_ae153f0374d54c17a13c2cef4662bcaa = L.marker(
+                [10.56257331, 72.63686717],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_ee670c272b7347f68b9b75f979148ab6 = L.popup({"maxWidth": 200});
+
+        
+            var html_a412147205464aa1a36cdcfa674fd666 = $(`<div id="html_a412147205464aa1a36cdcfa674fd666" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 26/03/2020</font></striong><br><strong><b>State  : Lakshadweep</strong> <br><strong><b>Total Cases : 0</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>0</striong><br><strong><b>Active Cases : 0</striong></div>`)[0];
+            popup_ee670c272b7347f68b9b75f979148ab6.setContent(html_a412147205464aa1a36cdcfa674fd666);
+        
+
+        marker_ae153f0374d54c17a13c2cef4662bcaa.bindPopup(popup_ee670c272b7347f68b9b75f979148ab6)
+        ;
+
+        
+    
+    
+            var circle_marker_9bed9f2f102042eabbc3963f94323462 = L.circleMarker(
+                [21.30039105, 76.13001949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_62943d3acde14ed69ca621f1ff0aeb34 = L.marker(
+                [21.30039105, 76.13001949],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_f5632e3305df47ccaa759d5a4e98b07c = L.popup({"maxWidth": 200});
+
+        
+            var html_6ae4609e05e442759e550932b5e8853c = $(`<div id="html_6ae4609e05e442759e550932b5e8853c" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Madhya Pradesh</strong> <br><strong><b>Total Cases : 14106</striong><br><strong><font color= red>Deaths : </font>589</striong><br><strong><font color=green>Recoveries : </font>10815</striong><br><strong><b>Active Cases : 2702</striong></div>`)[0];
+            popup_f5632e3305df47ccaa759d5a4e98b07c.setContent(html_6ae4609e05e442759e550932b5e8853c);
+        
+
+        marker_62943d3acde14ed69ca621f1ff0aeb34.bindPopup(popup_f5632e3305df47ccaa759d5a4e98b07c)
+        ;
+
+        
+    
+    
+            var circle_marker_33139d5e5c164bd686a1692a824a8580 = L.circleMarker(
+                [19.25023195, 73.16017493],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_da02e37893ef4e9ba1c53e96156db8f1 = L.marker(
+                [19.25023195, 73.16017493],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_e7dcae7210d14cd49dd3f399b49a8479 = L.popup({"maxWidth": 200});
+
+        
+            var html_05007e3c329f4b35838fbb1714a5621a = $(`<div id="html_05007e3c329f4b35838fbb1714a5621a" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Maharashtra</strong> <br><strong><b>Total Cases : 186626</striong><br><strong><font color= red>Deaths : </font>8178</striong><br><strong><font color=green>Recoveries : </font>101172</striong><br><strong><b>Active Cases : 77260</striong></div>`)[0];
+            popup_e7dcae7210d14cd49dd3f399b49a8479.setContent(html_05007e3c329f4b35838fbb1714a5621a);
+        
+
+        marker_da02e37893ef4e9ba1c53e96156db8f1.bindPopup(popup_e7dcae7210d14cd49dd3f399b49a8479)
+        ;
+
+        
+    
+    
+            var circle_marker_3bd80eb1bcae40f3ace12348ba91ceaf = L.circleMarker(
+                [24.79997072, 93.95001705],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_7faea94bf8d14eb08ba44a4d64569b6b = L.marker(
+                [24.79997072, 93.95001705],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_cd27163026b645ac86a801f36570df38 = L.popup({"maxWidth": 200});
+
+        
+            var html_25ee91fc6ace475eb6a6f77d2c19f40e = $(`<div id="html_25ee91fc6ace475eb6a6f77d2c19f40e" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Manipur</strong> <br><strong><b>Total Cases : 1279</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>616</striong><br><strong><b>Active Cases : 663</striong></div>`)[0];
+            popup_cd27163026b645ac86a801f36570df38.setContent(html_25ee91fc6ace475eb6a6f77d2c19f40e);
+        
+
+        marker_7faea94bf8d14eb08ba44a4d64569b6b.bindPopup(popup_cd27163026b645ac86a801f36570df38)
+        ;
+
+        
+    
+    
+            var circle_marker_c441af2213ec4d499342f38433dd427a = L.circleMarker(
+                [25.57049217, 91.8800142],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_8373c0baf9134499ba296150f21263f7 = L.marker(
+                [25.57049217, 91.8800142],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_dbc5574bd377434e9aec85b4bf4003df = L.popup({"maxWidth": 200});
+
+        
+            var html_f08519be67a94efc8d101d66e40b8e39 = $(`<div id="html_f08519be67a94efc8d101d66e40b8e39" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Meghalaya</strong> <br><strong><b>Total Cases : 62</striong><br><strong><font color= red>Deaths : </font>1</striong><br><strong><font color=green>Recoveries : </font>43</striong><br><strong><b>Active Cases : 18</striong></div>`)[0];
+            popup_dbc5574bd377434e9aec85b4bf4003df.setContent(html_f08519be67a94efc8d101d66e40b8e39);
+        
+
+        marker_8373c0baf9134499ba296150f21263f7.bindPopup(popup_dbc5574bd377434e9aec85b4bf4003df)
+        ;
+
+        
+    
+    
+            var circle_marker_45541992fd164e30850a79ff2d1c29d3 = L.circleMarker(
+                [23.71039899, 92.72001461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_269d0722cd1e4657b84b6f96e4f08576 = L.marker(
+                [23.71039899, 92.72001461],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_bd26645376db44f7a281fbd9ff809467 = L.popup({"maxWidth": 200});
+
+        
+            var html_0602e546779c446a81f81a56bf76d12f = $(`<div id="html_0602e546779c446a81f81a56bf76d12f" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Mizoram</strong> <br><strong><b>Total Cases : 162</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>127</striong><br><strong><b>Active Cases : 35</striong></div>`)[0];
+            popup_bd26645376db44f7a281fbd9ff809467.setContent(html_0602e546779c446a81f81a56bf76d12f);
+        
+
+        marker_269d0722cd1e4657b84b6f96e4f08576.bindPopup(popup_bd26645376db44f7a281fbd9ff809467)
+        ;
+
+        
+    
+    
+            var circle_marker_0b3d17dc519b4416a2794f9953486575 = L.circleMarker(
+                [25.6669979, 94.11657019],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_3f7d4cbe84ee4612a68dc0522f43b387 = L.marker(
+                [25.6669979, 94.11657019],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_29b8ce3a3c254c38a5f17c03cd570e95 = L.popup({"maxWidth": 200});
+
+        
+            var html_7561393f39814c2884c92a5beaaf83b6 = $(`<div id="html_7561393f39814c2884c92a5beaaf83b6" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Nagaland</strong> <br><strong><b>Total Cases : 539</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>228</striong><br><strong><b>Active Cases : 311</striong></div>`)[0];
+            popup_29b8ce3a3c254c38a5f17c03cd570e95.setContent(html_7561393f39814c2884c92a5beaaf83b6);
+        
+
+        marker_3f7d4cbe84ee4612a68dc0522f43b387.bindPopup(popup_29b8ce3a3c254c38a5f17c03cd570e95)
+        ;
+
+        
+    
+    
+            var circle_marker_f761b477d8834ab5820d4374a220fbd0 = L.circleMarker(
+                [19.82042971, 85.90001746],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_29eefac932a04cebad22815f2e21acb4 = L.marker(
+                [19.82042971, 85.90001746],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_8df966d56cf44f49a59c3d7bb23dbe1e = L.popup({"maxWidth": 200});
+
+        
+            var html_2f11dde370094452bd12345d55b717e5 = $(`<div id="html_2f11dde370094452bd12345d55b717e5" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Odisha</strong> <br><strong><b>Total Cases : 8106</striong><br><strong><font color= red>Deaths : </font>37</striong><br><strong><font color=green>Recoveries : </font>5705</striong><br><strong><b>Active Cases : 2364</striong></div>`)[0];
+            popup_8df966d56cf44f49a59c3d7bb23dbe1e.setContent(html_2f11dde370094452bd12345d55b717e5);
+        
+
+        marker_29eefac932a04cebad22815f2e21acb4.bindPopup(popup_8df966d56cf44f49a59c3d7bb23dbe1e)
+        ;
+
+        
+    
+    
+            var circle_marker_55557e868e3647a6b30d39003e204ddc = L.circleMarker(
+                [11.93499371, 79.83000037],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_9b7a611a42364a7ca16c7c3df672e7b5 = L.marker(
+                [11.93499371, 79.83000037],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_b292a57ca9ba4be2bb0d63f4798fb9d5 = L.popup({"maxWidth": 200});
+
+        
+            var html_f10031be9b3a4d5aacc56d2a24b70e70 = $(`<div id="html_f10031be9b3a4d5aacc56d2a24b70e70" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Puducherry</strong> <br><strong><b>Total Cases : 824</striong><br><strong><font color= red>Deaths : </font>13</striong><br><strong><font color=green>Recoveries : </font>384</striong><br><strong><b>Active Cases : 427</striong></div>`)[0];
+            popup_b292a57ca9ba4be2bb0d63f4798fb9d5.setContent(html_f10031be9b3a4d5aacc56d2a24b70e70);
+        
+
+        marker_9b7a611a42364a7ca16c7c3df672e7b5.bindPopup(popup_b292a57ca9ba4be2bb0d63f4798fb9d5)
+        ;
+
+        
+    
+    
+            var circle_marker_c1d3b720900846f686a3e9614cd999b1 = L.circleMarker(
+                [31.51997398, 75.98000281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_fe31086b19ed4eca8c16d73ee288fe46 = L.marker(
+                [31.51997398, 75.98000281],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_ed8636c50c42400d8774ad4346f7d6bb = L.popup({"maxWidth": 200});
+
+        
+            var html_b8848eb333d84cf4bfae7d818443f47c = $(`<div id="html_b8848eb333d84cf4bfae7d818443f47c" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Punjab</strong> <br><strong><b>Total Cases : 5784</striong><br><strong><font color= red>Deaths : </font>152</striong><br><strong><font color=green>Recoveries : </font>4144</striong><br><strong><b>Active Cases : 1488</striong></div>`)[0];
+            popup_ed8636c50c42400d8774ad4346f7d6bb.setContent(html_b8848eb333d84cf4bfae7d818443f47c);
+        
+
+        marker_fe31086b19ed4eca8c16d73ee288fe46.bindPopup(popup_ed8636c50c42400d8774ad4346f7d6bb)
+        ;
+
+        
+    
+    
+            var circle_marker_a8964a1110424650969c9e6ed48ad9dd = L.circleMarker(
+                [26.44999921, 74.63998124],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_080e560a0f54449fbd55a7b11755c7e8 = L.marker(
+                [26.44999921, 74.63998124],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_809eebddbc6f444a890fa02503261b97 = L.popup({"maxWidth": 200});
+
+        
+            var html_15427f9047a64d0a8abdd226693927dc = $(`<div id="html_15427f9047a64d0a8abdd226693927dc" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 03/07/2020</font></striong><br><strong><b>State  : Rajasthan</strong> <br><strong><b>Total Cases : 18785</striong><br><strong><font color= red>Deaths : </font>435</striong><br><strong><font color=green>Recoveries : </font>15043</striong><br><strong><b>Active Cases : 3307</striong></div>`)[0];
+            popup_809eebddbc6f444a890fa02503261b97.setContent(html_15427f9047a64d0a8abdd226693927dc);
+        
+
+        marker_080e560a0f54449fbd55a7b11755c7e8.bindPopup(popup_809eebddbc6f444a890fa02503261b97)
+        ;
+
+        
+    
+    
+            var circle_marker_4f05660a66bc4c188be8030b93cd4aed = L.circleMarker(
+                [27.3333303, 88.6166475],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_4e6f6712d4644a588b6a4a8dbcc93afb = L.marker(
+                [27.3333303, 88.6166475],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_e4112f54d9594361aab99ad19bb58c1e = L.popup({"maxWidth": 200});
+
+        
+            var html_4d413b152b2a4b57944e6f103c8bee24 = $(`<div id="html_4d413b152b2a4b57944e6f103c8bee24" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Sikkim</strong> <br><strong><b>Total Cases : 101</striong><br><strong><font color= red>Deaths : </font>0</striong><br><strong><font color=green>Recoveries : </font>52</striong><br><strong><b>Active Cases : 49</striong></div>`)[0];
+            popup_e4112f54d9594361aab99ad19bb58c1e.setContent(html_4d413b152b2a4b57944e6f103c8bee24);
+        
+
+        marker_4e6f6712d4644a588b6a4a8dbcc93afb.bindPopup(popup_e4112f54d9594361aab99ad19bb58c1e)
+        ;
+
+        
+    
+    
+            var circle_marker_25e8b0f46b454efead13d119eed6adeb = L.circleMarker(
+                [12.92038576, 79.15004187],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_299be5de61a74cf881ad890c2558baba = L.marker(
+                [12.92038576, 79.15004187],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_52db44ef09d14b1ba1270e9d0e77fc1d = L.popup({"maxWidth": 200});
+
+        
+            var html_1a00316b5f1a4ebb852aef79b7593c5a = $(`<div id="html_1a00316b5f1a4ebb852aef79b7593c5a" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Tamil Nadu</strong> <br><strong><b>Total Cases : 98392</striong><br><strong><font color= red>Deaths : </font>1321</striong><br><strong><font color=green>Recoveries : </font>56021</striong><br><strong><b>Active Cases : 41050</striong></div>`)[0];
+            popup_52db44ef09d14b1ba1270e9d0e77fc1d.setContent(html_1a00316b5f1a4ebb852aef79b7593c5a);
+        
+
+        marker_299be5de61a74cf881ad890c2558baba.bindPopup(popup_52db44ef09d14b1ba1270e9d0e77fc1d)
+        ;
+
+        
+    
+    
+            var circle_marker_7cb89edb69304df2affa5b366a26aa0b = L.circleMarker(
+                [18.1124, 79.0193],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_c7d2b58e952b4948a9a2dd7c0fc08d15 = L.marker(
+                [18.1124, 79.0193],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_0b3e0a1e34f64803800b3ffe6e0382a4 = L.popup({"maxWidth": 200});
+
+        
+            var html_356a901a476e48eab9018e9f40314912 = $(`<div id="html_356a901a476e48eab9018e9f40314912" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Telangana</strong> <br><strong><b>Total Cases : 18570</striong><br><strong><font color= red>Deaths : </font>275</striong><br><strong><font color=green>Recoveries : </font>9069</striong><br><strong><b>Active Cases : 9226</striong></div>`)[0];
+            popup_0b3e0a1e34f64803800b3ffe6e0382a4.setContent(html_356a901a476e48eab9018e9f40314912);
+        
+
+        marker_c7d2b58e952b4948a9a2dd7c0fc08d15.bindPopup(popup_0b3e0a1e34f64803800b3ffe6e0382a4)
+        ;
+
+        
+    
+    
+            var circle_marker_2d14f00da5a64fdcbe1250bad6b75a52 = L.circleMarker(
+                [23.83540428, 91.27999914],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_c0f35877d08943108658b1a1cd2ef3a4 = L.marker(
+                [23.83540428, 91.27999914],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_86cd42f062c9410a8c3efca168c2ee0e = L.popup({"maxWidth": 200});
+
+        
+            var html_ca9be115382b47c8a2829abfc640533d = $(`<div id="html_ca9be115382b47c8a2829abfc640533d" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Tripura</strong> <br><strong><b>Total Cases : 1440</striong><br><strong><font color= red>Deaths : </font>1</striong><br><strong><font color=green>Recoveries : </font>1146</striong><br><strong><b>Active Cases : 293</striong></div>`)[0];
+            popup_86cd42f062c9410a8c3efca168c2ee0e.setContent(html_ca9be115382b47c8a2829abfc640533d);
+        
+
+        marker_c0f35877d08943108658b1a1cd2ef3a4.bindPopup(popup_86cd42f062c9410a8c3efca168c2ee0e)
+        ;
+
+        
+    
+    
+            var circle_marker_6f75358cf89d49d19126d279307114c4 = L.circleMarker(
+                [27.59998069, 78.05000565],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_a0d14a8e575b403f90fd0db964252893 = L.marker(
+                [27.59998069, 78.05000565],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_70dbfca9b5954801a0459e30ae1d2e2e = L.popup({"maxWidth": 200});
+
+        
+            var html_feee57fae9bd48fe889a717d54ac4599 = $(`<div id="html_feee57fae9bd48fe889a717d54ac4599" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Uttar Pradesh</strong> <br><strong><b>Total Cases : 24825</striong><br><strong><font color= red>Deaths : </font>735</striong><br><strong><font color=green>Recoveries : </font>17221</striong><br><strong><b>Active Cases : 6869</striong></div>`)[0];
+            popup_70dbfca9b5954801a0459e30ae1d2e2e.setContent(html_feee57fae9bd48fe889a717d54ac4599);
+        
+
+        marker_a0d14a8e575b403f90fd0db964252893.bindPopup(popup_70dbfca9b5954801a0459e30ae1d2e2e)
+        ;
+
+        
+    
+    
+            var circle_marker_72d9507432904ad9887f3d9d9f11182a = L.circleMarker(
+                [30.32040895, 78.05000565],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_1a5f805f903e46a9a0b62de86c9e8675 = L.marker(
+                [30.32040895, 78.05000565],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_9ce6d5a7f0264bbba74d9fe271ea427c = L.popup({"maxWidth": 200});
+
+        
+            var html_1945bd54dd724835ad2921e99c850594 = $(`<div id="html_1945bd54dd724835ad2921e99c850594" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : Uttarakhand</strong> <br><strong><b>Total Cases : 2984</striong><br><strong><font color= red>Deaths : </font>42</striong><br><strong><font color=green>Recoveries : </font>2405</striong><br><strong><b>Active Cases : 510</striong></div>`)[0];
+            popup_9ce6d5a7f0264bbba74d9fe271ea427c.setContent(html_1945bd54dd724835ad2921e99c850594);
+        
+
+        marker_1a5f805f903e46a9a0b62de86c9e8675.bindPopup(popup_9ce6d5a7f0264bbba74d9fe271ea427c)
+        ;
+
+        
+    
+    
+            var circle_marker_bcf6c205d70c457cba02802321a84ff5 = L.circleMarker(
+                [22.58039044, 88.32994665],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+            var marker_bfcdff48b5924b69a3dd4391fa92d043 = L.marker(
+                [22.58039044, 88.32994665],
+                {}
+            ).addTo(map_1aef20089e67482db98738c63ff24d6e);
+        
+    
+        var popup_a34f9e23023842498321a0c4aedff4e3 = L.popup({"maxWidth": 200});
+
+        
+            var html_21074a51af994c7489314fec4b9c7106 = $(`<div id="html_21074a51af994c7489314fec4b9c7106" style="width: 100.0%; height: 100.0%;"><strong><font color= blue>Date : 02/07/2020</font></striong><br><strong><b>State  : West Bengal</strong> <br><strong><b>Total Cases : 19819</striong><br><strong><font color= red>Deaths : </font>699</striong><br><strong><font color=green>Recoveries : </font>13037</striong><br><strong><b>Active Cases : 6083</striong></div>`)[0];
+            popup_a34f9e23023842498321a0c4aedff4e3.setContent(html_21074a51af994c7489314fec4b9c7106);
+        
+
+        marker_bfcdff48b5924b69a3dd4391fa92d043.bindPopup(popup_a34f9e23023842498321a0c4aedff4e3)
+        ;
+
+        
+    
+</script>

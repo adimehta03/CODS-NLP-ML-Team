@@ -1,38 +1,50 @@
-Updated On,Total Tested,Positive,Negative,Unconfirmed,Test positivity rate,Tests per thousand,Tests per million,Tests per positive case
-17/04/2020,1403.0,12.0,1210,181.0,0.86%,3.53,3534.0,117.0
-24/04/2020,2679.0,27.0,Not Available,246.0,1.01%,6.75,6748.0,99.0
-27/04/2020,2848.0,33.0,Not Available,106.0,1.16%,7.17,7174.0,86.0
-01/05/2020,3754.0,33.0,Not Available,199.0,0.88%,9.46,9456.0,114.0
-16/05/2020,6677.0,33.0,Not Available,136.0,0.49%,16.82,16819.0,202.0
-19/05/2020,6965.0,33.0,Not Available,117.0,Not Available,Not Available,Not Available,Not Available
-20/05/2020,7082.0,33.0,Not Available,117.0,Not Available,Not Available,Not Available,Not Available
-21/05/2020,7167.0,33.0,Not Available,85.0,Not Available,Not Available,Not Available,Not Available
-22/05/2020,7263.0,33.0,Not Available,96.0,0.45%,18.29,18295.0,220.0
-23/05/2020,7327.0,33.0,Not Available,61.0,Not Available,Not Available,Not Available,Not Available
-24/05/2020,7327.0,33.0,Not Available,0.0,Not Available,Not Available,Not Available,Not Available
-25/05/2020,7363.0,33.0,Not Available,34.0,Not Available,Not Available,Not Available,Not Available
-26/05/2020,7448.0,33.0,Not Available,84.0,Not Available,Not Available,Not Available,Not Available
-27/05/2020,7499.0,33.0,Not Available,51.0,Not Available,Not Available,Not Available,Not Available
-28/05/2020,7519.0,33.0,Not Available,19.0,Not Available,Not Available,Not Available,Not Available
-29/05/2020,7567.0,33.0,Not Available,48.0,Not Available,Not Available,Not Available,Not Available
-30/05/2020,7567.0,33.0,Not Available,129.0,Not Available,Not Available,Not Available,Not Available
-31/05/2020,7706.0,33.0,Not Available,0.0,Not Available,Not Available,Not Available,Not Available
-01/06/2020,7805.0,33.0,Not Available,99.0,Not Available,Not Available,Not Available,Not Available
-02/06/2020,8086.0,33.0,Not Available,274.0,Not Available,Not Available,Not Available,Not Available
-03/06/2020,8295.0,33.0,Not Available,208.0,Not Available,Not Available,Not Available,Not Available
-04/06/2020,8413.0,33.0,Not Available,118.0,Not Available,Not Available,Not Available,Not Available
-05/06/2020,8694.0,33.0,Not Available,281.0,Not Available,Not Available,Not Available,Not Available
-06/06/2020,9037.0,33.0,Not Available,343.0,Not Available,Not Available,Not Available,Not Available
-07/06/2020,9242.0,33.0,Not Available,404.0,Not Available,Not Available,Not Available,Not Available
-08/06/2020,9341.0,33.0,Not Available,279.0,Not Available,Not Available,Not Available,Not Available
-09/06/2020,9859.0,33.0,Not Available,531.0,Not Available,Not Available,Not Available,Not Available
-10/06/2020,10010.0,35.0,Not Available,382.0,Not Available,Not Available,Not Available,Not Available
-11/06/2020,10226.0,38.0,Not Available,294.0,Not Available,Not Available,Not Available,Not Available
-12/06/2020,10697.0,38.0,Not Available,556.0,Not Available,Not Available,Not Available,Not Available
-13/06/2020,10955.0,38.0,Not Available,814.0,Not Available,Not Available,Not Available,Not Available
-14/06/2020,11356.0,38.0,Not Available,1040.0,Not Available,Not Available,Not Available,Not Available
-15/06/2020,11518.0,41.0,Not Available,579.0,Not Available,Not Available,Not Available,Not Available
-16/06/2020,11809.0,44.0,Not Available,719.0,Not Available,Not Available,Not Available,Not Available
-17/06/2020,12239.0,44.0,Not Available,383.0,Not Available,Not Available,Not Available,Not Available
-18/06/2020,12622.0,45.0,Not Available,350.0,Not Available,Not Available,Not Available,Not Available
-19/06/2020,12930.0,47.0,Not Available,306.0,Not Available,Not Available,Not Available,Not Available
+Updated On,Total Tested,Positive,Tests Positivity Rate,Tests Per Positive Case
+17/04/2020,1403.0,12.0,0.86%,117.0
+24/04/2020,2679.0,27.0,1.01%,99.0
+27/04/2020,2848.0,33.0,1.16%,86.0
+01/05/2020,3754.0,33.0,0.88%,114.0
+16/05/2020,6677.0,33.0,0.49%,202.0
+19/05/2020,6965.0,33.0,0.47%,211.0
+20/05/2020,7082.0,33.0,0.47%,215.0
+21/05/2020,7167.0,33.0,0.46%,217.0
+22/05/2020,7263.0,33.0,0.45%,220.0
+23/05/2020,7327.0,33.0,0.45%,222.0
+24/05/2020,7327.0,33.0,0.45%,222.0
+25/05/2020,7363.0,33.0,0.45%,223.0
+26/05/2020,7448.0,33.0,0.44%,226.0
+27/05/2020,7499.0,33.0,0.44%,227.0
+28/05/2020,7519.0,33.0,0.44%,228.0
+29/05/2020,7567.0,33.0,0.44%,229.0
+30/05/2020,7567.0,33.0,0.44%,229.0
+31/05/2020,7706.0,33.0,0.43%,234.0
+01/06/2020,7805.0,33.0,0.42%,237.0
+02/06/2020,8086.0,33.0,0.41%,245.0
+03/06/2020,8295.0,33.0,0.40%,251.0
+04/06/2020,8413.0,33.0,0.39%,255.0
+05/06/2020,8694.0,33.0,0.38%,263.0
+06/06/2020,9037.0,33.0,0.37%,274.0
+07/06/2020,9242.0,33.0,0.36%,280.0
+08/06/2020,9341.0,33.0,0.35%,283.0
+09/06/2020,9859.0,33.0,0.33%,299.0
+10/06/2020,10010.0,35.0,0.35%,286.0
+11/06/2020,10226.0,38.0,0.37%,269.0
+12/06/2020,10697.0,38.0,0.36%,282.0
+13/06/2020,10955.0,38.0,0.35%,288.0
+14/06/2020,11356.0,38.0,0.33%,299.0
+15/06/2020,11518.0,41.0,0.36%,281.0
+16/06/2020,11809.0,44.0,0.37%,268.0
+17/06/2020,12239.0,44.0,0.36%,278.0
+18/06/2020,12622.0,45.0,0.36%,280.0
+19/06/2020,12930.0,47.0,0.36%,275.0
+20/06/2020,13320.0,47.0,0.35%,283.0
+21/06/2020,13434.0,48.0,0.36%,280.0
+22/06/2020,13511.0,48.0,0.36%,281.0
+23/06/2020,13723.0,50.0,0.36%,274.0
+24/06/2020,13994.0,56.0,0.40%,250.0
+25/06/2020,14277.0,59.0,0.41%,242.0
+26/06/2020,14583.0,72.0,0.49%,203.0
+27/06/2020,14851.0,73.0,0.49%,203.0
+28/06/2020,15094.0,83.0,0.55%,182.0
+29/06/2020,15410.0,90.0,0.58%,171.0
+30/06/2020,15709.0,97.0,0.62%,162.0
+01/07/2020,15982.0,100.0,0.63%,160.0
