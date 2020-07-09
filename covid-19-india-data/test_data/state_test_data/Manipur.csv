@@ -1,46 +1,50 @@
-Updated On,Total Tested,Positive,Tests Positivity Rate,Tests Per Positive Case
-14/04/2020,276.0,2.0,0.72%,138.0
-17/04/2020,311.0,2.0,0.64%,156.0
-24/04/2020,402.0,2.0,0.50%,201.0
-25/04/2020,416.0,2.0,0.48%,208.0
-30/04/2020,459.0,2.0,0.44%,230.0
-01/05/2020,461.0,2.0,0.43%,230.0
-02/05/2020,468.0,2.0,0.43%,234.0
-04/05/2020,571.0,2.0,0.35%,286.0
-07/05/2020,684.0,2.0,0.29%,342.0
-08/05/2020,756.0,2.0,0.26%,378.0
-09/05/2020,865.0,2.0,0.23%,432.0
-10/05/2020,1096.0,2.0,0.18%,548.0
-11/05/2020,1337.0,2.0,0.15%,668.0
-13/05/2020,1706.0,2.0,0.12%,853.0
-15/05/2020,1799.0,3.0,0.17%,600.0
-16/05/2020,1900.0,4.0,0.21%,475.0
-18/05/2020,2483.0,7.0,0.28%,355.0
-20/05/2020,3087.0,20.0,0.65%,154.0
-22/05/2020,3721.0,26.0,0.70%,143.0
-23/05/2020,4094.0,29.0,0.71%,141.0
-25/05/2020,5041.0,36.0,0.71%,140.0
-26/05/2020,6233.0,39.0,0.63%,160.0
-27/05/2020,6836.0,44.0,0.64%,155.0
-28/05/2020,7758.0,55.0,0.71%,141.0
-29/05/2020,8596.0,59.0,0.69%,146.0
-03/06/2020,12454.0,118.0,0.95%,106.0
-05/06/2020,14629.0,132.0,0.90%,111.0
-07/06/2020,17028.0,172.0,1.01%,99.0
-09/06/2020,18612.0,304.0,1.63%,61.0
-10/06/2020,19756.0,311.0,1.57%,64.0
-11/06/2020,20528.0,366.0,1.78%,56.0
-13/06/2020,24046.0,449.0,1.87%,54.0
-14/06/2020,25226.0,458.0,1.82%,55.0
-15/06/2020,26458.0,490.0,1.85%,54.0
-17/06/2020,29865.0,552.0,1.85%,54.0
-18/06/2020,30476.0,606.0,1.99%,50.0
-19/06/2020,32093.0,681.0,2.12%,47.0
-21/06/2020,35943.0,841.0,2.34%,43.0
-22/06/2020,38286.0,898.0,2.35%,43.0
-23/06/2020,40829.0,921.0,2.26%,44.0
-24/06/2020,43477.0,970.0,2.23%,45.0
-25/06/2020,45253.0,1056.0,2.33%,43.0
-27/06/2020,48220.0,1092.0,2.26%,44.0
-29/06/2020,49882.0,1227.0,2.46%,41.0
-02/07/2020,53030.0,1279.0,2.41%,41.0
+Updated On,Total Tested,Positive,Negative,Unconfirmed,Unnamed: 22,Test positivity rate,Tests per thousand,Tests per million,Tests per positive case
+14/04/2020,276.0,2.0,Not Available,Not Available,Not Available,0.72%,0.09,89.0,138.0
+17/04/2020,311.0,2.0,Not Available,Not Available,Not Available,0.64%,0.1,100.0,156.0
+24/04/2020,402.0,2.0,Not Available,Not Available,Not Available,0.50%,0.13,130.0,201.0
+25/04/2020,416.0,2.0,Not Available,Not Available,Not Available,0.48%,0.13,134.0,208.0
+30/04/2020,459.0,2.0,Not Available,Not Available,Not Available,0.44%,0.15,148.0,230.0
+01/05/2020,461.0,2.0,Not Available,Not Available,Not Available,0.43%,0.15,149.0,231.0
+02/05/2020,468.0,2.0,Not Available,Not Available,Not Available,0.43%,0.15,151.0,234.0
+04/05/2020,571.0,2.0,Not Available,Not Available,Not Available,0.35%,0.18,184.0,286.0
+07/05/2020,684.0,2.0,Not Available,Not Available,Not Available,0.29%,0.22,220.0,342.0
+08/05/2020,756.0,2.0,Not Available,Not Available,Not Available,0.26%,0.24,244.0,378.0
+09/05/2020,865.0,2.0,Not Available,Not Available,Not Available,0.23%,0.28,279.0,433.0
+10/05/2020,1096.0,2.0,Not Available,Not Available,Not Available,0.18%,0.35,353.0,548.0
+11/05/2020,1337.0,2.0,Not Available,Not Available,Not Available,0.15%,0.43,431.0,669.0
+13/05/2020,1706.0,2.0,Not Available,Not Available,Not Available,0.12%,0.55,550.0,853.0
+15/05/2020,1799.0,3.0,Not Available,Not Available,Not Available,0.17%,0.58,580.0,600.0
+16/05/2020,1900.0,4.0,Not Available,Not Available,Not Available,0.21%,0.61,612.0,475.0
+18/05/2020,2483.0,7.0,Not Available,Not Available,Not Available,0.28%,0.8,800.0,355.0
+20/05/2020,3087.0,20.0,Not Available,Not Available,Not Available,0.65%,0.99,995.0,154.0
+22/05/2020,3721.0,26.0,Not Available,Not Available,Not Available,0.70%,1.2,1199.0,143.0
+23/05/2020,4094.0,29.0,Not Available,Not Available,Not Available,0.71%,1.32,1319.0,141.0
+25/05/2020,5041.0,36.0,Not Available,Not Available,Not Available,0.71%,1.62,1625.0,140.0
+26/05/2020,6233.0,39.0,Not Available,Not Available,Not Available,0.63%,2.01,2009.0,160.0
+27/05/2020,6836.0,44.0,Not Available,Not Available,Not Available,0.64%,2.2,2203.0,155.0
+28/05/2020,7758.0,55.0,Not Available,Not Available,Not Available,0.71%,2.5,2500.0,141.0
+29/05/2020,8596.0,59.0,Not Available,Not Available,Not Available,0.69%,2.77,2770.0,146.0
+03/06/2020,12454.0,118.0,Not Available,Not Available,Not Available,0.95%,4.01,4014.0,106.0
+05/06/2020,14629.0,132.0,Not Available,Not Available,Not Available,0.90%,4.71,4714.0,111.0
+07/06/2020,17028.0,172.0,Not Available,Not Available,Not Available,1.01%,5.49,5488.0,99.0
+09/06/2020,18612.0,304.0,Not Available,Not Available,Not Available,1.63%,6.0,5998.0,61.0
+10/06/2020,19756.0,311.0,Not Available,Not Available,Not Available,1.57%,6.37,6367.0,64.0
+11/06/2020,20528.0,366.0,Not Available,Not Available,Not Available,1.78%,6.62,6616.0,56.0
+13/06/2020,24046.0,449.0,Not Available,Not Available,Not Available,1.87%,7.75,7749.0,54.0
+14/06/2020,25226.0,458.0,Not Available,Not Available,Not Available,1.82%,8.13,8130.0,55.0
+15/06/2020,26458.0,490.0,Not Available,Not Available,Not Available,1.85%,8.53,8527.0,54.0
+17/06/2020,29865.0,552.0,Not Available,Not Available,Not Available,1.85%,9.62,9625.0,54.0
+18/06/2020,30476.0,606.0,Not Available,Not Available,Not Available,1.99%,9.82,9821.0,50.0
+19/06/2020,32093.0,681.0,Not Available,Not Available,Not Available,2.12%,10.34,10343.0,47.0
+21/06/2020,35943.0,841.0,Not Available,Not Available,Not Available,2.34%,11.58,11583.0,43.0
+22/06/2020,38286.0,898.0,Not Available,Not Available,Not Available,2.35%,12.34,12338.0,43.0
+23/06/2020,40829.0,921.0,Not Available,Not Available,Not Available,2.26%,13.16,13158.0,44.0
+24/06/2020,43477.0,970.0,Not Available,Not Available,Not Available,2.23%,14.01,14011.0,45.0
+25/06/2020,45253.0,1056.0,Not Available,Not Available,Not Available,2.33%,14.58,14584.0,43.0
+27/06/2020,48220.0,1092.0,Not Available,Not Available,Not Available,2.26%,15.54,15540.0,44.0
+29/06/2020,49882.0,1227.0,Not Available,Not Available,Not Available,2.46%,16.08,16075.0,41.0
+02/07/2020,53030.0,1279.0,Not Available,Not Available,Not Available,2.41%,17.09,17090.0,41.0
+03/07/2020,53608.0,1316.0,Not Available,Not Available,Not Available,2.45%,17.28,17276.0,41.0
+04/07/2020,54483.0,1325.0,Not Available,Not Available,Not Available,2.43%,17.56,17558.0,41.0
+06/07/2020,56584.0,1390.0,Not Available,Not Available,Not Available,2.46%,18.24,18235.0,41.0
+07/07/2020,57769.0,1430.0,Not Available,Not Available,Not Available,Not Available,Not Available,Not Available,Not Available
