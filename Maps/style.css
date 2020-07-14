@@ -65,6 +65,7 @@ td, th {
   color: var(--black);
   text-shadow: none;
 }
+
 #map {
   /* position: relative; */
   top: 0;
@@ -74,9 +75,6 @@ td, th {
 }
 
 
-:focus {
-  outline-color: var(--pink);
-}
 
 h1,
 h2,

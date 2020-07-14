@@ -195,13 +195,7 @@ function renderMap(){
     zoom: 1
     });
     
-    const geocoder = new MapboxGeocoder({
-        accessToken:mapboxgl.accessToken
-    });
-
-    map.addControl(geocoder);
-    map.addControl(new mapboxgl.NavigationControl());
-
+        
     map.on('load', async function() {
     // Add a new source from our GeoJSON data and
     // set the 'cluster' option to true. GL-JS will
@@ -214,7 +208,7 @@ function renderMap(){
         crs: { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }},
         features:(coronaData.locations.map(Location => {
 
-            //console.log(placeName);
+            // console.log(Location.location);
 
             return {
                 type:"Feature",
@@ -256,6 +250,7 @@ function renderMap(){
     clusterMaxZoom: 14, // Max zoom to cluster points on
     clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
     });
+    console.log(coronaData.locations[0]);
     
     map.addLayer({
     id: 'clusters',
@@ -332,7 +327,7 @@ function renderMap(){
     }
     );
     });
-    
+
     // When a click event occurs on a feature in
     // the unclustered-point layer, open a popup at
     // the location of the feature, with
@@ -340,7 +335,7 @@ function renderMap(){
     map.on('click', 'unclustered-point', function(event) {
     const coordinates = event.features[0].geometry.coordinates.slice();
     var {description} = event.features[0].properties;
-
+    
     
     // Ensure that if the map is zoomed out such that
     // multiple copies of the feature are visible, the
@@ -348,7 +343,7 @@ function renderMap(){
     while (Math.abs(event.lngLat.lng - coordinates[0]) > 180) {
     coordinates[0] += event.lngLat.lng > coordinates[0] ? 360 : -360;
     }
-    
+ 
     new mapboxgl.Popup()
     .setLngLat(coordinates)
     .setHTML(description)
@@ -363,7 +358,15 @@ function renderMap(){
     });
     });
 }
-
+// function showCoords(event) {
+//     var x = event.clientX;
+//     var y = event.clientY;
+//     var coords = "X coords: " + x + ", Y coords: " + y;
+//     // document.getElementById("countryMaps").innerHTML = coords;
+//     console.log(coords);
+//     document.getElementsByClassName('container').getElementById("countryMaps")[0].style.transition = "transform 0.25s ease";
+    
+//   }
 
 async function initializeApp(){
     //console.log('initialize the app');
@@ -497,12 +500,6 @@ var countryMaps = new mapboxgl.Map({
     center:[0,20]
     }); 
 
-    const geocoder = new MapboxGeocoder({
-        accessToken:mapboxgl.accessToken
-    });
-
-    countryMaps.addControl(geocoder);
-    countryMaps.addControl(new mapboxgl.NavigationControl());
 
     let latitude;
     let longitude;
@@ -540,6 +537,11 @@ function countryData(){
 
         latitude=data[i].latitude;
         longitude=data[i].longitude;
+        // console.log(latitude+longitude); Checking the format
+        countryMaps.on('click', function(e) {
+            var idk = JSON.stringify(e.lngLat);
+            console.log(idk);
+            });
         country=data[i].location;
         confirmedCases=data[i].confirmed.toString();
         deadCases=data[i].dead.toString();
