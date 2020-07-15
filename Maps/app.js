@@ -500,22 +500,16 @@ var countryMaps = new mapboxgl.Map({
     center:[0,20]
     }); 
 
-    // countryMaps.on('click', function(e) {
-    //     var lngClicked = JSON.stringify(e.lngLat.lng);
-    //     var latClicked = JSON.stringify(e.lngLat.lat);
-    //     console.log(lngClicked+latClicked);
-    //     });
 
-    var latitude=[];
-    var longitude=[];
+    var latitude=[], longitude=[];
     let country;
     let confirmedCases;
     let deadCases;
     let recoveredCases;
     let lastUpdate;
     let activeCases;
-    var lngClicked = [];
-    var latClicked = [];
+    var lngClicked;
+    var latClicked;
     
     function getActiveCases(data,index){
         if(data[index].recovered!=0 || recoveredCases!=null)
@@ -535,16 +529,7 @@ var countryMaps = new mapboxgl.Map({
         }
     }*/
 
-// function onClickZoom(lat, long){
-//     countryMaps.on('click', function(e) {
-//         var lngClicked = JSON.stringify(e.lngLat.lng);
-//         var latClicked = JSON.stringify(e.lngLat.lat);
-//         if (latClicked == lat && lngClicked == long) console.log(true+"LOL");
-//         console.log(lngClicked+latClicked);
-//         });
-    
-    
-// }
+
 
 
 function countryData(){
@@ -553,8 +538,8 @@ function countryData(){
     
     for(let i=0;i<Object.keys(data).length;i++){
 
-        latitude.push(Math.abs(data[i].latitude));
-        longitude.push(Math.abs(    data[i].longitude));
+        latitude.push(Math.round(data[i].latitude));
+        longitude.push(Math.round(data[i].longitude));
         // console.log(latitude+longitude); Checking the format
         country=data[i].location;
         confirmedCases=data[i].confirmed.toString();
@@ -569,7 +554,7 @@ function countryData(){
         //console.log(latitude,longitude,country,confirmedCases,deadCases,recoveredCases,lastUpdate)
 
         var popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-            "<strong><em><h2>"+country+"</h2></em></strong><br><strong>Confirmed :</strong>"+confirmedCases+"<br><strong style='color:red'>Death :    </strong>"+deadCases+"<br><strong style='color:green'>Recovered :</strong>"+recoveredCases+"<br><strong>Active    :</strong>"+activeCases+"<br><strong>Last Update:</strong>"+lastUpdate
+            "<div id='popup'><strong><em><h2>"+country+"</h2></em></strong><br><strong>Confirmed :</strong>"+confirmedCases+"<br><strong style='color:red'>Death :    </strong>"+deadCases+"<br><strong style='color:green'>Recovered :</strong>"+recoveredCases+"<br><strong>Active    :</strong>"+activeCases+"<br><strong>Last Update:</strong>"+lastUpdate+"</div>"
         );
         
         var marker = new mapboxgl.Marker({
@@ -584,18 +569,14 @@ function countryData(){
     
 
     countryMaps.on('click', function(e) {
-        lngClicked.push(Number(Math.abs(e.lngLat.lng)));
-        latClicked.push(Number(Math.abs(e.lngLat.lat)));
-        checkOnClick(lngClicked, latClicked);
-    });
-    });
-}
-
-function checkOnClick(lngClicked, latClicked){
-    console.log(typeof(lngclicked));
+        lngClicked = (Number(Math.round(e.lngLat.lng)));
+        latClicked = (Number(Math.round(e.lngLat.lat)));
+        if (latitude.includes(latClicked) && longitude.includes(lngClicked)) console.log(true+"LOL");
+        else console.log(lngClicked+' '+latClicked);
+        // if($("#popup").length) console.log("AGAIN TRUE LOL"); // thinking about using the popup id which comes from the popup function
         
-    // if (latitude.includes(latClicked) && longitude.includes(lngClicked)) console.log(true+"LOL");
-    // else console.log(lngClicked+' '+latClicked);
+    });
+    });
 }
 
 /*function stateData(){
