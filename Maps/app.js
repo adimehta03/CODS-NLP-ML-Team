@@ -250,7 +250,7 @@ function renderMap(){
     clusterMaxZoom: 14, // Max zoom to cluster points on
     clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
     });
-    console.log(coronaData.locations[0]);
+    // console.log(coronaData.locations[0]);
     
     map.addLayer({
     id: 'clusters',
@@ -500,15 +500,22 @@ var countryMaps = new mapboxgl.Map({
     center:[0,20]
     }); 
 
+    // countryMaps.on('click', function(e) {
+    //     var lngClicked = JSON.stringify(e.lngLat.lng);
+    //     var latClicked = JSON.stringify(e.lngLat.lat);
+    //     console.log(lngClicked+latClicked);
+    //     });
 
-    let latitude;
-    let longitude;
+    var latitude=[];
+    var longitude=[];
     let country;
     let confirmedCases;
     let deadCases;
     let recoveredCases;
     let lastUpdate;
     let activeCases;
+    var lngClicked = [];
+    var latClicked = [];
     
     function getActiveCases(data,index){
         if(data[index].recovered!=0 || recoveredCases!=null)
@@ -528,6 +535,17 @@ var countryMaps = new mapboxgl.Map({
         }
     }*/
 
+// function onClickZoom(lat, long){
+//     countryMaps.on('click', function(e) {
+//         var lngClicked = JSON.stringify(e.lngLat.lng);
+//         var latClicked = JSON.stringify(e.lngLat.lat);
+//         if (latClicked == lat && lngClicked == long) console.log(true+"LOL");
+//         console.log(lngClicked+latClicked);
+//         });
+    
+    
+// }
+
 
 function countryData(){
     fetch("https://www.trackcorona.live/api/countries").then(response => response.json()).then(fjson => {
@@ -535,13 +553,9 @@ function countryData(){
     
     for(let i=0;i<Object.keys(data).length;i++){
 
-        latitude=data[i].latitude;
-        longitude=data[i].longitude;
+        latitude.push(Math.abs(data[i].latitude));
+        longitude.push(Math.abs(    data[i].longitude));
         // console.log(latitude+longitude); Checking the format
-        countryMaps.on('click', function(e) {
-            var idk = JSON.stringify(e.lngLat);
-            console.log(idk);
-            });
         country=data[i].location;
         confirmedCases=data[i].confirmed.toString();
         deadCases=data[i].dead.toString();
@@ -563,13 +577,27 @@ function countryData(){
             id:"marker",
             scale:0.3
         })
-        .setLngLat([ longitude,latitude])
+        .setLngLat([ longitude[i],latitude[i]])
         .addTo(countryMaps)
         .setPopup(popup);
-        }
-    });
+    };
     
+
+    countryMaps.on('click', function(e) {
+        lngClicked.push(Number(Math.abs(e.lngLat.lng)));
+        latClicked.push(Number(Math.abs(e.lngLat.lat)));
+        checkOnClick(lngClicked, latClicked);
+    });
+    });
 }
+
+function checkOnClick(lngClicked, latClicked){
+    console.log(typeof(lngclicked));
+        
+    // if (latitude.includes(latClicked) && longitude.includes(lngClicked)) console.log(true+"LOL");
+    // else console.log(lngClicked+' '+latClicked);
+}
+
 /*function stateData(){
     fetch("https://www.trackcorona.live/api/provinces").then(response => response.json()).then(fjson => {
     const data = fjson.data
