@@ -1,5 +1,5 @@
 mapboxgl.accessToken = "pk.eyJ1Ijoic3VtdWtoYmhhdDI3MDEiLCJhIjoiY2tja3cxc3drMXh3ZDJxcGY4ZnJzaWx4bSJ9.HWGh19cxLpx4q8d_sTxLPA";
-let geocoder;
+
 function clusterMaps()
 {
     window.addEventListener('DOMContentLoaded',initializeApp);
@@ -203,7 +203,7 @@ function renderMap(){
     zoom: 1
     });
     
-    geocoder = new MapboxGeocoder({
+    const geocoder = new MapboxGeocoder({
         accessToken:mapboxgl.accessToken
     });
     map.addControl(geocoder);
@@ -568,11 +568,6 @@ function countryData(){
         center:[0,20]
         }); 
         
-        geocoder = new MapboxGeocoder({
-            accessToken:mapboxgl.accessToken
-        });
-        countryMaps.addControl(geocoder);
-        countryMaps.addControl(new mapboxgl.NavigationControl());
     
         
         let country;
