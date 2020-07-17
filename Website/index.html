@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>CODS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    	window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+	};
+    </script>
+</head>
+<body>
+
+    <!-- the header -->
+    <header>
+
+        <!-- our main logo -->
+        <a id="logo" href="index.html">
+            <img src="img/corona.png" alt="Logo">
+            <span>CODS</span>
+        </a>
+
+        <!-- main navigation links -->
+        <nav>
+            <ul>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">EVA</a></li>
+                <li><a href="#section3">COVID-19 Tracker</a></li>
+                <li><a href="#section4">Predictor</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
+
+    <!-- the content -->
+    <main>
+
+        <!-- hero content -->
+        <div class="hero">
+            <!-- content for the hero -->
+            <div class="hero-content">
+                <h2 class="hero-title">Our fight against COVID-19. Stay safe.</h2>
+                              <a href="https://www.mohfw.gov.in/" target="_blank" class="w-inline-block"><img src="img/Covid-19.jpg" alt="MOHFW" srcset="img/Covid-19.jpg 500w, img/Covid-19.jpg 791w" sizes="(max-width: 991px) 100vw, 945px" class="image"></a>
+                             <br><br>
+                <a href="#section1">Learn More</a>
+            </div>
+        </div>
+
+        <!-- about section -->
+        <section class="about" id="section1"> 
+        <div class="site-section">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>ABOUT</h2>
+            </div>
+
+            <div class="about-box">
+                <h5>1. Emotional Virtual Assistant<br>
+                    2. COVID-19 Tracker<br>
+                    3. Case Predictor Model<br> </h5>
+                <p>A multi-functional page, helping you to be ahead of what's out there!</p>
+            </div>
+
+        </div>
+        </div>
+        </section>
+
+        <!-- EVA section -->
+        
+        <div class="site-section site-section-secondary" id="section2">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>EVA</h2>
+            </div>
+
+            <div class="eva-img">
+            	<img class="eimage" src="img/chatbot.png" alt="chat" width="150px" height="140px" >
+            	<div class="overlay">
+    				<div class="text">EVA says Hi!</div>
+  				</div>
+            </div>
+            <div class="eva-box">
+                <div class="eva-content">
+                    Emotional Virtual Assistant<br> 
+                    Tiny conversations to feel your best!
+                    <br><br>
+                    A mental health chatbot to help you out in these hard times<br>
+                    Also answers FAQs on the current pandemic
+                </div>
+
+                
+            </div>
+            <br>
+            <div class="eva-button">
+            	<button class="eva button">TRY EVA</button>
+            </div>
+        </div>
+        </div>
+
+    <!-- tracker map section -->
+        <section class="tracker" id="section3"> 
+        <div class="site-section site-section-three">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>COVID-19 TRACKER</h2>
+            </div>
+
+            <div class="tracker-box">
+                <h5>Real time plot of the number of cases per each country, on the world map</h5>
+            </div>
+            <br>
+            <div class="tracker-button">
+            	<button class="tracker button" id="maptrack" onclick="window.open(href='map/index.html');">GO TO THE MAP</button>
+            </div>
+
+        </div>
+        </div>
+        </section>
+
+        <!-- predictor section -->
+        
+        <div class="site-section site-section-fourth" id="section4">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>PREDICTOR MODEL</h2>
+            </div>
+
+            <div class="predictor-box">
+                <div class="predictor-content">
+                    Peaking of cases predicted by our ML Model<br> 
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        
+    </main>
+
+    <!-- the footer -->
+    <footer>
+        <span>Center of Data Science 2020</span>
+    </footer>
+
+</body>
+</html>
