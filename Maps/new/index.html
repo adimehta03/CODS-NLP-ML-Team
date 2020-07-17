@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Maps</title>
+  <link type="text/css" href='styles.css'></link>
+</head>
+<body>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="http://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script>
+  <div>
+    <div id="country-container"></div>
+    <div id="state-container"></div>
+  </div>
+  
+
+  <script>
+    fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => response.json()).then(fdata => {
+        // Data is joined to map using value of ['hc-key',value'] property by default.
+        let hc_key = ['nct of delhi','goa','puducherry','madhya pradesh','uttar pradesh','karnataka','nagaland','bihar','lakshadweep','andaman and nicobar','assam','west bengal','punducherry','daman and diu','gujarat','rajasthan','dadara and nagar havelli','chhattisgarh','tamil nadu','chandigarh','punjab','haryana','andhra pradesh','maharashtra','himachal pradesh','meghalaya','kerala','telangana','mizoram','tripura','manipur','arunanchal pradesh','jharkhand','odisha','jammu and kashmir','sikkim','uttarakhand'];
+        //console.log(fdata)
+        let data = fdata.data.regional;
+        let chartData=[];
+
+        for(let i=0;i<data.length;i++){
+            if(hc_key.includes(data[i].loc.toLowerCase())){
+                chartData.push([data[i].loc.toLowerCase(),data[i].totalConfirmed-data[i].deaths-data[i].discharged]);
+            }
+            else{
+                chartData.push([data[i].loc.toLowerCase(),'No information',i]);
+            }
+        }
+        let j;
+        for(let i=0;i<chartData.length;i++){
+            if(chartData[i][0]=='andaman and nicobar islands'){
+                chartData[i][0]=chartData[i][0].replace('andaman and nicobar islands','andaman and nicobar');
+                chartData[i][1]=data[chartData[i][2]].totalConfirmed-data[chartData[i][2]].deaths-data[chartData[i][2]].discharged;
+                chartData[i].pop();
+                chartData[i]=[chartData[i][0],chartData[i][1]]
+            }
+            if(chartData[i][0]=='arunachal pradesh'){
+                chartData[i][0]=chartData[i][0].replace('arunachal pradesh','arunanchal pradesh');
+                chartData[i][1]=data[chartData[i][2]].totalConfirmed-data[chartData[i][2]].deaths-data[chartData[i][2]].discharged;
+                chartData[i].pop();
+                chartData[i]=[chartData[i][0],chartData[i][1]]
+            }
+            if(chartData[i][0]=='dadra and nagar haveli and daman and diu'){
+                chartData[i][0]=chartData[i][0].replace('dadra and nagar haveli and daman and diu','daman and diu');
+                chartData[i][1]=data[chartData[i][2]].totalConfirmed-data[chartData[i][2]].deaths-data[chartData[i][2]].discharged;
+                chartData[i].pop();
+                chartData[i]=[chartData[i][0],chartData[i][1]]
+            }
+            if(chartData[i][0]=='delhi'){
+                chartData[i][0]=chartData[i][0].replace('delhi','nct of delhi');
+                chartData[i][1]=data[chartData[i][2]].totalConfirmed-data[chartData[i][2]].deaths-data[chartData[i][2]].discharged;
+                chartData[i].pop();
+                chartData[i]=[chartData[i][0],chartData[i][1]]
+            }
+            if(chartData[i][0]=='ladakh'){
+               chartData[i].pop();
+               chartData[i]=[chartData[i][0],chartData[i][1]]
+            }
+        }
+
+
+        // Create the chart
+        var chart = Highcharts.mapChart('country-container', {
+            chart: {
+                height:600,
+                width:600,
+                map: 'countries/in/custom/in-all-disputed'
+            },
+
+            title: {
+                text: 'COVID-19 in India'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'top'
+                }
+            },
+
+            colorAxis: {
+                min: 300
+            },
+            series: [{
+                data: chartData,
+                name: 'Active Cases',
+                states: {
+                    hover: {
+                        color: 'purple',
+
+                    }
+                }
+            }]
+        });
+        window.onmouseover=function(e) {
+            let string = e.target.className.baseVal;
+            let state=string.slice(string.indexOf('key')+4,string.indexOf('highcharts-point-hover')-1);
+
+            if(hc_key.includes(state)){
+                document.getElementById('state-container').innerHTML="html code for "+state+" 's graphs";
+            }
+            else{
+                document.getElementById('state-container').innerHTML=''
+            }
+
+        }
+    });
+
+
+      
+  </script>
+
+
+</body>
+</html>

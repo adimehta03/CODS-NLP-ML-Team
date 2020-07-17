@@ -1,0 +1,12 @@
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: red;
+}
+
+#country-container{
+    float:left;
+}
+#state-container{
+    float:right;
+}
