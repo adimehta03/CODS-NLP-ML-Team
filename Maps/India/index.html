@@ -1,0 +1,113 @@
+
+<html>
+	<head>
+
+		<title>
+			India Map
+		</title>
+
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://colorbrewer2.org/export/colorbrewer.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		
+		<style type="text/css">
+			.d3-tip {
+			  line-height: 1;
+			  font-weight: bold;
+			  padding: 12px;
+			  background: black;
+			  color: #fff;
+			  border-radius: 2px;
+			  opacity: 0.001%;
+			}
+			.d3-tip:after {
+			  box-sizing: border-box;
+			  display: inline;
+			  font-size: 10px;
+			  width: 100%;
+			  line-height: 1;
+			  color: black;
+			  content: "\25BC";
+			  position: absolute;
+			  text-align: center;
+			  opacity: 0.001%;
+			}
+
+			.d3-tip.n:after {
+			  margin: -1px 0 0 0;
+			  top: 100%;
+			  left: 0;
+			  opacity: 0.001%;
+			}
+			
+			.area:hover {
+				fill: #3a3b3d;
+				opacity: 1;
+				cursor: pointer;
+			}
+
+			h2 {
+				margin-left: 300px;
+			}
+			body {
+				margin-top: 0px;
+			}
+            #states{
+                position: relative;
+            }
+		</style>
+	</head>
+	<body>
+		<script>
+
+			var canvas= d3.select("body").append("svg")
+					.attr("width", 1000)
+					.attr("height", 650)
+					.attr("fill", "grey");
+					
+			d3.json("states.json", function(data){
+
+				var tip = d3.tip()
+					.attr('class', 'd3-tip')
+					.offset([-10, 0])
+					.html(function(d) {
+						return ("<center>State :</center>"+d.id);
+					});
+				
+				canvas.call(tip);
+				
+				var group=canvas.selectAll("g")
+					.data(data.features)
+					.enter()
+					.append("g")
+					.on('mouseover', tip.show)
+					.on('mouseout', tip.hide)
+						
+					var projection = d3.geo.mercator().scale(1000).translate([-1000,700]);
+					
+					var path= d3.geo.path().projection(projection);
+
+					var areas= group.append("path")
+						.attr("d", path)
+						.attr("class", "area")
+                        .attr("fill", "#5a5a5e")
+                        .attr("opacity", "1")
+				});
+            </script>
+            <div id="states">
+                <script>
+                    fetch("states.json")
+                    .then(response => response.json())
+                    .then(json => {
+                        // console.log(Object.keys(json).length);
+                        for(let i=0; i<37; i++)
+                        {
+                            console.log(json.features[i].id);
+                        }
+                    }
+                    );
+                </script>
+			</div>
+			
+	</body>
+</html>
