@@ -1,3 +1,0 @@
-ujson==2.0.3
-tensorflow==2.1.0
-rasa==1.10.0
