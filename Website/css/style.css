@@ -21,13 +21,16 @@ body     {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Forkme on GitHub */
+.github-fork-ribbon.right-bottom:before{
+  color: #1b1b1b;
+}
 /* styling our header */
-header   {
+#navbar   {
   background: #222;
   color: #FFF;
   padding: 20px 30px;
 }
-
 /* logo */
 #logo         {
   display: inline-block;
@@ -43,7 +46,7 @@ header   {
 }
 #logo span   {
   display: inline-block;
-}
+} 
 
 /* main navigation */
 nav     {
@@ -71,7 +74,9 @@ nav ul li a    {
 }
 nav ul li a:hover   {
   background: #444;
-}
+  text-decoration: none;
+  color: #fff;
+} 
 
 /* styling our footer */
 footer   {
@@ -115,7 +120,10 @@ footer img   {
   text-decoration: none;
   font-size: 28px;
 }
-
+.hero-content a:hover{
+  background-color: #FFF;
+  color: #1b1b1b;
+}
 /* basic site sections */
 .site-section   {
   padding-bottom: 50px;
@@ -151,17 +159,14 @@ footer img   {
 
 /* about boxes */
 .about-box   {
-  display: inline-block;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 470px;
   background: #1b1b1b;
 }
 
 .about-box h5   {
   font-size: 20px;
   color: #6b6b6b;
+  text-indent: center;
+  padding: 7% 20% 7% 38%;
   font-weight: 300;
   letter-spacing: 2px;
   margin: 0;
@@ -169,18 +174,16 @@ footer img   {
 
 .about-box p {
   color: #9c8686;
-  text-indent: -145px;
+  text-indent: center;
   font-weight: 900;
   font-family: verdana;
+  padding: 1% 25% 1% 35%;
 }
 
 /* EVA boxes */
 .eva-box   {
   display: inline-block;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 120px;
+  padding: 50px 30px 50px 120px;
   background: #023037;
 }
 .eva-content   {
@@ -257,10 +260,7 @@ footer img   {
 /* tracker boxes */
 .tracker-box   {
   display: inline-block;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 240px;
+  padding: 50px 30px 50px 240px;
   background: #1b1b1b;
 }
 
@@ -310,4 +310,8 @@ footer img   {
   text-align: center;
   border-radius: 4px;
   margin-bottom: 15px;
+}
+
+.model-button {
+  text-align: center;
 }
