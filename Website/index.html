@@ -3,24 +3,24 @@
 <head>
 	<meta charset="UTF-8">
     <title>CODS</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script>
     	window.onbeforeunload = function () {
-    window.scrollTo(0,0);
+        window.scrollTo(0,0);
 	};
-    </script>
+    </script> 
 </head>
 <body>
-
+    <!-- <a class="github-fork-ribbon right-bottom fixed" href="https://github.com/saksham49/CODS-NLP-ML-Team/tree/master/Website" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
     <!-- the header -->
-    <header>
+    <header id="navbar">
 
         <!-- our main logo -->
         <a id="logo" href="index.html">
             <img src="img/corona.png" alt="Logo">
             <span>CODS</span>
-        </a>
+        </a> 
 
         <!-- main navigation links -->
         <nav>
@@ -29,9 +29,37 @@
                 <li><a href="#section2">EVA</a></li>
                 <li><a href="#section3">COVID-19 Tracker</a></li>
                 <li><a href="#section4">Predictor</a></li>
+                <li><a href="#section4">News and Tweets</a></li>
             </ul>
-        </nav>
-
+        </nav> 
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                    <img src="img/corona.png" alt="Logo">
+                  </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#section1">About
+                          <span class="sr-only">(current)</span>
+                        </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section2">EVA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section3">COVID-19 Tracker</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section4">Predictor</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> -->
     </header>
 
     
@@ -137,7 +165,9 @@
                 <div class="predictor-content">
                     Peaking of cases predicted by our ML Model<br> 
                 </div>
-                
+            </div>
+            <div class="model-button">
+            	<button class="model button">TRY OUR MODEL</button>
             </div>
         </div>
         </div>
@@ -146,7 +176,8 @@
 
     <!-- the footer -->
     <footer>
-        <span>Center of Data Science 2020</span>
+        <span>Center of Data Science, PES University 2020</span>
+        <!-- Include all the libraries, languages and frameworks used to build the website -->
     </footer>
 
 </body>
