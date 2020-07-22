@@ -5,7 +5,7 @@ function createMap(cData){
 					.attr("height", '75%')
 					.attr("fill", "grey");
 					
-    d3.json("states.json", function(data){
+    d3.json("https://raw.githubusercontent.com/saksham49/CODS-NLP-ML-Team/master/Maps/India/India/states.json", function(data){
     
     var tip = d3.tip()
         .attr('class', 'd3-tip')
@@ -44,7 +44,7 @@ function createMap(cData){
     } );
 }
 function appendCases(coronaData){
-    fetch('states.json')
+    fetch('https://raw.githubusercontent.com/saksham49/CODS-NLP-ML-Team/master/Maps/India/India/states.json')
         .then(response => response.json())
         .then(data => {
             

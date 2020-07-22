@@ -1,4 +1,3 @@
-
 <html>
 	<head>
 
@@ -9,6 +8,7 @@
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 		<script src="http://colorbrewer2.org/export/colorbrewer.js"></script>
 		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
 		
 		<style type="text/css">
 			.d3-tip {
@@ -59,13 +59,12 @@
 	</head>
 	<body>
 		<script>
-
 			var canvas= d3.select("body").append("svg")
 					.attr("width", 1000)
 					.attr("height", 650)
 					.attr("fill", "grey");
 					
-			d3.json("states.json", function(data){
+			d3.json("https://raw.githubusercontent.com/saksham49/CODS-NLP-ML-Team/master/Maps/India/states.json", function(data){
 
 				var tip = d3.tip()
 					.attr('class', 'd3-tip')
@@ -96,7 +95,7 @@
             </script>
             <div id="states">
                 <script>
-                    fetch("states.json")
+                    fetch("https://raw.githubusercontent.com/saksham49/CODS-NLP-ML-Team/master/Maps/India/states.json")
                     .then(response => response.json())
                     .then(json => {
                         // console.log(Object.keys(json).length);

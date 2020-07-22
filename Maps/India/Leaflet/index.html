@@ -7,13 +7,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <style>
+    #container {
+    margin: auto;
+    }
+    #map {
+        float: right;
+    }
+    #legend1 {
+        float: left;
+    }
+  </style>
   
   <style>
-    #map{ height: 100% }
+    #map{ height: 100% ;width:95%}
   </style>
 </head>
 <body>
+  <div id="container">
+    <div id="map"><script src="./assets/Indian_States.js"></script><script src="../India/js/zoom.js"></script><script src="index.js"></script></div>
+    <br><br><br><br><br><br><br><br><br>
+    <div id="legend1" style="display: inline-block"></div>
+  </div>
+  
 
-  <div id="map"><script src="./assets/Indian_States.js"></script><script src="../India/js/zoom.js"></script><script src="index.js"></script></div>
+
 </body>
 </html>
