@@ -8,6 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <style>
@@ -33,6 +34,111 @@
     }
       text { 
         fill: white;
+    }
+    #filterButton{
+      position: absolute;
+      bottom: 0;
+      z-index: 3;
+    }
+    #tccButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: red;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #tccButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #tccButton:hover{
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #acButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: blue;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #acButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #acButton:hover{
+      cursor: pointer;
+      background-color: blue;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #recoveredButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: green;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #recoveredButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #recoveredButton:hover{
+      cursor: pointer;
+      background-color: green;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #dButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: grey;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #dButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #dButton:hover{
+      cursor: pointer;
+      background-color: grey;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
     }
     /* #button-marked{
       position: relative;
@@ -90,12 +196,14 @@
   </div>
 
   <!-- INSTEAD OF PUTTING BUTTONS USE EITHER SPAN OR DIV AND USE ID WITH EVENT LISTENER IN ORDER TO MAKE THE APP.js MORE DYNAMIC -->
-  <!-- <button onclick="active()">ACTIVE</button>
-  <button onclick="total()">Total</button>
-  <button onclick="recovered()">Recovered</button>
-  <button onclick="deaths()">DEATHS</button> -->
+  <!-- <button onclick="active()">ACTIVE</button> -->
+<div id="filterButton"> 
+  <div id="tccButton"><span>Total Confirmed Cases</span></div>
 
-
+  <div id="acButton"><span>Active Cases</span></div>
+  <div id="recoveredButton"><span>Recovered</span></div>
+  <div id="dButton"><span>Deaths</span></div>
+</div>
 
   <!-- <div id="on-load" onload="javascript:hideIntro()">
     <h1>ESC - Recenter the Map.<br>Double Tap anywhere on the map to zoom to that point.</h1>
