@@ -1,15 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import tweepy
 import json
 import pandas as pd
 from langdetect import detect
 from datetime import datetime 
 from datetime import timedelta
+# import sys
 
 consumer_key = "cFf7im7BH68xO9qh3zEsv3nFz"
 consumer_secret = "2QyodEVK63XYE5D9RFPAo0I53rhBOsNocQGpGB8rapmEqxDnJi"
@@ -21,7 +19,8 @@ auth.set_access_token(access_key, access_secret)
 api = tweepy.API(auth) 
 
 # screenname = input("Enter the twitter screen name: ")
-screenname="narendramodi"
+# screenname=sys.argv[1]
+screenname = "narendramodi";
 
 tweets = api.user_timeline(screen_name=screenname,count=200,tweet_mode="extended")  
 
@@ -47,5 +46,5 @@ for status in tweets:
     
 df = pd.DataFrame({"Tweets":tweet,"Most Recent":tweets_dates})
 df.to_csv(screenname+'.csv')
-# df
+print(df)
 

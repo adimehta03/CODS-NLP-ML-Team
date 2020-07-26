@@ -35,7 +35,7 @@ for i in img:
     img_url.append(i[1])
 df = pd.DataFrame({"Image URL":img_url})
 df.to_csv(screenname+'.csv')
-# df
+print(df)
 
 
 # In[2]:
@@ -77,7 +77,7 @@ for i in img:
 df = pd.DataFrame({"Tweets":tweet,"Date Created":tweets_dates,"Image URL":img_url})
 df.to_csv(screenname+'.csv')
 df["Date Created"]=df['Date Created'].dt.date
-# df
+print(df)
 
 
 # In[3]:
@@ -117,6 +117,7 @@ df2 = pd.DataFrame(columns = title, data = cases)
 
 df2["Date Created"] = df["Date Created"]
 
+print(df2)
 
 # In[6]:
 
