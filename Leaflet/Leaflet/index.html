@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>A Leaflet map!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/leaflet.css"/>
+  <script src="./assets/js/leaflet.js"></script>
+  <script src="./assets/js/leaflet-providers.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+  <div id="body">
+    <div id="container">
+      <div id="map"></div>
+      <br><br><br><br><br><br><br><br><br>
+      <div id="legend1" style="display: inline-block"></div>
+    </div>
+
+    <div id="filterButton"> 
+      <div id="tccButton"><span>Total Confirmed Cases</span></div>
+      <div id="acButton"><span>Active Cases</span></div>
+      <div id="recoveredButton"><span>Recovered</span></div>
+      <div id="dButton"><span>Deaths</span></div>
+    </div>
+  </div>
+
+
+
+  <!-- <div id="on-load">
+    <h1>ESC - Recenter the Map.<br>Double Tap anywhere on the map to zoom to that point.</h1>
+  </div> -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#body').show();
+    });
+  </script>
+  <script src="./assets/Indian_States.js"></script><script src="index.js"></script>
+  
+</body>
+</html>
