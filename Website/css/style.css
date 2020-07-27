@@ -96,7 +96,7 @@ footer img   {
 .hero           {
   min-height: 800px;
   text-align: center;
-  background-image: url('../img/landing.jpg');
+  background-image: url('../img/lander.jpg');
   background-size: cover;
 }
 .hero-content   {
@@ -128,16 +128,16 @@ footer img   {
 .site-section   {
   padding-bottom: 50px;
   padding-top: 50px;
-  background: #1b1b1b;
+  background: #023037;
 }
 .site-section-secondary   {
-  background: #023037;
-}
-.site-section-three   {
   background: #1b1b1b;
 }
-.site-section-fourth   {
+.site-section-three   {
   background: #023037;
+}
+.site-section-fourth   {
+  background: #1b1b1b;
 }
 .site-section-inside   {
   width: 80%;
@@ -159,7 +159,7 @@ footer img   {
 
 /* about boxes */
 .about-box   {
-  background: #1b1b1b;
+  background: #023037;
 }
 
 .about-box h5   {
@@ -183,8 +183,8 @@ footer img   {
 /* EVA boxes */
 .eva-box   {
   display: inline-block;
-  padding: 50px 30px 50px 120px;
-  background: #023037;
+  padding: 50px 30px 50px 90px;
+  background: #1b1b1b;
 }
 .eva-content   {
   background: #1b1b1b;
@@ -219,7 +219,7 @@ footer img   {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #023037;
+  background-color: #1b1b1b;
 }
 
 .eva-img:hover .overlay {
@@ -253,7 +253,7 @@ footer img   {
 }
 
 .button:hover {
-  background-color: #1b1b1b; 
+  background-color: #023037; 
   color: #0afcaf;
 }
 
