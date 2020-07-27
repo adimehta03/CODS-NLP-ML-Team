@@ -204,9 +204,11 @@ function renderMap(){
     });
     
     const geocoder = new MapboxGeocoder({
-        accessToken:mapboxgl.accessToken
-    });
-    map.addControl(geocoder);
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
+        });
+         
+        document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
     map.addControl(new mapboxgl.NavigationControl());
         
     map.on('load', async function() {

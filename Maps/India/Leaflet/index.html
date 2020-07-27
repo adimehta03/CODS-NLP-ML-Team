@@ -1,12 +1,14 @@
 <html>
 <head>
   <title>A Leaflet map!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/leaflet.css"/>
   <script src="./assets/js/leaflet.js"></script>
   <script src="./assets/js/leaflet-providers.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <style>
@@ -14,25 +16,199 @@
     margin: auto;
     }
     #map {
-        float: right;
+        position: absolute;
+        /* float: right; */
+        z-index: 1;
     }
     #legend1 {
-        float: left;
+        position: relative;
+        /* float: left; */
+        z-index: 3;
     }
+    /* fanon */
+    .axis path {
+        stroke: white;
+    }
+      .axis line {
+        stroke: white;
+    }
+      text { 
+        fill: white;
+    }
+    #filterButton{
+      position: absolute;
+      bottom: 0;
+      z-index: 3;
+    }
+    #tccButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: red;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #tccButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #tccButton:hover{
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #acButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: blue;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #acButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #acButton:hover{
+      cursor: pointer;
+      background-color: blue;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #recoveredButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: green;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #recoveredButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #recoveredButton:hover{
+      cursor: pointer;
+      background-color: green;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #dButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: grey;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #dButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #dButton:hover{
+      cursor: pointer;
+      background-color: grey;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    /* #button-marked{
+      position: relative;
+      z-index: 3;
+      padding: 14em 50% 0 45%;
+    }
+    #button-marked #checkbox {
+      display: none;
+    }
+
+    #button-marked .square {
+      position: fixed;
+      bottom: 0;
+      border-radius: 50%;
+      background-color: #1cb98f!important;box-shadow: 0 2px 5px 0 rgba(81,177,153,0.377)important;
+      width: 3.5em;
+      height: 3.5em;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      cursor: pointer;
+      transition: all 0.75s 0.25s;
+      transform: rotate(0);
+    }
+
+    #button-marked #checkbox:checked + #button-marked .square {
+      transform: rotate(180deg);
+    }
+    i{
+      padding:22.0 20px 21px 20px;
+    } */
+    
   </style>
   
   <style>
-    #map{ height: 100% ;width:95%}
+    #map{ height: 100% ;width:100%}
   </style>
 </head>
 <body>
   <div id="container">
-    <div id="map"><script src="./assets/Indian_States.js"></script><script src="../India/js/zoom.js"></script><script src="index.js"></script></div>
+    <div id="map"><script src="./assets/Indian_States.js"></script><script src="index.js"></script></div>
     <br><br><br><br><br><br><br><br><br>
     <div id="legend1" style="display: inline-block"></div>
+    <!-- <div id="button-marked" class="marked-map">
+      <label for="checkbox">
+        <input type="checkbox" id="checkbox">
+          <div class="square toggle-down" onclick="clickHandlerCenter()">
+            <i class="fa fa-map" aria-hidden="true"></i>
+          </div>
+        </label>
+    </div> -->
   </div>
-  
 
+  <!-- INSTEAD OF PUTTING BUTTONS USE EITHER SPAN OR DIV AND USE ID WITH EVENT LISTENER IN ORDER TO MAKE THE APP.js MORE DYNAMIC -->
+  <!-- <button onclick="active()">ACTIVE</button> -->
+<div id="filterButton"> 
+  <div id="tccButton"><span>Total Confirmed Cases</span></div>
+
+  <div id="acButton"><span>Active Cases</span></div>
+  <div id="recoveredButton"><span>Recovered</span></div>
+  <div id="dButton"><span>Deaths</span></div>
+</div>
+
+  <!-- <div id="on-load" onload="javascript:hideIntro()">
+    <h1>ESC - Recenter the Map.<br>Double Tap anywhere on the map to zoom to that point.</h1>
+    <script src="index.js"></script>
+  </div> -->
 
 </body>
 </html>
