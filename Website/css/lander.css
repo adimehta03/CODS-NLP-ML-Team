@@ -180,7 +180,7 @@ html {
 .hero           {
     min-height: 800px;
     text-align: center;
-    background-image: url('../img/1.jpg');
+    background-image: url('../img/lander.jpg');
     background-size: cover;
   }
   .hero-content   {
