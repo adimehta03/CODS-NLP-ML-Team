@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>CODS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="css/lander.css">
+    <script src="script/lander.js"></script>
+    <script>
+    	window.onbeforeunload = function () {
+        window.scrollTo(0,0);
+	};
+    </script> 
+</head>
+<body>
+    <!-- <a class="github-fork-ribbon right-bottom fixed" href="https://github.com/saksham49/CODS-NLP-ML-Team/tree/master/Website" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+    <!-- the header -->
+    <header id="navbar">
+
+        <!-- our main logo -->
+        <a id="logo" href="lander.html">
+            <img src="img/corona.png" alt="Logo">
+            <span>CODS</span>
+        </a> 
+        <nav>
+            <ul>
+                <li><a href="map.html">COVID-19 Tracker</a></li>
+                <li><a href="#section4">Predictor</a></li>
+                <li><a href="#section2">EVA</a></li>
+                <li><a href="#section4">News and Tweets</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        
+        <!-- hero content -->
+        <div class="hero">
+            <!-- content for the hero -->
+            <div class="hero-content">
+                <h1 class="hero-title">Our fight against <span style="color:#991a1a">COVID-19.</span><span style="color:#47ce3b"> Stay safe.</span></h1>
+            </div>
+            <br><br>
+            <div class="stats">
+                <!-- content for the hero -->
+                <div class="container">
+                    <h2 style="color: blanchedalmond;text-align: center;">The World and COVID-19</h2>
+                    <div class="board">
+                      <div class="card d"><i class="fa fa-tachometer"></i><h5>Total Cases</h5><span id="Wcases"></span></div>
+                      <div class="card r"><i class="fa fa-th-list"></i><h5>Deaths</h5><span id="Wdeaths"></span></div>
+                      <div class="card t"><i class="fa fa-times-circle"></i><h5>Recovered</h5><span id="Wrecovered"></span></div>
+                    </div>
+                    <h2 style="color: blanchedalmond;text-align: center;">India and COVID-19</h2>
+                    <div class="board">
+                      <div class="card d"><i class="fa fa-times"></i><h5>Total Cases</h5><span id="Icases"></span></div>
+                      <div class="card r"><i class="fa fa-check-square-o"></i><h5>Deaths</h5><span id="Ideaths"></span></div>
+                      <div class="card t"><i class="fa fa-eye"></i><h5>Recovered</h5><span id="Irecovered"></span></div>
+                    </div>
+                    <h2 style="color: blanchedalmond;text-align: center;">Karnataka and COVID-19</h2>
+                    <div class="board">
+                        <div class="card d"><i class="fa fa-times"></i><h5>Total Cases</h5><span id="Kcases"></span></div>
+                        <div class="card r"><i class="fa fa-check-square-o"></i><h5>Deaths</h5><span id="Kdeaths"></span></div>
+                        <div class="card t"><i class="fa fa-eye"></i><h5>Recovered</h5><span id="Krecovered"></span></div>
+                    </div>
+            </div>
+            
+            <div class="row">
+                <div class="column" style="background-color:#023037;">
+                    <h2 style="color: #037385;">TRACKER</h2><br>
+                    <p>Realtime relay of the COVID-19 cases all around the world</p><br>
+                    <div class="tracker-button">
+                        <button class="tracker button" id="maptrack" onclick="window.open(href='map.html');">GO TO THE MAP</button>
+                    </div>
+                </div>
+
+                <div class="column" style="background-color:#024049;">
+                    <h2 style="color: aquamarine;">PREDICTOR</h2><br>
+                    <p>Predicton of number of COVID-19 cases on a specific date</p><br>
+                    <div class="predictor-button">
+                        <button class="predictor button" id="casetrack" onclick="window.open(href='#');">CHECK MODEL</button>
+                    </div>
+                </div>
+
+                <div class="column" style="background-color:#035966;">
+                    <h2 style="color: aqua;">EVA</h2><br>
+                    <p>Our Emotinal Virtual Assistant, here to assist you in these hard times</p><br>
+                    <div class="eva-button">
+                        <button class="eva button">TRY EVA</button>
+                    </div>
+                </div>
+
+                <div class="column" style="background-color:#037385;">
+                    <h2 style="color: #023037;">NEWS AND TWEETS</h2><br>
+                    <p> Latest news and important tweets concerning the pandemic</p><br>
+                    <div class="news-button">
+                        <button class="news button" onclick="window.open(href='#');">YES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- govt page-->
+        <div class="official-page" style="background-color: black;text-align: center;vertical-align: middle;">
+            <div class="hero-content">
+                <h2 class="hero-title">For more details, visit:</h2>
+                <div class="something"><a href="https://www.mohfw.gov.in/" target="_blank" class="w-inline-block"><img src="img/Covid-19.jpg" alt="MOHFW" srcset="img/Covid-19.jpg 500w, img/Covid-19.jpg 791w" sizes="(max-width: 991px) 100vw, 945px" class="image"></a></div>
+            </div>
+        </div>
+
+         <!-- the footer -->
+         <footer>
+            <span>Center of Data Science, PES University 2020</span>
+        <!-- Include all the libraries, languages and frameworks used to build the website -->  
+        </footer>
+    </main>
+</body>
+</html>
