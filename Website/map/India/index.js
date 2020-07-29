@@ -32,22 +32,23 @@ let rcList=[];
 map.on('doubleclick', function(e) {
       map.panTo(e.latlng);
 });
-map.on('click', function(e) {
-  closeNav();
-  console.log(e.target.getBounds());
-  var i;
-  northEast = e.target.getBounds()._northEast;
-  southWest = e.target.getBounds()._southWest;
-  console.log(northEast.lat,northEast.lng);
-  console.log(southWest.lat,southWest.lng);
+// map.on('click', function(e) {
+//   closeNav();
+//   // console.log(e.target.getBounds());
+//   // var i;
+//   // northEast = e.target.getBounds()._northEast;
+//   // southWest = e.target.getBounds()._southWest;
+//   // console.log(northEast.lat,northEast.lng);
+//   // console.log(southWest.lat,southWest.lng);
 
-  if((northEast.lat >= 35.75097043944928-1 && northEast.lat <= 35.75097043944928 + 1) && northEast.lng == 79.70031738281251 && southWest.lat == 32.01273389791075 && southWest.lng == 73.62487792968751)
-  {
-   i=13
-   console.log(true);
-  }
-  openNav(i);
-});
+//   // if((northEast.lat >= 35.75097043944928-1 && northEast.lat <= 35.75097043944928 + 1) && northEast.lng == 79.70031738281251 && southWest.lat == 32.01273389791075 && southWest.lng == 73.62487792968751)
+//   // {
+//   //  i=13
+//   //  console.log(true);
+//   // }
+
+//   openNav(i);
+// });
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWRpbWVodGEiLCJhIjoiY2tjZ3F4d2JjMGkwOTM0cXFmZjc4enVpNSJ9.-g8OjRs_-7w7nIAqNUQ90w', {
 maxZoom: 18,
@@ -233,7 +234,6 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
     }
     function highlightFeature(e) {
         layer = e.target;
-        
         layer.setStyle({
             weight: 3,
             dashArray: '',
@@ -253,9 +253,12 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
     var geojson;
 
     function zoomToFeature(e) {
-      
-              map.fitBounds(e.target.getBounds());
-              
+      //Uncomment the next line to again enable zoom on Single click!!!!!!!!!!!!!!!!!!!!!!!!
+      //  map.fitBounds(e.target.getBounds());
+      closeNav();
+      state = e.target.feature.properties.loc;
+      console.log(state);
+      openNav(state);
           }
     function onEachFeature(feature, layer) {
         
@@ -344,10 +347,11 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function openNav(i) {
+function openNav(state) {
   document.getElementById("mySidenav").style.width = "350px";
   try{
-    document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><strong><font color = white><b>State  : '+statesData.features[i].properties.loc+"</font></strong> <br><strong><b><font color = orange>Total Confirmed Cases : "+statesData.features[i].properties.totalConfirmedCase+"</font></striong><br><strong><font color= red>Deaths : "+statesData.features[i].properties.deaths+"</font></striong><br><strong><font color=green>Recovered : "+statesData.features[i].properties.recovered+"</font></striong><br><strong><b><font color=blue>Active Cases : "+statesData.features[i].properties.activeCases+"</font></striong>";
+    //document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><strong><font color = white><b>State  : '+statesData.features[i].properties.loc+"</font></strong> <br><strong><b><font color = orange>Total Confirmed Cases : "+statesData.features[i].properties.totalConfirmedCase+"</font></striong><br><strong><font color= red>Deaths : "+statesData.features[i].properties.deaths+"</font></striong><br><strong><font color=green>Recovered : "+statesData.features[i].properties.recovered+"</font></striong><br><strong><b><font color=blue>Active Cases : "+statesData.features[i].properties.activeCases+"</font></striong>";
+    document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><strong><font color = white><b>State  : '+state+"</font></strong>";
   }
   catch{
     // marker.on('mouseover', function (e) {
