@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # Number of days in consideration
     days = (date.today() - date(2020,3,23)).days
 
-    initial_infected = 463 #497 total cases on 23rd march,with 25 recovered,9 dead.So I(0) is assumed as approximately as 497-25-9
+    initial_infected = 497 #497 total cases on 23rd march,with 25 recovered,9 dead.So I(0) is assumed as approximately as 497-25-9
     initial_removed = 0
 
     # parameter to build avg recovery rate (gamma)
@@ -162,11 +162,14 @@ if __name__ == "__main__":
         predictions['R'].append(round(R))
         days+=1
 
-    print('COVID-19 peak in India expected on: {},with: {} million confirmed cases'.format(predictions1[round(max(predictions['I']))],max(predictions['I'])/1000000))
-    print('\n')
-    print('During the COVID-19 peak in India, {}% of the population is to be expected to be infected'.format(round(max(predictions['I'])*100/total_population,2)))
-
     dateInput = date(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
-    # print(predictions1)
-    print("Number of infected cases on {} is {}".format(date,predictions2[dateInput]))
+
+    if(int(sys.argv[1])>=date.today().year and int(sys.argv[2])>=date.today().month and int(sys.argv[3])>=date.today().day):
+        print("Number of infected cases on {} is {}##########".format(dateInput,int(predictions2[dateInput])))
+        print('COVID-19 peak in India expected on: {},with: {} million confirmed cases##########'.format(predictions1[round(max(predictions['I']))],max(predictions['I'])/1000000))
+        
+    else:
+        print("Please re-enter a date in the future!##########")
+        print('COVID-19 peak in India expected on: {},with: {} million confirmed cases##########'.format(predictions1[round(max(predictions['I']))],max(predictions['I'])/1000000))
+        
     

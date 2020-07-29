@@ -4,11 +4,13 @@ const path = require('path');
 const spawn = require("child_process").spawn; 
 const bodyParser = require('body-parser');
 
-app.use('/public',express.static(path.join(__dirname,'static')));
-app.use(bodyParser.urlencoded({extended:false}));
+app.set('view engine','ejs') 
+// app.set('views',__dirname+'/views')
 
+app.use(bodyParser.urlencoded({extended:false}));
+let predictions;
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'static','index.html'));
+    res.render('index',{data:{prediction1:null}});
 })
  
 app.post('/predictions', (req, res) =>{ 
@@ -20,11 +22,14 @@ app.post('/predictions', (req, res) =>{
                             parseInt(yyyy),parseInt(mm),parseInt(dd)] ); 
   
     process.stdout.on('data', function(data) { 
-        res.send(data); 
-        console.log(data)
+        predictions = data.toString().split("##########");
+        res.redirect('/output')
     } ) 
 } ); 
   
+app.get('/output',(req,res)=>{
+    res.render('index',{data:{prediction1:predictions[0],prediction2:predictions[1],prediction3:predictions[2]}});
+});
 app.listen(3000, function() { 
     console.log('Listening at port 3000...'); 
 } ) 

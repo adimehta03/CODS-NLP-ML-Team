@@ -1,0 +1,89 @@
+<head>
+    <title>SIR model</title>
+</head>
+
+<div>
+    <form action="/predictions" method="POST">
+        <input type="date" name="name" value="predDate">
+        <input type="submit" value="Predict">
+    </form>
+</div>
+
+<% if(data.prediction1!=null) {%>
+    <div>
+        
+        <div>
+            <p><%= data.prediction1 %></p>
+        </div>
+        
+        <div>
+            <p><%= data.prediction2 %></p>
+        </div>
+        
+        <div>
+            <p><%= data.prediction3 %></p>
+        </div>
+        
+        <div>
+            Assumptions and Remarks used by this model:
+            <table>
+                <tr>
+                    <th>Assumptions</th>
+                    <th>Values</th>
+                </tr>
+                <tr>
+                    <td>Population(N) Count</td>
+                    <td>1380004385</td>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td>N = S+I+R = constant</td>
+                </tr>
+                <tr>
+                    <td>Basic Reproduction Number(R0)</td>
+                    <td>1.568769846974838</td>
+                </tr>
+                <tr>
+                    <td>Estimation of R0</td>
+                    <td>I(t)=I(0)*exp(gamma*t*(R0-1)) assuming N/S is almost 1</td>
+                </tr>
+                <tr>
+                    <td>Average recovery period</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>beta</td>
+                    <td>R0*gamma</td>
+                </tr>
+                <tr>
+                    <td>gamma</td>
+                    <td>1/recovery_period</td>
+                </tr>
+                <tr>
+                    <td>Start of the pandemic</td>
+                    <td>23rd March 2020</td>
+                </tr>
+                <tr>
+                    <td>Initial infected(I(0))</td>
+                    <td>497</td>
+                </tr>
+                <tr>
+                    <td>Initial recovered/dead(R(0))</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Actual data on March 23rd</td>
+                    <td>I=497,R=15+9</td>
+                </tr>
+                <tr>
+                    <td>Initial Susceptible</td>
+                    <td>S(0)=N-I(0)-R(0) using N = S+I+R at any time t</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4>Interested in learning more?</h4>
+            <iframe scrolling="no" title="Copy of SIR Model" src="https://www.geogebra.org/material/iframe/id/rvhwc6yk/width/1291/height/787/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1291px" height="787px" style="border:0px;"> </iframe>
+        </div>
+</div>
+<% } %>
