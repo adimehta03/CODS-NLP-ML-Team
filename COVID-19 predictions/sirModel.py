@@ -169,7 +169,7 @@ if __name__ == "__main__":
         print('COVID-19 peak in India expected on: {},with: {} million confirmed cases##########'.format(predictions1[round(max(predictions['I']))],max(predictions['I'])/1000000))
         
     else:
-        print("Please re-enter a date in the future!##########")
+        print("Please re-enter a date of the future!##########")
         print('COVID-19 peak in India expected on: {},with: {} million confirmed cases##########'.format(predictions1[round(max(predictions['I']))],max(predictions['I'])/1000000))
         
     
