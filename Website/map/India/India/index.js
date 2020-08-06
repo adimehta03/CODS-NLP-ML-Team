@@ -77,7 +77,7 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
     var coordinates = {};
     for(let i=0; i< regionalData.length;i++)
     {
-      // console.log(regionalData[i].loc,i);
+      //  console.log(regionalData[i].loc,i);
         statesData.features[i].properties.loc = regionalData[i].loc;
         statesData.features[i].properties.totalConfirmedCase = regionalData[i].totalConfirmed;
         statesData.features[i].properties.recovered = regionalData[i].discharged;
@@ -258,7 +258,7 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
       closeNav();
       state = e.target.feature.properties.loc;
       console.log(state);
-      openNav(state);
+      openNav(state,true);
           }
     function onEachFeature(feature, layer) {
         
@@ -347,13 +347,13 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function openNav(state) {
+function openNav(state,stateFlag=false) {
   document.getElementById("mySidenav").style.width = "420px";
   document.getElementById("mySidenav").style.opacity = "1";
   try{
     //document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><strong><font color = white><b>State  : '+statesData.features[i].properties.loc+"</font></strong> <br><strong><b><font color = orange>Total Confirmed Cases : "+statesData.features[i].properties.totalConfirmedCase+"</font></striong><br><strong><font color= red>Deaths : "+statesData.features[i].properties.deaths+"</font></striong><br><strong><font color=green>Recovered : "+statesData.features[i].properties.recovered+"</font></striong><br><strong><b><font color=blue>Active Cases : "+statesData.features[i].properties.activeCases+"</font></striong>";
     
-    if(state == undefined) {
+    if(stateFlag == false) {
       document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
 
       fetch("https://api.covid19india.org/data.json").then(response => response.json()).then(ldata => {
@@ -608,8 +608,152 @@ function openNav(state) {
                 
     });
   }
-    else
-      document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><strong><font color = white><b>State  : '+state+"</font></strong>";
+    else{
+      document.getElementById("mySidenav").innerHTML = '';
+      // document.getElementById("mySidenav").innerHTML = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><strong><font color = white><b>State  : '+state+"</font></strong>";
+      fetch("https://api.covid19india.org/states_daily.json").then(response => response.json()).then(fdata => {
+
+        const statesData = fdata.states_daily;
+        let conf=[],rec=[],dec=[],dates=[];
+        let j=1,date=null;
+        for(let i=0;i<statesData.length;i++){
+            date = statesData[i].date;
+            delete statesData[i].date;
+            delete statesData[i].status;
+            if(j==1){
+                conf.push(statesData[i]);
+                dates.push(date);
+                j++;
+            } else if(j==2){
+                rec.push(statesData[i]);
+                j++;
+            } else {
+                dec.push(statesData[i]);
+                j = 1;
+            }
+        }
+        let stateCode = {'Andaman and Nicobar Islands':"an", "Andhra Pradesh":"ap", "Arunachal Pradesh":"ar","Assam":"as", "Bihar":"br", "Chandigarh":"ch", "Chhattisgarh":"ct", "XXXXX":"dd","Delhi": "dl","Dadra and Nagar Haveli and Daman and Diu": "dn", "Goa":"ga", "Gujarat":"gj", "Himachal Pradesh":"hp", "Haryana":"hr", "Jharkhand":"jh", "Jammu and Kashmir":"jk", "Karnataka":"ka", "Kerala":"kl", "Ladakh":"la", "Lakshadweep":"ld", "Maharashtra":"mh", "Meghalaya":"ml", "Manipur":"mn", "Madhya Pradesh":"mp", "Mizoram":"mz", "Nagaland":"nl", "Odisha":"or", "Punjab":"pb", "Pondicherry":"py", "Rajasthan":"rj", "Sikkim":"sk", "Telangana":"tg", "Tamil Nadu":"tn", "Tripura":"tr", "India":"tt", "Unknown":"un", "Uttar Pradesh":"up", "Uttarakhand":"ut", "West Bengal":"wb"};
+        let recovered = {"an":[], "ap":[], "ar":[], "as":[], "br":[], "ch":[], "ct":[], "dd":[], "dl":[], "dn":[], "ga":[], "gj":[], "hp":[], "hr":[], "jh":[], "jk":[], "ka":[], "kl":[], "la":[], "ld":[], "mh":[], "ml":[], "mn":[], "mp":[], "mz":[], "nl":[], "or":[], "pb":[], "py":[], "rj":[], "sk":[], "tg":[], "tn":[], "tr":[], "tt":[], "un":[], "up":[], "ut":[], "wb":[]};
+        let deceased = {"an":[], "ap":[], "ar":[], "as":[], "br":[], "ch":[], "ct":[], "dd":[], "dl":[], "dn":[], "ga":[], "gj":[], "hp":[], "hr":[], "jh":[], "jk":[], "ka":[], "kl":[], "la":[], "ld":[], "mh":[], "ml":[], "mn":[], "mp":[], "mz":[], "nl":[], "or":[], "pb":[], "py":[], "rj":[], "sk":[], "tg":[], "tn":[], "tr":[], "tt":[], "un":[], "up":[], "ut":[], "wb":[]};
+        let confirmed = {"an":[], "ap":[], "ar":[], "as":[], "br":[], "ch":[], "ct":[], "dd":[], "dl":[], "dn":[], "ga":[], "gj":[], "hp":[], "hr":[], "jh":[], "jk":[], "ka":[], "kl":[], "la":[], "ld":[], "mh":[], "ml":[], "mn":[], "mp":[], "mz":[], "nl":[], "or":[], "pb":[], "py":[], "rj":[], "sk":[], "tg":[], "tn":[], "tr":[], "tt":[], "un":[], "up":[], "ut":[], "wb":[]};
+        let everythingR=[];
+        let everythingC=[];
+        let everythingD=[];
+        let states = Object.keys(statesData[0]);
+
+        
+        for(let i=0;i<rec.length;i++){
+            everythingR.push(Object.values(rec[i]));
+            everythingC.push(Object.values(conf[i]));
+            everythingD.push(Object.values(dec[i]));
+        }
+        
+        function cummulativeSum(a) {
+            let result = [a[0]];
+        
+            for(let i = 1; i < a.length; i++) {
+              result[i] = result[i - 1] + a[i];
+            }
+        
+            return result;
+        };
+
+        for(let i=0;i<everythingR.length;i++){
+            for(let j=0;j<everythingR[i].length;j++){
+                recovered[states[j]].push(Number(everythingR[i][j]));
+                deceased[states[j]].push(Number(everythingD[i][j]));
+                confirmed[states[j]].push(Number(everythingC[i][j]));
+            }
+        }
+
+        for(let i=0;i<Object.keys(confirmed).length;i++){
+            recovered[states[i]] = cummulativeSum(recovered[states[i]]);
+            deceased[states[i]] = cummulativeSum(deceased[states[i]]);
+            confirmed[states[i]] = cummulativeSum(confirmed[states[i]]);
+        }
+        // console.log(recovered,deceased,confirmed)   # statewise data in datewise order of dates list above
+        var divID1 = document.createElement('div');
+        divID1.setAttribute('id',"tester1")
+        divID1.style.width ="100%";
+        divID1.style.display = "inline-block";
+        divID1.style.color = "white";
+        divID1.style.textAlign = "center";
+        document.getElementById("mySidenav").appendChild(divID1);
+        document.getElementById("tester1").innerHTML = `<b style="font-size:20px">${state}</b>`;
+
+
+        var divID = document.createElement('div');
+        divID.setAttribute('id',"tester")
+        divID.style.width ="100%";
+        divID.style.height = "40%";
+        divID.style.display = "inline-block";
+        document.getElementById("mySidenav").appendChild(divID);
+        plotCumulative(dates,confirmed[stateCode[state]],deceased[stateCode[state]],recovered[stateCode[state]],divID,states[stateCode[state]]);
+
+    });
+
+    function plotCumulative(xLabel,cumulativeDaily,cumulativeDailyDeceased,cumulativeDailyRecovered,divID,state){
+        // console.log(xLabel);
+        var trace1 = {
+            x: xLabel,
+            y: cumulativeDaily,
+            name: 'Total Confirmed Cases',
+            type: 'scatter'
+          };
+          var trace2 = {
+              x: xLabel,
+              y: cumulativeDailyDeceased,
+              name: 'Total Deceased',
+              type: 'scatter'
+            };
+            var trace3 = {
+                x: xLabel,
+                y: cumulativeDailyRecovered,
+                name: 'Total Recovered Cases',
+                type: 'scatter'
+              };
+          
+          var data = [trace1,trace3,trace2];
+          
+          var layout = {
+              title: state,
+              xaxis: { showticklabels: false }
+        };
+          Plotly.newPlot(divID.id, data,layout, {displayModeBar:false});
+        
+    }
+
+    function plotDaily(xLabel,yLabel,yLabelDeceased,yLabelRecovered,state,divID){
+        console.log(xLabel);
+        var trace1 = {
+            x: xLabel,
+            y: yLabel,
+            name: 'Daily Cases',
+            type: 'scatter', 'line': {'shape': 'spline', 'smoothing': 1.3}
+          };
+          var trace2 = {
+              x: xLabel,
+              y: yLabelDeceased,
+              name: 'Daily Deceased',
+              type: 'scatter', 'line': {'shape': 'spline', 'smoothing': 1.3}
+            };
+            var trace3 = {
+                x: xLabel,
+                y: yLabelRecovered,
+                name: 'Daily Recovered Cases',
+                type: 'scatter', 'line': {'shape': 'spline', 'smoothing': 1.3}
+              };
+          
+          var data = [trace1,trace3,trace2];
+          
+          var layout = {
+              title: "Karnataka",
+              xaxis: { showticklabels: false }
+            };
+          Plotly.newPlot("mySidenav", data,layout, {displayModeBar:false});
+        
+    }
+    }
   }
   catch{
     // marker.on('mouseover', function (e) {
