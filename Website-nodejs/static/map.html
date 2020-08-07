@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>CODS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="css/maps.css">
+    <script>
+    	window.onbeforeunload = function () {
+        window.scrollTo(0,0);
+	};
+    </script> 
+</head>
+<body>
+    <!-- <a class="github-fork-ribbon right-bottom fixed" href="https://github.com/saksham49/CODS-NLP-ML-Team/tree/master/Website" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+    <!-- the header -->
+    <header id="navbar">
+
+        <!-- our main logo -->
+        <a id="logo" href="/">
+            <img src="img/corona.png" alt="Logo">
+            <span>CODS</span>
+        </a> 
+
+        <!-- main navigation links -->
+        <nav>
+            <ul>
+                <li><a href="/maps">COVID-19 Tracker</a></li>
+                <li><a href="/preditionsModel">Predictor</a></li>
+                <li><a href="/evaChatbot">EVA</a></li>
+                <li><a href="/newsAndTweets">News and Tweets</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+            <!--<div class="map1"><br>
+                <img src="img/map1.JPG" alt="map" class="image">
+                <div class="overlay">
+                    <div class="text"><em>This map shows all cases per each state/county in each country</em></div>
+                </div>
+            </div>-->
+            <h3 class="header">COVID-19 MAP TRACKERS</h3>
+            <div class="row">
+                <div class="column" id="map1">
+                    <div class="overlay">
+                        <div class="text"><em>This map shows all cases per each state/county in each country</em>
+                            <br><br><a href="/worldMap">VIEW</a>
+                        </div>
+                    </div>
+                    <img src="img/map1.JPG" alt="States Info" style="width:100%" class="image1"/>
+                </div>
+
+                <div class="column" id="map2">
+                    <div class="overlay">
+                        <div class="text"><em>This map shows all cases in each country</em>
+                            <br><br><a href="/">VIEW</a>   
+                        </div>
+                    </div>
+                    <img src="img/map2.JPG" alt="Country Info" style="width:100%" class="image2">
+                </div>
+         
+                <div class="column" id="map3">
+                    <div class="overlay">
+                        <div class="text"><em>This map shows all cases in each state in depth of India</em>
+                            <br><br><a href="/IndiaMap">VIEW</a>   
+                        </div>
+                    </div>
+                    <img src="img/map3.jpg" alt="Country Info" style="width:100%" class="image3">
+                </div>
+                
+              </div>
+            
+         <!-- the footer -->
+         <footer>
+            <span>Center of Data Science, PES University 2020</span>
+        <!-- Include all the libraries, languages and frameworks used to build the website -->  
+        </footer>
+    </main>
+</body>
+</html>
