@@ -1,9 +1,9 @@
+<html>
 <head>
     <title>SIR model</title>
     <link href="./css/SIRModel.css" rel="stylesheet" type="text/css">
 </head>
-
-<!-- <header id="navbar">
+<header id="navbar">
 
     <a id="logo" href="/">
         <img src="img/corona.png" alt="Logo">
@@ -18,10 +18,13 @@
             <li><a href="/about">About</a></li>
         </ul>
     </nav> 
-</header> -->
+</header>
+<h3 class="header">PREDICTOR MODEL</h3>
+
 
 <% if(data.prediction1!=null) {%>
         <body>
+            
             <div class="inputs">
                 <form action="/predictions" method="POST">
                     <div class="labels" style="text-align:center;"><label for="date">You can try another date:<br><br></label></div>
@@ -272,9 +275,13 @@
                     
             </div>
     </div>
+    <footer>
+        <span>Center of Data Science, PES University 2020</span>
+    </footer> 
 </body>
-<% } else {%>
+<%} else {%>
     <body>
+     
         <div class="dateInput">
             <form action="/predictions" method="POST">
                 <div class="labels"><label for="date">Enter the date to predict the number of cases:<br><br></label></div>
@@ -282,11 +289,13 @@
                 <input class="button" type="submit" value="Predict">
             </form>
         </div>
+        <br><br>
+        <footer>
+            <span>Center of Data Science, PES University 2020</span>
+        </footer> 
     </body>
 
 <% } %>
 
 
-<!-- <footer>
-    <span>Center of Data Science, PES University 2020</span>
-</footer> -->
+</html>
