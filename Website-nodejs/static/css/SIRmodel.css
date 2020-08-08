@@ -10,7 +10,7 @@ body   {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-size: 8px;
+    font-size: 16px;
 }
 
 
@@ -19,10 +19,6 @@ body     {
     /* background: #023037; */background: black;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    position: absolute;
-    text-align: justify;
 }
 
 .equations{
@@ -153,23 +149,15 @@ input[type="date"], focus {
 }
 
 .dateInput{
-    padding: 100px 100px 100px 100px;
-    background-color: #023037;
-    margin-left:500px;
-    margin-top: 200px;
-    text-align: center;
-    list-style-position: inside;
+  padding: 100px 100px 100px 100px;
+  background-color: #023037;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+  list-style-position: inside;
 }
 
-.labels{
-    padding:auto;
-}
 
-/* #navbar   {
-    background: #222;
-    color: #FFF;
-    padding: 20px 30px;
-  }
   /* logo */
   #logo         {
     display: inline-block;
@@ -188,6 +176,11 @@ input[type="date"], focus {
   } 
   
   /* main navigation */
+  #navbar   {
+    background: #222;
+    color: #FFF;
+    padding: 20px 30px;
+  }
   nav     {
     position: fixed;
     width: 50%;
@@ -216,16 +209,31 @@ input[type="date"], focus {
     text-decoration: none;
     color: #fff;
   } 
+
+  .header{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+
+}
   /* styling our footer */
-footer   {
+  footer   {
     background: #222;
     color: #777;
-    padding: 40px;
+    padding: 50px;
     text-align: center;
+    width: 100%;
   }
   footer img   {
     display: block;
     border-radius: 5px;
     width: 80px;
     margin: 0 auto 10px;
-  } */
+  }
+
+.header{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+
+}
